@@ -1,0 +1,27 @@
+# Large Data Feeds (Enterprise Standard)
+*.csv
+data/*.csv
+data/raw/
+
+# Environment & Secrets
+.env
+.env.local
+.env.production
+.env.staging
+
+# Build Output & Logs
+dist/audit/
+*.png
+*.jpg
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+node_modules/
+.wrangler/
+.DS_Store
+v26.9.0/

@@ -1,0 +1,27 @@
+# robots.txt for https://link.iviztrading.com
+User-agent: *
+Allow: /
+
+# Dedicated AI & Search Crawlers (AEO / GEO)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://link.iviztrading.com/sitemap.xml
