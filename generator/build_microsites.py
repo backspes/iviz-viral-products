@@ -859,6 +859,31 @@ def generate_production_microsites():
             </a>
         </div>
 
+        <!-- Listicle Hub Callout Banner -->
+        <div class="mb-8 grid sm:grid-cols-3 gap-3">
+            <a href="skincare-kesihatan-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">✨</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Skincare & Kesihatan</span>
+                    <span class="text-[11px] text-slate-500">43 produk ulasan →</span>
+                </div>
+            </a>
+            <a href="gajet-elektronik-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">⚡</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Gajet & Elektronik</span>
+                    <span class="text-[11px] text-slate-500">24 produk ulasan →</span>
+                </div>
+            </a>
+            <a href="perkakas-dapur-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🍳</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Perkakas Dapur</span>
+                    <span class="text-[11px] text-slate-500">30 produk ulasan →</span>
+                </div>
+            </a>
+        </div>
+
         <!-- Dynamic Group Filter Tabs -->
         <div class="flex items-center gap-2.5 overflow-x-auto pb-3 mb-6 no-scrollbar">
             {tab_buttons_html}
