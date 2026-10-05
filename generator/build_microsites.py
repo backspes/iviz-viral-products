@@ -398,6 +398,208 @@ TEMPLATE_HTML = """<!DOCTYPE html>
 </html>
 """
 
+# ==============================================================================
+# CATEGORY LISTICLE HUBS GENERATOR (Hub-and-Spoke, AEO/GEO/SEO)
+# ==============================================================================
+CATEGORY_LISTICLE_SPECS = [
+    {
+        "slug": "skincare-kesihatan-viral.html",
+        "title_short": "Skincare & Kesihatan",
+        "emoji": "✨",
+        "meta_title": "{n} Produk Skincare & Kesihatan Viral Malaysia ({year}) — Pilihan Terbaik",
+        "meta_desc": "Bandingkan {n} produk skincare dan kesihatan viral paling berbaloi di Shopee & Lazada Malaysia ({year}). Semakan ramuan bebas, status NPRA KKM, dan harga terkini.",
+        "h1": "{n} Produk Skincare & Kesihatan Viral Terbaik di Malaysia ({year})",
+        "intro": "Senarai semakan bebas produk penjagaan kulit dan kesihatan paling laris di Malaysia. Setiap ulasan menilai keberkesanan bahan aktif, maklum balas pengguna sebenar, serta status keselamatan berdaftar rasmi.",
+        "match": lambda p: p.get("group") in ["Kesihatan & Penjagaan Diri", "Kesihatan & Kecantikan"] or "skincare" in p.get("tags", []) or "serum" in p.get("name", "").lower() or "cleanser" in p.get("name", "").lower()
+    },
+    {
+        "slug": "gajet-elektronik-terbaik.html",
+        "title_short": "Gajet & Elektronik",
+        "emoji": "⚡",
+        "meta_title": "{n} Gajet & Aksesori Elektronik Terbaik Malaysia ({year}) — Berbaloi Beli",
+        "meta_desc": "Bandingkan {n} gajet viral dan aksesori telefon paling berbaloi di pasaran Malaysia ({year}). Ulasan fon telinga, powerbank, kabel pantas, dan pengecas.",
+        "h1": "{n} Gajet & Aksesori Elektronik Paling Berbaloi di Malaysia ({year})",
+        "intro": "Panduan ulasan bebas gajet pintar, fon telinga tanpa wayar, powerbank tahan lasak, dan aksesori komputer berkualiti tinggi yang menawarkan nilai terbaik untuk wang anda.",
+        "match": lambda p: p.get("group") in ["Gajet & Elektronik"] or p.get("group_slug") in ["gadgets-tech", "gadget"]
+    },
+    {
+        "slug": "perkakas-dapur-viral.html",
+        "title_short": "Perkakas Dapur & Rumah",
+        "emoji": "🍳",
+        "meta_title": "{n} Perkakas Dapur & Rumah Viral Malaysia ({year}) — Jimat Masa Masak",
+        "meta_desc": "Bandingkan {n} perkakas dapur dan rumah viral paling popular di Malaysia ({year}). Semakan air fryer, periuk nasi rendah gula, induction cooker, dan alatan pembersih.",
+        "h1": "{n} Perkakas Dapur & Rumah Paling Viral di Malaysia ({year})",
+        "intro": "Ulasan objektif alatan dapur moden dan perkakas rumah pintar yang terbukti memudahkan rutin harian keluarga Malaysia. Jimat masa memasak dan mengemas kediaman.",
+        "match": lambda p: (p.get("group") in ["Rumah & Perkakas Elektrik", "Rumah & Dapur"]) or "dapur" in p.get("category", "").lower() or "masak" in p.get("category", "").lower() or "cooker" in p.get("name", "").lower() or "fryer" in p.get("name", "").lower()
+    }
+]
+
+def generate_category_listicles(dist_dir, products):
+    import datetime as _dt
+    _now = _dt.datetime.now()
+    year = _now.year
+    generated_slugs = []
+
+    for spec in CATEGORY_LISTICLE_SPECS:
+        matched = [p for p in products if spec["match"](p)]
+        n = len(matched)
+        if n == 0:
+            continue
+
+        slug = spec["slug"]
+        generated_slugs.append(slug)
+        title = spec["meta_title"].format(n=n, year=year)
+        desc = spec["meta_desc"].format(n=n, year=year)
+        h1 = spec["h1"].format(n=n, year=year)
+
+        # Build items schema
+        item_schema_list = []
+        for idx, p in enumerate(matched, start=1):
+            item_schema_list.append({
+                "@type": "ListItem",
+                "position": idx,
+                "name": p["name"],
+                "url": f"https://link.iviztrading.com/{p['id']}.html"
+            })
+
+        list_json_ld = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": h1,
+            "description": desc,
+            "numberOfItems": n,
+            "itemListElement": item_schema_list
+        }
+
+        # Build cards HTML
+        items_html = ""
+        for idx, p in enumerate(matched, start=1):
+            status_badge = '<span class="bg-slate-200 text-slate-600 px-2 py-0.5 rounded text-[10px] font-bold">STOK HABIS</span>' if p.get('status') == 'out_of_stock' else ''
+            items_html += f"""
+            <article class="bg-white rounded-2xl border border-slate-200 p-5 md:p-6 shadow-sm hover:shadow-md transition-all group">
+                <div class="flex items-start gap-4 md:gap-6">
+                    <div class="flex flex-col items-center justify-center shrink-0">
+                        <span class="w-8 h-8 rounded-full bg-slate-900 text-white font-extrabold text-xs flex items-center justify-center shadow-sm">#{idx}</span>
+                    </div>
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-slate-100 border border-slate-200 rounded-xl shrink-0 overflow-hidden p-1 flex items-center justify-center relative">
+                        <img src="{p.get('image_url', '')}" alt="{p['name']}" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <div class="absolute inset-0 flex items-center justify-center">{status_badge}</div>
+                    </div>
+                    <div class="flex-grow min-w-0">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200/80 px-2.5 py-0.5 rounded-md">{p['category']}</span>
+                            <span class="text-xs text-slate-500 font-semibold">{p['brand']}</span>
+                            <span class="text-xs font-bold text-amber-600 ml-auto">⭐ {p.get('editorial_score', '9.0')}/10</span>
+                        </div>
+                        <h2 class="text-base md:text-lg font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors leading-snug">
+                            <a href="{p['id']}.html">{p['name']}</a>
+                        </h2>
+                        <p class="text-xs md:text-sm text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                            "{p.get('verdict', p.get('hook', ''))}"
+                        </p>
+                        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 pt-3 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Harga Pasaran:</span>
+                                <span class="text-lg md:text-xl font-black text-slate-900">{p['shopee_price']}</span>
+                                <span class="text-xs text-slate-400 line-through ml-1">{p.get('original_price', '')}</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <a href="{p['id']}.html" class="inline-flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition-colors">
+                                    Baca Ulasan
+                                </a>
+                                <a href="{p['affiliate_url']}" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center gap-1 text-xs font-extrabold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 px-3.5 py-2 rounded-lg shadow-sm transition-all">
+                                    Beli di Shopee →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            """
+
+        # Other category quick links
+        other_cats = ""
+        for ospec in CATEGORY_LISTICLE_SPECS:
+            is_cur = ospec["slug"] == slug
+            cur_cls = "bg-orange-500 text-white font-extrabold shadow-sm" if is_cur else "bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold"
+            other_cats += f'<a href="{ospec["slug"]}" class="px-4 py-2 rounded-xl text-xs whitespace-nowrap transition-colors {cur_cls}">{ospec["emoji"]} {ospec["title_short"]}</a>\n'
+
+        cat_page_html = f"""<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content="{desc}">
+    <link rel="canonical" href="https://link.iviztrading.com/{slug}">
+    
+    <!-- OpenGraph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{desc}">
+    <meta property="og:url" content="https://link.iviztrading.com/{slug}">
+    <meta property="og:site_name" content="iviz Picks Malaysia">
+    <meta name="twitter:card" content="summary">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>body {{ font-family: 'Plus Jakarta Sans', sans-serif; }}</style>
+
+    <!-- Schema.org ItemList (AEO / Search Citation) -->
+    <script type="application/ld+json">
+    {json.dumps(list_json_ld, ensure_ascii=False, indent=2)}
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col justify-between selection:bg-orange-500 selection:text-white">
+
+    <main class="max-w-3xl mx-auto px-4 py-6 md:py-10 w-full flex-1">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+            <a href="index.html" class="hover:text-orange-600 font-medium transition-colors">Utama</a>
+            <span>/</span>
+            <span class="text-slate-900 font-semibold">{spec['title_short']}</span>
+        </nav>
+
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 text-orange-700 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                <span>{spec['emoji']} Panduan Listicle {year}</span>
+            </div>
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                {h1}
+            </h1>
+            <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
+                {spec['intro']}
+            </p>
+        </div>
+
+        <!-- Category Pills Filter Bar -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-8 no-scrollbar">
+            <a href="index.html" class="px-4 py-2 rounded-xl text-xs whitespace-nowrap bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold transition-colors">🏷️ Semua Produk</a>
+            {other_cats}
+        </div>
+
+        <!-- Products Listicle Grid -->
+        <div class="space-y-4 mb-10">
+            {items_html}
+        </div>
+
+        <!-- Transparency & Affiliate Disclaimer -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 text-xs text-slate-500 leading-relaxed shadow-sm">
+            <strong class="text-slate-800 block mb-1">Ketelusan Editorial & Pematuhan Afiliasi:</strong>
+            iviz Picks adalah saluran ulasan bebas. Pautan luar di atas menghala terus ke stor rasmi jenama di platform e-dagang (Shopee/Lazada). Kami mungkin menerima komisen kecil tanpa sebarang kos tambahan kepada anda sekiranya anda membuat pembelian melalui pautan ini. Kedudukan produk dinilai berdasarkan kepuasan pembeli, spesifikasi rasmi dan harga pasaran sebenar.
+        </div>
+    </main>
+
+</body>
+</html>"""
+
+        with open(os.path.join(dist_dir, slug), "w", encoding="utf-8") as f:
+            f.write(cat_page_html)
+        print(f" Generated Listicle Hub: dist/{slug} ({n} produk)")
+
+    return generated_slugs
+
 def generate_production_microsites():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_path = os.path.join(base_dir, "data", "trending_products.json")
@@ -752,6 +954,9 @@ def generate_production_microsites():
         f.write(index_html)
     print(" Generated External-CDN Image Hub: dist/index.html")
 
+    # 3b. Generate Category Listicle Hubs (Hub-and-Spoke, format dinamik)
+    category_slugs = generate_category_listicles(dist_dir, products)
+
     # 4. Generate sitemap.xml & robots.txt (AEO/GEO/SEO for Google, Bing, GPTBot, Perplexity)
     today_iso = _now.strftime("%Y-%m-%d")
     sitemap_entries = [
@@ -762,6 +967,14 @@ def generate_production_microsites():
     <priority>1.0</priority>
   </url>"""
     ]
+
+    for cslug in category_slugs:
+        sitemap_entries.append(f"""  <url>
+    <loc>https://link.iviztrading.com/{cslug}</loc>
+    <lastmod>{today_iso}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>""")
 
     for p in products:
         sitemap_entries.append(f"""  <url>

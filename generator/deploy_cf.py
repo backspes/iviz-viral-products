@@ -1,8 +1,6 @@
 import os
-import glob
-import json
-import hashlib
-import requests
+import subprocess
+import sys
 
 
 def load_env(path=None):
@@ -17,39 +15,29 @@ def load_env(path=None):
             if not line or line.startswith("#") or "=" not in line:
                 continue
             k, v = line.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip())
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 
 load_env()
 
-account_id = os.environ["CLOUDFLARE_ACCOUNT_ID"]
-token = os.environ["CLOUDFLARE_API_TOKEN"]
-project_name = "coupon-iviztrading"
-dist_dir = "/root/projects/study-programmatic-seo/prototype-arbitrage/dist"
+project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+dist_dir = os.path.join(project_dir, "dist")
+project_name = "store-iviztrading"
 
-headers = {
-    "Authorization": f"Bearer {token}"
-}
+wrangler_bin = "/root/node_modules/.bin/wrangler"
 
-html_files = glob.glob(os.path.join(dist_dir, "*.html"))
-manifest = {}
-files = {}
+cmd = [
+    wrangler_bin, "pages", "deploy", dist_dir,
+    f"--project-name={project_name}",
+    "--branch=main",
+    "--commit-dirty=true"
+]
 
-for filepath in html_files:
-    rel_path = "/" + os.path.basename(filepath)
-    with open(filepath, "rb") as f:
-        content = f.read()
-    file_hash = hashlib.sha256(content).hexdigest()[:32]
-    # In Cloudflare Pages, manifest is { "/path": "hash" } or { "/path": "file_hash" }
-    manifest[rel_path] = file_hash
-    files[file_hash] = (file_hash, content, "text/html")
+print(f"Deploying {dist_dir} to Cloudflare Pages ({project_name})...")
+res = subprocess.run(cmd, capture_output=True, text=True)
+print(res.stdout)
+if res.stderr:
+    print(res.stderr, file=sys.stderr)
 
-data = {
-    "manifest": json.dumps(manifest)
-}
-
-url = f"https://api.cloudflare.com/client/v4/accounts/{account_id}/pages/projects/{project_name}/deployments"
-
-response = requests.post(url, headers=headers, data=data, files=files)
-print("HTTP Status:", response.status_code)
-print("Response:", json.dumps(response.json(), indent=2))
+if res.returncode != 0:
+    sys.exit(res.returncode)
