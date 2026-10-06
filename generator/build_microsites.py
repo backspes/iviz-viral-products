@@ -795,6 +795,20 @@ def generate_production_microsites():
     for slug, count in group_counts.items():
         tab_buttons_html += f'''\n            <button onclick="filterGroup('{slug}', this)" class="tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">{group_names[slug]} ({count})</button>'''
 
+    # Build Listicle Hub banner dynamically (counts derived from the same classifier used by the hubs)
+    hub_banner_html = ""
+    for spec in CATEGORY_LISTICLE_SPECS:
+        hcount = sum(1 for p in products if spec["match"](p))
+        if hcount == 0:
+            continue
+        hub_banner_html += f'''\n            <a href="{spec['slug']}" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">{spec['title_short']}</span>
+                    <span class="text-[11px] text-slate-500">{hcount} produk ulasan →</span>
+                </div>
+            </a>'''
+
     # Rebuild Index Hub
     index_html = f"""<!DOCTYPE html>
 <html lang="ms">
@@ -890,41 +904,7 @@ def generate_production_microsites():
 
         <!-- Listicle Hub Callout Banner -->
         <div class="mb-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <a href="skincare-kesihatan-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">✨</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Skincare & Kesihatan</span>
-                    <span class="text-[11px] text-slate-500">43 produk ulasan →</span>
-                </div>
-            </a>
-            <a href="perkakas-dapur-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🍳</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Perkakas Dapur</span>
-                    <span class="text-[11px] text-slate-500">34 produk ulasan →</span>
-                </div>
-            </a>
-            <a href="gajet-elektronik-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">⚡</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Gajet & Aksesori</span>
-                    <span class="text-[11px] text-slate-500">15 produk ulasan →</span>
-                </div>
-            </a>
-            <a href="rumah-pintar-pembersihan.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🏠</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Rumah Pintar</span>
-                    <span class="text-[11px] text-slate-500">5 produk ulasan →</span>
-                </div>
-            </a>
-            <a href="setup-meja-wfh-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🖥️</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Setup Meja WFH</span>
-                    <span class="text-[11px] text-slate-500">3 produk ulasan →</span>
-                </div>
-            </a>
+            {hub_banner_html}
         </div>
 
         <!-- Dynamic Group Filter Tabs -->
