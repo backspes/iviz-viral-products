@@ -98,8 +98,25 @@ Semua produk baharu mesti dipetakan mengikut hierarki:
 ## 6. Aliran Kerja Pelaksanaan (Build & Deploy Workflow)
 
 Bila menambah produk baharu:
-1. Masukkan entri ke dalam `data/trending_products.json` mengikut skema di atas.
+1. Masukkan entri ke dalam `data/trending_products.json` mengikut skema di atas (atau guna enjin automatik `generator/auto_expand.py`).
 2. Jalankan penjana: `python3 generator/build_microsites.py`.
 3. Jalankan ujian semakan perkataan dilarang bagi memastikan tiada unsur Indonesia / typo.
 4. Deploy ke Cloudflare Pages: `wrangler pages deploy dist --project-name=picks-iviztrading`.
 5. Bersihkan cache CDN Cloudflare (*purge_everything*).
+
+---
+
+## 7. Standard Penambahan & Hub Ekspansi Automatik (Auto-Expand Pipeline)
+
+Bagi memastikan laman tidak tunggang-langgang apabila diskalakan secara automatik:
+1. **Enjin Pipeline**: `generator/auto_expand.py` bertindak sebagai pintu masuk automatik bagi datafeed Shopee/Involve Asia.
+2. **Pemisahan Data & Logik**:
+   - Senarai produk hab disimpan secara berasingan dalam `data/hub_assignments.json`.
+   - Peraturan penapisan negatif & kata kunci wajib disimpan dalam `data/hub_guardrail_rules.json`.
+3. **Penguatkuasaan Sempadan Perkataan (Word-Boundary Matching)**:
+   - Padanan kata kunci wajib menggunakan sempadan perkataan (`\b` / regex boundary) bagi menghalang padanan ralat substring (contoh: perkataan 'aha' dilarang memadankan 'tahan').
+4. **Pengesahan Imej Mandatori (HTTP 200)**:
+   - Setiap imej produk disahkan aktif (HTTP 200 OK) melalui permintaan `HEAD` sebelum disimpan ke dalam pangkalan data.
+5. **Sekatan Automatik (*Hard Abort*)**:
+   - Jika mana-mana produk melanggar peraturan hab masalah/persona, fungsi `validate_problem_hub_guardrails()` akan membatalkan binaan secara automatik (*raise ValueError*) bagi memelihara integriti portal.
+

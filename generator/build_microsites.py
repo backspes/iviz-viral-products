@@ -4,6 +4,14 @@ import re
 
 from components import GLOBAL_HEADER, GLOBAL_FOOTER, GLOBAL_NAV_SCRIPT
 
+# ==============================================================================
+# DATA: Import dynamic hub assignments & guardrail rules from /data directory
+# This allows auto-expansion without editing this source file directly.
+# ==============================================================================
+_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+_ASSIGNMENTS_FILE = os.path.join(_DATA_DIR, "hub_assignments.json")
+_RULES_FILE = os.path.join(_DATA_DIR, "hub_guardrail_rules.json")
+
 TEMPLATE_HTML = """<!DOCTYPE html>
 <html lang="ms" class="scroll-smooth">
 <head>
@@ -912,8 +920,8 @@ PROBLEM_GUARDRAIL_RULES = {
         "required": ["powerbank", "charger", "earbuds", "tumbler", "steamer", "fan"]
     },
     "fitness_kesihatan": {
-        "negative": ["charger", "earbuds", "keyboard", "dashcam"],
-        "required": ["scale", "blender", "band", "tumbler", "cushion"]
+        "negative": ["charger", "earbuds", "keyboard", "dashcam", "bra", "waistband", "strap", "pants"],
+        "required": ["scale", "blender", "smart band", "fitness band", "smartwatch", "tumbler", "cushion", "timbang"]
     },
     "setup_minimalis": {
         "negative": ["air fryer", "rice cooker", "steamer", "serum"],
@@ -924,6 +932,36 @@ PROBLEM_GUARDRAIL_RULES = {
         "required": ["earbuds", "cable", "tumbler", "lint", "patch", "cleanser"]
     },
 }
+
+# Override with dynamic JSON files if present in /data
+if os.path.exists(_ASSIGNMENTS_FILE):
+    try:
+        with open(_ASSIGNMENTS_FILE, "r", encoding="utf-8") as _f:
+            PROBLEM_HUB_PRODUCT_IDS = {k: set(v) for k, v in json.load(_f).items()}
+    except Exception as _e:
+        print(f"⚠️ Warning loading {_ASSIGNMENTS_FILE}: {_e}")
+
+if os.path.exists(_RULES_FILE):
+    try:
+        with open(_RULES_FILE, "r", encoding="utf-8") as _f:
+            PROBLEM_GUARDRAIL_RULES = json.load(_f)
+    except Exception as _e:
+        print(f"⚠️ Warning loading {_RULES_FILE}: {_e}")
+
+def _kw_match(keyword, text):
+    """
+    Padanan kata kunci SELAMAT dengan sempadan perkataan (word boundary).
+    Menghalang pepijat kritikal seperti 'aha' memadankan 'tahan', atau 'bha' memadankan 'bahan'.
+    Kata kunci berbilang perkataan (cth: 'tea tree') dipadankan sebagai frasa penuh.
+    """
+    kw = keyword.lower().strip()
+    if not kw:
+        return False
+    if " " in kw:
+        return kw in text
+    # Gunakan sempadan perkataan untuk kata kunci tunggal
+    return re.search(r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])", text) is not None
+
 
 def validate_problem_hub_guardrails(products):
     """
@@ -949,13 +987,13 @@ def validate_problem_hub_guardrails(products):
 
             full_text = (p.get("name","") + " " + p.get("category","") + " " + p.get("verdict","") + " " + " ".join(p.get("tags",[]))).lower()
 
-            # Semak negative keywords
+            # Semak negative keywords (word-boundary safe)
             for neg in negs:
-                if neg in full_text:
+                if _kw_match(neg, full_text):
                     guardrail_errors.append(f"❌ Produk '{pid}' dalam hab '{ptype}' dilarang kerana mengandungi kata kunci '{neg}'!")
 
-            # Semak required keywords
-            if reqs and not any(req in full_text for req in reqs):
+            # Semak required keywords (word-boundary safe)
+            if reqs and not any(_kw_match(req, full_text) for req in reqs):
                 guardrail_errors.append(f"❌ Produk '{pid}' dalam hab '{ptype}' tidak mengandungi kata kunci solusi yang sah {reqs}!")
 
     if guardrail_errors:

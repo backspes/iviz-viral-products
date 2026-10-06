@@ -1,0 +1,74 @@
+{
+  "jeragat_parut": {
+    "negative": ["body lotion", "losyen badan", "body serum", "body wash", "sabun mandi", "syampu"],
+    "required": ["serum", "niacinamide", "txa", "vitamin c", "symwhite", "arbutin", "brightening", "whitening", "dark spot", "parut", "jeragat", "cleanser", "face wash"]
+  },
+  "kulit_berminyak": {
+    "negative": ["body lotion", "losyen badan", "rambut", "shampoo"],
+    "required": ["tea tree", "salicylic", "bha", "aha", "acne", "pimple", "foaming", "low ph", "panthenol", "cleanser", "toner", "patch"]
+  },
+  "kulit_kering": {
+    "negative": ["body lotion", "losyen badan", "rambut", "shampoo"],
+    "required": ["ceramide", "hyaluronic", "hyalucera", "snail", "mucin", "lotion", "moisturizer", "moisture", "essence"]
+  },
+  "diet_sihat": {
+    "negative": ["cerek", "kettle", "pencuci", "fan", "kipas", "steamer clothes", "garment steamer"],
+    "required": ["rice cooker", "air fryer", "scale", "timbang", "blender", "smoothie", "low sugar"]
+  },
+  "sakit_pinggang": {
+    "negative": ["fan", "kipas", "keyboard", "mouse", "tetikus"],
+    "required": ["lumbar", "backrest", "chair", "kerusi", "laptop stand", "footrest", "ergonomic"]
+  },
+  "bulu_habuk": {
+    "negative": ["humidifier", "pelembap udara", "fan", "kipas", "kettle", "holder", "bracket", "mount", "phone holder", "suction cup", "sealer", "strip"],
+    "required": ["vacuum cleaner", "robot vacuum", "air purifier", "lint remover", "mite vacuum", "hama tilam", "hepa", "dust mite", "vacuum", "purifier"]
+  },
+  "kereta_bersih": {
+    "negative": ["dashcam", "camera", "recorder", "charger", "pengecas", "bluetooth", "receiver", "kabel", "steamer", "steam iron", "strip"],
+    "required": ["vacuum", "organizer", "trash", "holder", "but", "kabin", "kebersihan"]
+  },
+  "pakaian_kemas": {
+    "negative": ["shaver muka", "pencukur janggut", "hair dryer", "food steamer", "pengukus makanan", "cooker", "rice cooker"],
+    "required": ["garment steamer", "steam iron", "lint remover", "lint shaver", "pencukur bulu", "seterika wap", "seterika", "steamer", "lint"]
+  },
+  "hadiah_housewarming": {
+    "negative": ["ubat", "patch", "cleanser", "sabun"],
+    "required": ["air fryer", "tumbler", "purifier", "earbuds", "scale", "blender"]
+  },
+  "starter_pack_rumah_sewa": {
+    "negative": ["earbuds", "tws", "dashcam", "holder"],
+    "required": ["rice cooker", "steamer", "vacuum", "cushion", "air fryer"]
+  },
+  "rutin_penampilan_kemas": {
+    "negative": ["air fryer", "rice cooker", "vacuum", "purifier", "dashcam"],
+    "required": ["steamer", "lint", "remover", "ceramide", "serum", "skincare"]
+  },
+  "pelajar_asrama": {
+    "negative": ["air purifier", "vacuum cleaner", "monitor light", "dashcam"],
+    "required": ["rice cooker", "kettle", "powerbank", "earbuds", "steamer", "lint", "fan"]
+  },
+  "keluarga_bayi": {
+    "negative": ["gaming chair", "keyboard", "laptop stand", "dashcam"],
+    "required": ["bottle", "sterilizer", "purifier", "vacuum", "food jar", "pressure monitor", "camera", "chair", "booster"]
+  },
+  "bujang_sibuk": {
+    "negative": ["powerbank", "earbuds", "keyboard", "baby"],
+    "required": ["air fryer", "rice cooker", "blender", "vacuum", "steamer"]
+  },
+  "kaki_travel": {
+    "negative": ["air purifier", "rice cooker", "monitor light", "keyboard"],
+    "required": ["powerbank", "charger", "earbuds", "tumbler", "steamer", "fan"]
+  },
+  "fitness_kesihatan": {
+    "negative": ["charger", "earbuds", "keyboard", "dashcam", "bra", "waistband", "strap", "pants"],
+    "required": ["scale", "blender", "smart band", "fitness band", "smartwatch", "tumbler", "cushion", "timbang"]
+  },
+  "setup_minimalis": {
+    "negative": ["air fryer", "rice cooker", "steamer", "serum", "keycap", "switch"],
+    "required": ["light bar", "laptop stand", "keyboard", "hub", "mouse"]
+  },
+  "bajet_bawah_rm50": {
+    "negative": ["air fryer", "vacuum cleaner", "monitor light", "mechanical keyboard"],
+    "required": ["earbuds", "cable", "tumbler", "lint", "patch", "cleanser"]
+  }
+}
