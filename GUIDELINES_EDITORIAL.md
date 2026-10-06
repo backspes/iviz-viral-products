@@ -43,4 +43,13 @@ Dokumen ini adalah rujukan mandatori untuk pembinaan katalog, pengelasan kategor
 Sebelum menolak sebarang kod ke Cloudflare Pages atau GitHub:
 - [ ] Jalankan `python3 generator/build_microsites.py` dan pastikan tiada `⚠️ AMARAN ID TIDAK WUJUD`.
 - [ ] Sahkan semua halaman mengandungi `<header>` (Nav Bar), `<footer>`, dan skrip burger `toggleNav`.
+- [ ] Sahkan `styles.css` statik terjana & tiada amaran CDN dalam console browser.
 - [ ] Purge cache zon Cloudflare selepas deploy.
+
+---
+
+## 5. Standard Build Stealth & Kemas (Pematuhan Developer Professional)
+- **Tiada CDN Script**: Dilarang menggunakan `<script src="https://cdn.tailwindcss.com"></script>` dalam pengeluaran.
+- **Fail CSS Statik**: Semua kelas Tailwind di-compile ke fail statik `dist/styles.css` berasingan via Tailwind CLI.
+- **Nyah-Komen HTML**: Semua komen builder/nota internal (`<!-- ... -->`) dibuang secara automatik semasa penjanaan.
+- **HTML Minification**: Kod HTML diminify menggunakan `htmlmin` untuk muat turun pantas dan rupa binaan produksi yang bersih.
