@@ -1168,7 +1168,7 @@ def generate_production_microsites():
                     <span class="text-[11px] font-extrabold text-slate-800 group-hover:text-orange-600 leading-[1.15] line-clamp-2 break-words w-full">{spec['title_short']}</span>
                 </a>'''
         elif spec.get("is_intent"):
-            # Buying Psychology / Life Stage Guide Cards
+            # Buying Psychology / Life Stage Guide Cards (Human-friendly labels)
             blurb = spec["intro"]
             if len(blurb) > 135:
                 blurb = blurb[:132].rsplit(" ", 1)[0] + "..."
@@ -1177,13 +1177,13 @@ def generate_production_microsites():
                 <div>
                     <div class="flex items-center gap-2 mb-2.5">
                         <span class="text-xl p-1.5 bg-amber-100/70 rounded-lg shrink-0">{spec['emoji']}</span>
-                        <span class="text-[10px] font-black text-amber-800 bg-amber-100/80 border border-amber-300/70 px-2 py-0.5 rounded uppercase tracking-wide">Fasa & Niat Hidup</span>
+                        <span class="text-[10px] font-black text-amber-800 bg-amber-100/80 border border-amber-300/70 px-2 py-0.5 rounded uppercase tracking-wide">Idea & Keperluan</span>
                     </div>
                     <h3 class="font-extrabold text-slate-900 text-sm group-hover:text-amber-600 transition-colors leading-snug">{card_h1}</h3>
                     <p class="text-xs text-slate-500 mt-2 leading-relaxed">{blurb}</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-amber-100 flex items-center justify-between text-xs font-bold text-slate-400 group-hover:text-amber-600 transition-colors">
-                    <span>{hcount} Produk Terpilih</span>
+                    <span>{hcount} Koleksi Idea</span>
                     <span class="flex items-center gap-1">Lihat Pilihan
                         <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
@@ -1199,7 +1199,7 @@ def generate_production_microsites():
                 <div>
                     <div class="flex items-center gap-2 mb-2.5">
                         <span class="text-xl p-1.5 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
-                        <span class="text-[10px] font-black text-orange-700 bg-orange-50 border border-orange-200/70 px-2 py-0.5 rounded uppercase tracking-wide">Panduan Solusi</span>
+                        <span class="text-[10px] font-black text-orange-700 bg-orange-50 border border-orange-200/70 px-2 py-0.5 rounded uppercase tracking-wide">Panduan Beli</span>
                     </div>
                     <h3 class="font-extrabold text-slate-900 text-sm group-hover:text-orange-600 transition-colors leading-snug">{card_h1}</h3>
                     <p class="text-xs text-slate-500 mt-2 leading-relaxed">{blurb}</p>
@@ -1317,26 +1317,26 @@ def generate_production_microsites():
             </div>
         </div>
 
-        <!-- ELEMENT 2: Intent & Psychology Guides -->
+        <!-- ELEMENT 2: Collections & Gift Ideas -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-amber-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>💡 Panduan Niat & Psikologi Pembelian</span>
+                    <span>💡 Idea Beli-belah & Hadiah</span>
                 </h2>
-                <span class="text-[11px] font-bold text-amber-600 uppercase">Fasa Hidup</span>
+                <span class="text-[11px] font-bold text-amber-600 uppercase">Koleksi Pilihan</span>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {intent_cards_html}
             </div>
         </div>
 
-        <!-- ELEMENT 3: Problem & Solution Editorial Guides (Option A) -->
+        <!-- ELEMENT 3: Shopping Guides by Need -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>🎯 Panduan Mengikut Masalah & Solusi</span>
+                    <span>🎯 Pilihan Mengikut Keperluan</span>
                 </h2>
-                <span class="text-[11px] font-bold text-slate-400 uppercase">Panduan Solusi</span>
+                <span class="text-[11px] font-bold text-slate-400 uppercase">Pilihan Editor</span>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {problem_cards_html}
