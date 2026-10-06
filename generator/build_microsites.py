@@ -792,18 +792,19 @@ def generate_category_listicles(dist_dir, products):
                         <p class="text-xs md:text-sm text-slate-600 mt-2 line-clamp-2 leading-relaxed">
                             "{p.get('verdict', p.get('hook', ''))}"
                         </p>
-                        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 pt-3 border-t border-slate-100">
-                            <div>
-                                <span class="text-xs text-slate-400 block">Harga Pasaran:</span>
+                        <div class="mt-4 pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-xs text-slate-400">Harga:</span>
                                 <span class="text-lg md:text-xl font-black text-slate-900">{p['shopee_price']}</span>
-                                <span class="text-xs text-slate-400 line-through ml-1">{p.get('original_price', '')}</span>
+                                <span class="text-xs text-slate-400 line-through">{p.get('original_price', '')}</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <a href="{p['id']}.html" class="inline-flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition-colors">
-                                    Baca Ulasan
+                            <div class="grid grid-cols-2 sm:flex sm:items-center gap-2 w-full sm:w-auto">
+                                <a href="{p['id']}.html" class="inline-flex items-center justify-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 py-2.5 px-3 rounded-xl transition-colors min-h-[42px] text-center">
+                                    <span>Baca Ulasan</span>
                                 </a>
-                                <a href="{p['affiliate_url']}" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center gap-1 text-xs font-extrabold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 px-3.5 py-2 rounded-lg shadow-sm transition-all">
-                                    Beli di Shopee →
+                                <a href="{p['affiliate_url']}" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center justify-center gap-1.5 text-xs font-extrabold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 py-2.5 px-3.5 rounded-xl shadow-sm hover:shadow-md transition-all min-h-[42px] text-center">
+                                    <span>Beli di Shopee</span>
+                                    <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                 </a>
                             </div>
                         </div>
