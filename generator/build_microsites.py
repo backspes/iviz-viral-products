@@ -1355,5 +1355,61 @@ def apply_global_chrome(dist_dir):
 
     print(f" Applied Global Chrome (Header/Footer/Burger Nav) to ALL {count} HTML pages in dist/.")
 
+    # 6. Stealth Post-Processing (Static CSS, Strip Comments, Minify HTML)
+    optimize_and_stealth_dist(dist_dir)
+
+
+def optimize_and_stealth_dist(dist_dir):
+    """
+    STEALTH POST-PROCESSOR:
+    1. Compiles Tailwind CSS to a single static `styles.css` file via Tailwind CLI (no CDN script).
+    2. Replaces Tailwind CDN script and inline styles with <link rel="stylesheet" href="styles.css">.
+    3. Strips all HTML comments (e.g., <!-- GLOBAL HEADER ... -->).
+    4. Minifies HTML to look like a clean production developer build.
+    """
+    import subprocess, htmlmin
+
+    tw_bin = "/root/tools/tw/node_modules/.bin/tailwindcss"
+    tw_config = "/root/tools/tw/tailwind.config.js"
+    tw_input = "/root/tools/tw/input.css"
+    tw_output = os.path.join(dist_dir, "styles.css")
+
+    try:
+        subprocess.run([tw_bin, "-c", tw_config, "-i", tw_input, "-o", tw_output, "--minify"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception as e:
+        print(f"  ⚠️ Warning: Tailwind CLI compile failed ({e}), keeping existing styles.css if present.")
+
+    comment_regex = re.compile(r'<!--(?!\[if).*?-->', re.DOTALL)
+    tw_script_regex = re.compile(r'<script\s+src=["\']https://cdn\.tailwindcss\.com["\']><\s*/script\s*>', re.IGNORECASE)
+    inline_style_regex = re.compile(r'<style>[\s\S]*?</style>', re.IGNORECASE)
+
+    count = 0
+    for fname in os.listdir(dist_dir):
+        if not fname.endswith(".html"):
+            continue
+
+        fpath = os.path.join(dist_dir, fname)
+        html = open(fpath, encoding="utf-8").read()
+
+        # Replace Tailwind CDN with static stylesheet link
+        html = tw_script_regex.sub('<link rel="stylesheet" href="styles.css">', html)
+        
+        # Remove inline <style> tags (compiled into styles.css)
+        html = inline_style_regex.sub('', html)
+
+        # Strip HTML comments
+        html = comment_regex.sub('', html)
+
+        # Minify HTML
+        try:
+            html = htmlmin.minify(html, remove_comments=True, remove_empty_space=True)
+        except Exception:
+            pass
+
+        open(fpath, "w", encoding="utf-8").write(html)
+        count += 1
+
+    print(f" Stealth & Minify complete: Compiled static styles.css & cleaned {count} HTML pages.")
+
 if __name__ == "__main__":
     generate_production_microsites()
