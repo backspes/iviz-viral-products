@@ -552,24 +552,85 @@ CATEGORY_LISTICLE_SPECS = [
 ]
 
 def match_problem_category(p, problem_type):
-    t = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + p.get("verdict","") + " " + p.get("hook","") + " " + " ".join(p.get("tags",[]))).lower()
-    if problem_type == "kulit_berminyak":
-        return any(k in t for k in ["oily", "berminyak", "pori", "foaming", "acne", "cleanser", "tea tree"])
-    elif problem_type == "jeragat_parut":
-        return any(k in t for k in ["dark spot", "jeragat", "parut", "niacinamide", "brightening", "whitening", "c&e", "vitamin c", "triple serum"])
-    elif problem_type == "kulit_kering":
-        return any(k in t for k in ["dry", "kering", "ceramide", "hyaluronic", "barrier", "hydrating", "moisturizer", "moisturiser", "lotion", "snail"])
-    elif problem_type == "diet_sihat":
-        return any(k in t for k in ["low sugar", "rendah gula", "air fryer", "smokeless", "non-stick"])
-    elif problem_type == "sakit_pinggang":
-        return any(k in t for k in ["ergonomic", "backrest", "cushion", "posture", "lumbar", "gaming chair"])
-    elif problem_type == "bulu_habuk":
-        return any(k in t for k in ["vacuum cleaner", "vakum", "air purifier", "penapis udara", "hepa", "lint remover", "bulu", "habuk"])
-    elif problem_type == "kereta_bersih":
-        return any(k in t for k in ["car vacuum", "dash cam", "dashcam", "car holder", "car charger", "car receiver", "pembersih kereta", "aksesori kereta"]) or ("car" in t and "vacuum" in t)
-    elif problem_type == "pakaian_kemas":
-        return any(k in t for k in ["garment steamer", "steamer pakaian", "lint remover", "penggilap bulu", "penjagaan pakaian", "iron"])
-    return False
+    """
+    GUARDRAIL: Padanan produk ke hab masalah HANYA melalui whitelist ID eksplisit.
+    JANGAN guna padanan keyword/regex lagi — ia menyebabkan produk tak berkaitan
+    tersalah masuk (cth: 'cushion' padan 'backrest cushion', 'vacuum' padan 'vacuum sealer').
+    Setiap ID di bawah telah disemak manual supaya 100% relevan dengan masalah tersebut.
+    """
+    return p.get("id") in PROBLEM_HUB_PRODUCT_IDS.get(problem_type, set())
+
+
+# ==============================================================================
+# WHITELIST EKSPLISIT: ID produk yang SAH untuk setiap hab masalah.
+# Semak manual setiap kali tambah produk baharu. JANGAN tambah secara rambang.
+# ==============================================================================
+PROBLEM_HUB_PRODUCT_IDS = {
+    # Masalah jerawat, kulit berminyak & pori tersumbat
+    "kulit_berminyak": {
+        "cosrx-acne-pimple-master-patch-24pcs",
+        "some-by-mi-aha-bha-pha-miracle-toner-150ml",
+        "skintific-5-panthenol-acne-calming-water-gel-45g",
+        "aiken-tea-tree-oil-facial-cleanser-100g",
+        "cosmoderm-tea-tree-oil-calming-cleanser",
+        "cosrx-low-ph-good-morning-gel-cleanser-150ml",
+        "cetaphil-gentle-exfoliating-salicylic-cleanser",
+        "cerave-foaming-cleanser-473ml",
+    },
+    # Masalah jeragat, parut hitam & tona kulit tak sekata
+    "jeragat_parut": {
+        "anua-niacinamide-10-txa-4-dark-spot-serum",
+        "the-ordinary-niacinamide-10-zinc-1",
+        "glad2glow-10-niacinamide-pomegranate-serum-17ml",
+        "glad2glow-body-serum-set",
+        "aiken-5x-ceramide-bright-vitamin-c-serum-15ml",
+        "nivea-extra-bright-c-and-e-vitamin-body-lotion-320ml",
+        "hada-labo-softening-whitening-face-wash-100g",
+        "nivea-men-bright-c-hya-wash-foam-100g",
+    },
+    # Masalah kulit kering, mengelupas & skin barrier rosak
+    "kulit_kering": {
+        "skintific-5x-ceramide-moisture-gel",
+        "the-originote-hyalucera-moisturizer-gel",
+        "torriden-dive-in-low-molecule-hyaluronic-acid-serum",
+        "hada-labo-hydrating-lotion-light-170ml",
+        "laneige-water-bank-blue-hyaluronic-serum",
+        "cosrx-advanced-snail-96-mucin-power-essence",
+        "glad2glow-pomegranate-niacinamide-moisturizer",
+    },
+    # Masalah diet sihat: kurangkan minyak & gula (air fryer + periuk low-sugar SAHAJA)
+    "diet_sihat": {
+        "tefal-5l-low-sugar-rice-cooker",
+        "gaabor-air-fryer-3-5l-smokeless-oil-free",
+        "gaabor-smokeless-air-fryer-4l",
+    },
+    # Masalah sakit pinggang & postur duduk lama (kerusi + kusyen lumbar SAHAJA)
+    "sakit_pinggang": {
+        "boldlux-memory-foam-backrest-cushion",
+        "ttracing-swift-x-2020-gaming-chair",
+    },
+    # Masalah bulu kucing, habuk & kualiti udara rumah (vakum rumah + penapis udara SAHAJA)
+    "bulu_habuk": {
+        "xiaomi-smart-air-purifier-4-compact",
+        "xiaomi-mijia-smart-air-purifier-6",
+        "deerma-dx300-vacuum-cleaner",
+        "deerma-ultrasonic-air-humidifier-f628",
+    },
+    # Masalah kereta kotor & keselesaan pemanduan (aksesori kereta SAHAJA)
+    "kereta_bersih": {
+        "wireless-car-vacuum-cleaner-handheld",
+        "70mai-dash-cam-a500s-pro-plus-gps",
+        "dashcam-a22-3-camera-dvr-recorder",
+        "baseus-360-rotation-magnetic-car-holder",
+        "baseus-primetrip-vp2-car-charger-60w",
+        "ugreen-bluetooth-5-4-car-receiver-70601",
+    },
+    # Masalah pakaian berkedut & berbulu (steamer + lint remover SAHAJA)
+    "pakaian_kemas": {
+        "panasonic-ni-ghd021-handheld-garment-steamer",
+        "xiaomi-showsee-electric-lint-remover",
+    },
+}
 
 def classify_category(p):
     text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
@@ -585,6 +646,13 @@ def generate_category_listicles(dist_dir, products):
     _now = _dt.datetime.now()
     year = _now.year
     generated_slugs = []
+
+    # GUARDRAIL: sahkan setiap ID dalam whitelist wujud dalam katalog sebenar
+    all_ids = {p["id"] for p in products}
+    for ptype, ids in PROBLEM_HUB_PRODUCT_IDS.items():
+        for pid in ids:
+            if pid not in all_ids:
+                print(f"  ⚠️  AMARAN: ID '{pid}' dalam whitelist hab '{ptype}' TIDAK wujud dalam katalog!")
 
     for spec in CATEGORY_LISTICLE_SPECS:
         matched = [p for p in products if spec["match"](p)]
@@ -1237,13 +1305,17 @@ def apply_global_chrome(dist_dir):
         fpath = os.path.join(dist_dir, fname)
         html = open(fpath, encoding="utf-8").read()
 
-        # Replace Header
+        # Replace Header if exists, else INSERT after <body...>
         if header_regex.search(html):
             html = header_regex.sub(GLOBAL_HEADER, html, count=1)
+        elif "<header" not in html:
+            html = re.sub(r'(<body[^>]*>)', r'\1\n' + GLOBAL_HEADER, html, count=1)
 
-        # Replace Footer
+        # Replace Footer if exists, else INSERT before </body>
         if footer_regex.search(html):
             html = footer_regex.sub(GLOBAL_FOOTER, html, count=1)
+        elif "<footer" not in html:
+            html = html.replace("</body>", GLOBAL_FOOTER + "\n</body>")
 
         # Ensure GLOBAL_NAV_SCRIPT is present before </body>
         if "function toggleNav" not in html:
