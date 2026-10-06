@@ -515,6 +515,39 @@ CATEGORY_LISTICLE_SPECS = [
         "intro": "Solusi keselesaan duduk berjam-jam di meja kerja dengan sokongan lumbar dan fabrik bernafas untuk mengelakkan lenguh tulang belakang.",
         "match": lambda p: match_problem_category(p, "sakit_pinggang"),
         "is_problem": True
+    },
+    {
+        "slug": "penapis-udara-vakum-bulu-habuk.html",
+        "title_short": "Bulu Kucing & Habuk",
+        "emoji": "🧹",
+        "meta_title": "{n} Penapis Udara & Vakum Terbaik Atasi Bulu Kucing & Habuk ({year})",
+        "meta_desc": "Panduan {n} penapis udara HEPA dan vakum mudah alih terbaik untuk bersihkan bulu haiwan, habuk halus, dan atasi alahan rumah ({year}).",
+        "h1": "{n} Penapis Udara & Vakum Terbaik untuk Bulu Kucing & Habuk ({year})",
+        "intro": "Kombinasi penapis udara berteknologi HEPA dan vakum berkuasa tinggi yang berkesan menangkap bulu haiwan peliharaan serta habuk halus di udara dan permukaan.",
+        "match": lambda p: match_problem_category(p, "bulu_habuk"),
+        "is_problem": True
+    },
+    {
+        "slug": "aksesori-pembersih-kereta.html",
+        "title_short": "Kereta Bersih & Selesa",
+        "emoji": "🚗",
+        "meta_title": "{n} Aksesori & Pembersih Kereta Terbaik untuk Pemandu ({year})",
+        "meta_desc": "Senarai {n} vakum kereta, pemegang telefon magnetik, pengecas pantas, dan dashcam terbaik untuk keselesaan & keselamatan pemanduan ({year}).",
+        "h1": "{n} Aksesori & Pembersih Kereta Terbaik untuk Keselesaan Pemandu ({year})",
+        "intro": "Lengkapkan pengalaman memandu anda dengan vakum kereta mudah alih, pemegang telefon stabil, dan pengecas pantas yang menjadikan setiap perjalanan lebih selesa.",
+        "match": lambda p: match_problem_category(p, "kereta_bersih"),
+        "is_problem": True
+    },
+    {
+        "slug": "steamer-lint-remover-pakaian.html",
+        "title_short": "Pakaian Kemas & Licin",
+        "emoji": "👔",
+        "meta_title": "{n} Garment Steamer & Lint Remover Terbaik Malaysia ({year})",
+        "meta_desc": "Bandingkan {n} steamer pakaian mudah alih dan penggilap bulu fabrik terbaik untuk pakaian kemas tanpa seterika ({year}).",
+        "h1": "{n} Garment Steamer & Lint Remover Terbaik untuk Pakaian Kemas ({year})",
+        "intro": "Alatan penjagaan pakaian moden yang melicinkan kedutan dan membuang bulu fabrik dengan pantas, tanpa perlu mengeluarkan papan seterika.",
+        "match": lambda p: match_problem_category(p, "pakaian_kemas"),
+        "is_problem": True
     }
 ]
 
@@ -530,6 +563,12 @@ def match_problem_category(p, problem_type):
         return any(k in t for k in ["low sugar", "rendah gula", "air fryer", "smokeless", "non-stick"])
     elif problem_type == "sakit_pinggang":
         return any(k in t for k in ["ergonomic", "backrest", "cushion", "posture", "lumbar", "gaming chair"])
+    elif problem_type == "bulu_habuk":
+        return any(k in t for k in ["vacuum cleaner", "vakum", "air purifier", "penapis udara", "hepa", "lint remover", "bulu", "habuk"])
+    elif problem_type == "kereta_bersih":
+        return any(k in t for k in ["car vacuum", "dash cam", "dashcam", "car holder", "car charger", "car receiver", "pembersih kereta", "aksesori kereta"]) or ("car" in t and "vacuum" in t)
+    elif problem_type == "pakaian_kemas":
+        return any(k in t for k in ["garment steamer", "steamer pakaian", "lint remover", "penggilap bulu", "penjagaan pakaian", "iron"])
     return False
 
 def classify_category(p):
