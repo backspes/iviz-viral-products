@@ -402,6 +402,9 @@ TEMPLATE_HTML = """<!DOCTYPE html>
 # CATEGORY LISTICLE HUBS GENERATOR (Hub-and-Spoke, AEO/GEO/SEO)
 # ==============================================================================
 CATEGORY_LISTICLE_SPECS = [
+    # --------------------------------------------------------------------------
+    # HAB KATEGORI UTAMA (CATEGORY HUBS)
+    # --------------------------------------------------------------------------
     {
         "slug": "skincare-kesihatan-viral.html",
         "title_short": "Skincare & Kesihatan",
@@ -440,7 +443,8 @@ CATEGORY_LISTICLE_SPECS = [
         "meta_desc": "Bandingkan {n} produk rumah pintar, pembersih udara, dan vakum viral terbaik di Malaysia ({year}). Semakan prestasi dan nilai harga.",
         "h1": "{n} Produk Rumah Pintar & Pembersihan Paling Viral di Malaysia ({year})",
         "intro": "Pilihan penapis udara, robot vakum, dan alatan kebersihan kediaman yang memudahkan tugas harian dengan teknologi terkini.",
-        "match": lambda p: classify_category(p) == "rumah_pintar"
+        "match": lambda p: classify_category(p) == "rumah_pintar",
+        "is_problem": False
     },
     {
         "slug": "setup-meja-wfh-terbaik.html",
@@ -450,9 +454,83 @@ CATEGORY_LISTICLE_SPECS = [
         "meta_desc": "Bandingkan {n} kerusi ergonomik, meja boleh laras, dan aksesori meja yang selesa untuk produktiviti kerja dari rumah ({year}).",
         "h1": "{n} Kelengkapan Setup Meja WFH Paling Selesa di Malaysia ({year})",
         "intro": "Optimalkan ruang kerja anda dengan pilihan kerusi ergonomik, meja berdiri (standing desk), dan aksesori meja yang membantu kesihatan postur.",
-        "match": lambda p: classify_category(p) == "setup_wfh"
+        "match": lambda p: classify_category(p) == "setup_wfh",
+        "is_problem": False
+    },
+
+    # --------------------------------------------------------------------------
+    # HAB LISTICLE BERFOKUSKAN MASALAH (PROBLEM-FOCUSED HUBS)
+    # --------------------------------------------------------------------------
+    {
+        "slug": "skincare-kulit-berminyak.html",
+        "title_short": "Kulit Berminyak & Pori",
+        "emoji": "🧼",
+        "meta_title": "{n} Skincare Terbaik untuk Kulit Berminyak & Jerawat Malaysia ({year})",
+        "meta_desc": "Panduan {n} pencuci muka, sunscreen, dan pelembap paling berkesan kawal minyak dan pori tersumbat tanpa melekit ({year}).",
+        "h1": "{n} Skincare Terbaik untuk Kulit Berminyak & Mudah Berjerawat ({year})",
+        "intro": "Ulasan bebas produk skincare ringan berasaskan gel dan buih lembut yang terbukti mengawal lebihan sebum serta mencerahkan pori tersumbat.",
+        "match": lambda p: match_problem_category(p, "kulit_berminyak"),
+        "is_problem": True
+    },
+    {
+        "slug": "serum-jeragat-parut-hitam.html",
+        "title_short": "Jeragat & Parut Hitam",
+        "emoji": "🎯",
+        "meta_title": "{n} Serum Paling Berkesan Hilangkan Jeragat & Parut Hitam ({year})",
+        "meta_desc": "Semakan {n} serum Niacinamide, Vitamin C, dan Alpha Arbutin terbaik untuk pudar jeragat dan parut jerawat kusam ({year}).",
+        "h1": "{n} Serum Paling Berkesan Hilangkan Jeragat & Parut Hitam di Malaysia ({year})",
+        "intro": "Pilihan serum bahan aktif terbukti (Niacinamide, TXA, Vitamin C) yang diformulasi khas untuk memudarkan hiperpigmentasi dan meratakan tona kulit.",
+        "match": lambda p: match_problem_category(p, "jeragat_parut"),
+        "is_problem": True
+    },
+    {
+        "slug": "pelembap-kulit-kering-barrier.html",
+        "title_short": "Kulit Kering & Barrier",
+        "emoji": "💧",
+        "meta_title": "{n} Pelembap Terbaik Pulihkan Skin Barrier & Kulit Kering ({year})",
+        "meta_desc": "Senarai {n} moisturizer Ceramide dan Hyaluronic Acid terbaik untuk atasi kulit kering mengelupas dan pedih ({year}).",
+        "h1": "{n} Pelembap Terbaik Pulihkan Skin Barrier & Kulit Kering ({year})",
+        "intro": "Koleksi pelembap berformula Ceramide 5X dan Asid Hialuronik yang berkesan mengunci kelembapan 24 jam serta merawat skin barrier terjejas.",
+        "match": lambda p: match_problem_category(p, "kulit_kering"),
+        "is_problem": True
+    },
+    {
+        "slug": "perkakas-dapur-diet-sihat.html",
+        "title_short": "Diet Sihat & Low Sugar",
+        "emoji": "🥗",
+        "meta_title": "{n} Periuk Nasi Rendah Gula & Air Fryer untuk Diet Sihat ({year})",
+        "meta_desc": "Ulasan {n} periuk nasi low-sugar dan penggoreng udara tanpa minyak terbaik untuk gaya hidup sihat & kurangkan kolesterol ({year}).",
+        "h1": "{n} Periuk Nasi Rendah Gula & Air Fryer Terbaik untuk Diet Sihat ({year})",
+        "intro": "Perkakas dapur moden yang membantu mengurangkan kanji nasi dan minyak masakan tanpa menjejaskan rasa makanan harian keluarga.",
+        "match": lambda p: match_problem_category(p, "diet_sihat"),
+        "is_problem": True
+    },
+    {
+        "slug": "kerusi-ergonomik-sakit-pinggang.html",
+        "title_short": "Sakit Pinggang & Postur",
+        "emoji": "🪑",
+        "meta_title": "{n} Kerusi Ergonomik & Kusyen Tulang Belakang Terbaik ({year})",
+        "meta_desc": "Bandingkan {n} kerusi pejabat ergonomik dan kusyen sokongan lumbar untuk elak sakit pinggang bekerja seharian ({year}).",
+        "h1": "{n} Kerusi Ergonomik & Kusyen Sokongan Pinggang Terbaik ({year})",
+        "intro": "Solusi keselesaan duduk berjam-jam di meja kerja dengan sokongan lumbar dan fabrik bernafas untuk mengelakkan lenguh tulang belakang.",
+        "match": lambda p: match_problem_category(p, "sakit_pinggang"),
+        "is_problem": True
     }
 ]
+
+def match_problem_category(p, problem_type):
+    t = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + p.get("verdict","") + " " + p.get("hook","") + " " + " ".join(p.get("tags",[]))).lower()
+    if problem_type == "kulit_berminyak":
+        return any(k in t for k in ["oily", "berminyak", "pori", "foaming", "acne", "cleanser", "tea tree"])
+    elif problem_type == "jeragat_parut":
+        return any(k in t for k in ["dark spot", "jeragat", "parut", "niacinamide", "brightening", "whitening", "c&e", "vitamin c", "triple serum"])
+    elif problem_type == "kulit_kering":
+        return any(k in t for k in ["dry", "kering", "ceramide", "hyaluronic", "barrier", "hydrating", "moisturizer", "moisturiser", "lotion", "snail"])
+    elif problem_type == "diet_sihat":
+        return any(k in t for k in ["low sugar", "rendah gula", "air fryer", "smokeless", "non-stick", "steamer"])
+    elif problem_type == "sakit_pinggang":
+        return any(k in t for k in ["ergonomic", "backrest", "cushion", "posture", "lumbar", "gaming chair"])
+    return False
 
 def classify_category(p):
     text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
@@ -795,19 +873,24 @@ def generate_production_microsites():
     for slug, count in group_counts.items():
         tab_buttons_html += f'''\n            <button onclick="filterGroup('{slug}', this)" class="tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">{group_names[slug]} ({count})</button>'''
 
-    # Build Listicle Hub banner dynamically (counts derived from the same classifier used by the hubs)
-    hub_banner_html = ""
+    # Build Listicle Hub banner dynamically (split into Main Categories and Problem Solutions)
+    cat_banner_html = ""
+    prob_banner_html = ""
     for spec in CATEGORY_LISTICLE_SPECS:
         hcount = sum(1 for p in products if spec["match"](p))
         if hcount == 0:
             continue
-        hub_banner_html += f'''\n            <a href="{spec['slug']}" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+        card_html = f'''\n            <a href="{spec['slug']}" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
                 <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
                 <div class="min-w-0">
                     <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">{spec['title_short']}</span>
                     <span class="text-[11px] text-slate-500">{hcount} produk ulasan →</span>
                 </div>
             </a>'''
+        if spec.get("is_problem"):
+            prob_banner_html += card_html
+        else:
+            cat_banner_html += card_html
 
     # Rebuild Index Hub
     index_html = f"""<!DOCTYPE html>
@@ -902,9 +985,27 @@ def generate_production_microsites():
             </a>
         </div>
 
-        <!-- Listicle Hub Callout Banner -->
-        <div class="mb-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {hub_banner_html}
+        <!-- Category Hubs Banner -->
+        <div class="mb-6">
+            <h2 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 flex items-center gap-1.5">
+                <span>📁 Hab Kategori Produk</span>
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {cat_banner_html}
+            </div>
+        </div>
+
+        <!-- Problem-Focused Listicle Hubs Banner -->
+        <div class="mb-8 bg-gradient-to-br from-orange-50/60 to-amber-50/60 border border-orange-200/80 rounded-2xl p-4 sm:p-5 shadow-xs">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-xs font-black text-orange-900 uppercase tracking-widest flex items-center gap-1.5">
+                    <span>🎯 Pilihan Mengikut Masalah & Solusi</span>
+                </h2>
+                <span class="text-[10px] bg-orange-500 text-white font-black px-2 py-0.5 rounded-md">Popular</span>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {prob_banner_html}
+            </div>
         </div>
 
         <!-- Dynamic Group Filter Tabs -->
