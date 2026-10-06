@@ -626,7 +626,6 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "foldable-car-trunk-organizer-waterproof",
         "foldable-hanging-car-trash-can-waterproof",
         "baseus-360-rotation-magnetic-car-holder",
-        "baseus-primetrip-vp2-car-charger-60w",
     },
     # Masalah pakaian berkedut & berbulu (Steamer Lipat Travel, Garment Steamer, Lint Remover)
     "pakaian_kemas": {
@@ -635,6 +634,88 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "xiaomi-showsee-electric-lint-remover",
     },
 }
+
+# ==============================================================================
+# GUARDRAIL AUTOMATIK: Peraturan larangan & kelayakan untuk setiap hab masalah
+# ==============================================================================
+PROBLEM_GUARDRAIL_RULES = {
+    "jeragat_parut": {
+        "negative": ["body lotion", "losyen badan", "body serum", "body wash", "sabun mandi", "syampu"],
+        "required": ["serum", "niacinamide", "txa", "vitamin c", "symwhite", "arbutin", "brightening", "whitening", "dark spot", "parut", "jeragat", "cleanser", "face wash"]
+    },
+    "kulit_berminyak": {
+        "negative": ["body lotion", "losyen badan", "rambut", "shampoo"],
+        "required": ["tea tree", "salicylic", "bha", "aha", "acne", "pimple", "foaming", "low ph", "panthenol", "cleanser", "toner", "patch"]
+    },
+    "kulit_kering": {
+        "negative": ["body lotion", "losyen badan", "rambut", "shampoo"],
+        "required": ["ceramide", "hyaluronic", "hyalucera", "snail", "mucin", "lotion", "moisturizer", "moisture", "essence"]
+    },
+    "diet_sihat": {
+        "negative": ["cerek", "kettle", "pencuci", "fan", "kipas"],
+        "required": ["rice cooker", "air fryer", "scale", "timbang", "blender", "smoothie", "low sugar"]
+    },
+    "sakit_pinggang": {
+        "negative": ["fan", "kipas", "keyboard", "mouse", "tetikus"],
+        "required": ["lumbar", "backrest", "chair", "kerusi", "laptop stand", "footrest", "ergonomic"]
+    },
+    "bulu_habuk": {
+        "negative": ["humidifier", "pelembap udara", "fan", "kipas", "kettle"],
+        "required": ["vacuum", "purifier", "lint", "mite", "hama", "hepa", "remover"]
+    },
+    "kereta_bersih": {
+        "negative": ["dashcam", "camera", "recorder", "charger", "pengecas", "bluetooth", "receiver", "kabel"],
+        "required": ["vacuum", "organizer", "trash", "holder", "but", "kabin", "kebersihan"]
+    },
+    "pakaian_kemas": {
+        "negative": ["shaver muka", "pencukur janggut", "hair dryer"],
+        "required": ["steamer", "lint", "remover", "seterika", "iron"]
+    },
+}
+
+def validate_problem_hub_guardrails(products):
+    """
+    Sahkan kesahihan dan integriti produk untuk setiap hab masalah:
+    1. Pastikan setiap ID wujud dalam pangkalan data.
+    2. Pastikan tiada kata kunci terlarang (Negative Keywords).
+    3. Pastikan mengandungi sekurang-kurangnya satu kata kunci penyelesaian (Required Keywords).
+    Jika gagal, jana ralat kritikal dan henti proses build!
+    """
+    pbid = {p["id"]: p for p in products}
+    guardrail_errors = []
+
+    for ptype, pids in PROBLEM_HUB_PRODUCT_IDS.items():
+        rules = PROBLEM_GUARDRAIL_RULES.get(ptype, {})
+        negs = rules.get("negative", [])
+        reqs = rules.get("required", [])
+
+        for pid in pids:
+            p = pbid.get(pid)
+            if not p:
+                guardrail_errors.append(f"❌ ID '{pid}' dalam hab '{ptype}' tidak wujud dalam database!")
+                continue
+
+            full_text = (p.get("name","") + " " + p.get("category","") + " " + p.get("verdict","") + " " + " ".join(p.get("tags",[]))).lower()
+
+            # Semak negative keywords
+            for neg in negs:
+                if neg in full_text:
+                    guardrail_errors.append(f"❌ Produk '{pid}' dalam hab '{ptype}' dilarang kerana mengandungi kata kunci '{neg}'!")
+
+            # Semak required keywords
+            if reqs and not any(req in full_text for req in reqs):
+                guardrail_errors.append(f"❌ Produk '{pid}' dalam hab '{ptype}' tidak mengandungi kata kunci solusi yang sah {reqs}!")
+
+    if guardrail_errors:
+        print("\n" + "="*80)
+        print("🚨 CRITICAL GUARDRAIL ERROR: KESILAPAN PADANAN PRODUK MASALAH DIKESAN!")
+        print("="*80)
+        for err in guardrail_errors:
+            print("  " + err)
+        print("="*80 + "\n")
+        raise ValueError("Build dibatalkan automatik kerana terdapat produk yang tidak menyelesaikan masalah sebenar.")
+
+    print(f"  🛡️  Guardrail Integriti Masalah: LULUS 100% (Semua produk disahkan relevan).")
 
 def classify_category(p):
     text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
@@ -651,12 +732,8 @@ def generate_category_listicles(dist_dir, products):
     year = _now.year
     generated_slugs = []
 
-    # GUARDRAIL: sahkan setiap ID dalam whitelist wujud dalam katalog sebenar
-    all_ids = {p["id"] for p in products}
-    for ptype, ids in PROBLEM_HUB_PRODUCT_IDS.items():
-        for pid in ids:
-            if pid not in all_ids:
-                print(f"  ⚠️  AMARAN: ID '{pid}' dalam whitelist hab '{ptype}' TIDAK wujud dalam katalog!")
+    # ENFORCE CRITICAL GUARDRAIL: Sahkan integriti produk masalah secara automatik
+    validate_problem_hub_guardrails(products)
 
     for spec in CATEGORY_LISTICLE_SPECS:
         matched = [p for p in products if spec["match"](p)]
@@ -1002,10 +1079,10 @@ def generate_production_microsites():
             continue
 
         if not spec.get("is_problem"):
-            # Vertical Icon Card for Horizontal Scroll
-            cat_pills_html += f'''\n                <a href="{spec['slug']}" class="flex flex-col items-center justify-center gap-2 p-3.5 bg-white hover:bg-orange-50/50 border border-slate-200 hover:border-orange-400 rounded-2xl w-24 h-24 shrink-0 transition-all shadow-xs group text-center">
-                    <span class="text-3xl p-1.5 bg-slate-50 group-hover:bg-orange-100/60 rounded-xl transition-colors">{spec['emoji']}</span>
-                    <span class="text-[11px] font-extrabold text-slate-800 group-hover:text-orange-600 leading-tight line-clamp-1">{spec['title_short']}</span>
+            # Vertical Icon Card for Horizontal Scroll (2-line label, no truncation)
+            cat_pills_html += f'''\n                <a href="{spec['slug']}" class="flex flex-col items-center justify-start gap-2 p-3 pt-3.5 bg-white hover:bg-orange-50/50 border border-slate-200 hover:border-orange-400 rounded-2xl w-[6.5rem] h-[7.25rem] shrink-0 transition-all shadow-xs group text-center">
+                    <span class="text-2xl leading-none p-1.5 bg-slate-50 group-hover:bg-orange-100/60 rounded-xl transition-colors">{spec['emoji']}</span>
+                    <span class="text-[11px] font-extrabold text-slate-800 group-hover:text-orange-600 leading-[1.15] line-clamp-2 break-words w-full">{spec['title_short']}</span>
                 </a>'''
         else:
             # Option A: Editorial Guide Cards (ALL problems)
