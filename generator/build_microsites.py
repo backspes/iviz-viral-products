@@ -527,7 +527,7 @@ def match_problem_category(p, problem_type):
     elif problem_type == "kulit_kering":
         return any(k in t for k in ["dry", "kering", "ceramide", "hyaluronic", "barrier", "hydrating", "moisturizer", "moisturiser", "lotion", "snail"])
     elif problem_type == "diet_sihat":
-        return any(k in t for k in ["low sugar", "rendah gula", "air fryer", "smokeless", "non-stick", "steamer"])
+        return any(k in t for k in ["low sugar", "rendah gula", "air fryer", "smokeless", "non-stick"])
     elif problem_type == "sakit_pinggang":
         return any(k in t for k in ["ergonomic", "backrest", "cushion", "posture", "lumbar", "gaming chair"])
     return False
