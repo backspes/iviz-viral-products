@@ -998,10 +998,10 @@ def generate_production_microsites():
             continue
 
         if not spec.get("is_problem"):
-            # Option B: Category Pills
-            cat_pills_html += f'''\n                <a href="{spec['slug']}" class="px-3.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-full text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-colors shadow-2xs">
-                    <span>{spec['emoji']}</span> {spec['title_short']}
-                    <span class="text-[10px] bg-slate-100 text-slate-500 font-black px-1.5 py-0.5 rounded-full">{hcount}</span>
+            # Vertical Icon Card for Horizontal Scroll
+            cat_pills_html += f'''\n                <a href="{spec['slug']}" class="flex flex-col items-center justify-center gap-2 p-3.5 bg-white hover:bg-orange-50/50 border border-slate-200 hover:border-orange-400 rounded-2xl w-24 h-24 shrink-0 transition-all shadow-xs group text-center">
+                    <span class="text-3xl p-1.5 bg-slate-50 group-hover:bg-orange-100/60 rounded-xl transition-colors">{spec['emoji']}</span>
+                    <span class="text-[11px] font-extrabold text-slate-800 group-hover:text-orange-600 leading-tight line-clamp-1">{spec['title_short']}</span>
                 </a>'''
         else:
             # Option A: Editorial Guide Cards (ALL problems)
@@ -1123,21 +1123,21 @@ def generate_production_microsites():
             </a>
         </div>
 
-        <!-- ELEMENT 1: Category Pills (Option B - Clean Sub-Nav) -->
-        <div class="mb-8 bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-xs">
-            <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-2.5">📁 Hab Kategori Produk</span>
-            <div class="flex flex-wrap gap-2">
+        <!-- ELEMENT 1: Category Hubs (Side-scrolling Icon-Grid) -->
+        <div class="mb-8">
+            <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-4 ml-1">📁 Hab Kategori Produk</span>
+            <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar -mx-4 px-4 mask-fade-right">
                 {cat_pills_html}
             </div>
         </div>
 
-        <!-- ELEMENT 2: Problem & Solution Editorial Guides (Option A - ALL problems as Wirecutter Style Cards) -->
+        <!-- ELEMENT 2: Problem & Solution Editorial Guides (Option A) -->
         <div class="mb-8">
-            <div class="flex items-center justify-between mb-3.5">
+            <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
                     <span>🎯 Panduan Mengikut Masalah & Solusi</span>
                 </h2>
-                <span class="text-[11px] font-bold text-slate-400">Panduan Solusi</span>
+                <span class="text-[11px] font-bold text-slate-400 uppercase">Panduan Solusi</span>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {problem_cards_html}
