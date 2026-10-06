@@ -410,7 +410,7 @@ CATEGORY_LISTICLE_SPECS = [
         "meta_desc": "Bandingkan {n} produk skincare dan kesihatan viral paling berbaloi di Shopee & Lazada Malaysia ({year}). Semakan ramuan bebas, status NPRA KKM, dan harga terkini.",
         "h1": "{n} Produk Skincare & Kesihatan Viral Terbaik di Malaysia ({year})",
         "intro": "Senarai semakan bebas produk penjagaan kulit dan kesihatan paling laris di Malaysia. Setiap ulasan menilai keberkesanan bahan aktif, maklum balas pengguna sebenar, serta status keselamatan berdaftar rasmi.",
-        "match": lambda p: p.get("group") in ["Kesihatan & Penjagaan Diri", "Kesihatan & Kecantikan"] or "skincare" in p.get("tags", []) or "serum" in p.get("name", "").lower() or "cleanser" in p.get("name", "").lower()
+        "match": lambda p: classify_category(p) == "skincare"
     },
     {
         "slug": "gajet-elektronik-terbaik.html",
@@ -420,7 +420,7 @@ CATEGORY_LISTICLE_SPECS = [
         "meta_desc": "Bandingkan {n} gajet viral dan aksesori telefon paling berbaloi di pasaran Malaysia ({year}). Ulasan fon telinga, powerbank, kabel pantas, dan pengecas.",
         "h1": "{n} Gajet & Aksesori Elektronik Paling Berbaloi di Malaysia ({year})",
         "intro": "Panduan ulasan bebas gajet pintar, fon telinga tanpa wayar, powerbank tahan lasak, dan aksesori komputer berkualiti tinggi yang menawarkan nilai terbaik untuk wang anda.",
-        "match": lambda p: p.get("group") in ["Gajet & Elektronik"] or p.get("group_slug") in ["gadgets-tech", "gadget"]
+        "match": lambda p: classify_category(p) == "gajet"
     },
     {
         "slug": "perkakas-dapur-viral.html",
@@ -430,9 +430,38 @@ CATEGORY_LISTICLE_SPECS = [
         "meta_desc": "Bandingkan {n} perkakas dapur dan rumah viral paling popular di Malaysia ({year}). Semakan air fryer, periuk nasi rendah gula, induction cooker, dan alatan pembersih.",
         "h1": "{n} Perkakas Dapur & Rumah Paling Viral di Malaysia ({year})",
         "intro": "Ulasan objektif alatan dapur moden dan perkakas rumah pintar yang terbukti memudahkan rutin harian keluarga Malaysia. Jimat masa memasak dan mengemas kediaman.",
-        "match": lambda p: (p.get("group") in ["Rumah & Perkakas Elektrik", "Rumah & Dapur"]) or "dapur" in p.get("category", "").lower() or "masak" in p.get("category", "").lower() or "cooker" in p.get("name", "").lower() or "fryer" in p.get("name", "").lower()
+        "match": lambda p: classify_category(p) == "dapur"
+    },
+    {
+        "slug": "rumah-pintar-pembersihan.html",
+        "title_short": "Rumah Pintar & Pembersihan",
+        "emoji": "🏠",
+        "meta_title": "{n} Produk Rumah Pintar & Pembersihan Viral Malaysia ({year})",
+        "meta_desc": "Bandingkan {n} produk rumah pintar, pembersih udara, dan vakum viral terbaik di Malaysia ({year}). Semakan prestasi dan nilai harga.",
+        "h1": "{n} Produk Rumah Pintar & Pembersihan Paling Viral di Malaysia ({year})",
+        "intro": "Pilihan penapis udara, robot vakum, dan alatan kebersihan kediaman yang memudahkan tugas harian dengan teknologi terkini.",
+        "match": lambda p: classify_category(p) == "rumah_pintar"
+    },
+    {
+        "slug": "setup-meja-wfh-terbaik.html",
+        "title_short": "Setup Meja WFH",
+        "emoji": "🖥️",
+        "meta_title": "{n} Kelengkapan Setup Meja WFH Terbaik Malaysia ({year})",
+        "meta_desc": "Bandingkan {n} kerusi ergonomik, meja boleh laras, dan aksesori meja yang selesa untuk produktiviti kerja dari rumah ({year}).",
+        "h1": "{n} Kelengkapan Setup Meja WFH Paling Selesa di Malaysia ({year})",
+        "intro": "Optimalkan ruang kerja anda dengan pilihan kerusi ergonomik, meja berdiri (standing desk), dan aksesori meja yang membantu kesihatan postur.",
+        "match": lambda p: classify_category(p) == "setup_wfh"
     }
 ]
+
+def classify_category(p):
+    text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
+    if any(k in text for k in ["serum","sunscreen","sunblock","cleanser","toner","moisturizer","skincare","ceramide","retinol","kkm","npra","jerawat","jeragat","kulit","collagen","vitamin c","brightening","whitening","spf"]): return "skincare"
+    if any(k in text for k in ["kerusi","keyboard","papan kekunci","desk","standing desk","light bar","ergonom","gaming chair"]): return "setup_wfh"
+    if any(k in text for k in ["air fryer","rice cooker","periuk","pressure cooker","blender","chopper","cooker","dapur","masak","pan","kuali","steamer"]): return "dapur"
+    if any(k in text for k in ["earbuds","earphone","tws","fon telinga","powerbank","charger","pengecas","kabel","cable","dashcam","ugreen","baseus","smartwatch","jam tangan","bluetooth"]): return "gajet"
+    # Rumah Pintar & Gaya Hidup
+    return "rumah_pintar"
 
 def generate_category_listicles(dist_dir, products):
     import datetime as _dt
@@ -860,7 +889,7 @@ def generate_production_microsites():
         </div>
 
         <!-- Listicle Hub Callout Banner -->
-        <div class="mb-8 grid sm:grid-cols-3 gap-3">
+        <div class="mb-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <a href="skincare-kesihatan-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
                 <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">✨</span>
                 <div class="min-w-0">
@@ -868,18 +897,32 @@ def generate_production_microsites():
                     <span class="text-[11px] text-slate-500">43 produk ulasan →</span>
                 </div>
             </a>
-            <a href="gajet-elektronik-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">⚡</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Gajet & Elektronik</span>
-                    <span class="text-[11px] text-slate-500">24 produk ulasan →</span>
-                </div>
-            </a>
             <a href="perkakas-dapur-viral.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
                 <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🍳</span>
                 <div class="min-w-0">
                     <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Perkakas Dapur</span>
-                    <span class="text-[11px] text-slate-500">30 produk ulasan →</span>
+                    <span class="text-[11px] text-slate-500">34 produk ulasan →</span>
+                </div>
+            </a>
+            <a href="gajet-elektronik-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">⚡</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Gajet & Aksesori</span>
+                    <span class="text-[11px] text-slate-500">15 produk ulasan →</span>
+                </div>
+            </a>
+            <a href="rumah-pintar-pembersihan.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🏠</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Rumah Pintar</span>
+                    <span class="text-[11px] text-slate-500">5 produk ulasan →</span>
+                </div>
+            </a>
+            <a href="setup-meja-wfh-terbaik.html" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
+                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">🖥️</span>
+                <div class="min-w-0">
+                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">Setup Meja WFH</span>
+                    <span class="text-[11px] text-slate-500">3 produk ulasan →</span>
                 </div>
             </a>
         </div>
