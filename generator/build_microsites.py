@@ -987,42 +987,29 @@ def generate_production_microsites():
         tab_buttons_html += f'''\n            <button onclick="filterGroup('{slug}', this)" class="tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">{group_names[slug]} ({count})</button>'''
 
     # ==========================================================================
-    # HYBRID LAYOUT: Topic Pills (Option B) + Featured Editorial Cards (Option A)
+    # HYBRID LAYOUT: Categories as Pills (B) + ALL Problems as Editorial Cards (A)
     # ==========================================================================
-    # 1. TOPIC PILLS — horizontal quick-nav bar (categories + problems)
     cat_pills_html = ""
-    prob_pills_html = ""
-    featured_cards_html = ""
+    problem_cards_html = ""
 
     for spec in CATEGORY_LISTICLE_SPECS:
         hcount = sum(1 for p in products if spec["match"](p))
         if hcount == 0:
             continue
 
-        # --- Pills ---
-        if spec.get("is_problem"):
-            prob_pills_html += f'''\n                <a href="{spec['slug']}" class="px-3.5 py-1.5 bg-orange-50 hover:bg-orange-100 text-orange-800 border border-orange-200/70 rounded-full text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-colors shadow-2xs">
-                    <span>{spec['emoji']}</span> {spec['title_short']}
-                    <span class="text-[10px] bg-orange-200 text-orange-900 font-black px-1.5 py-0.5 rounded-full">{hcount}</span>
-                </a>'''
-        else:
+        if not spec.get("is_problem"):
+            # Option B: Category Pills
             cat_pills_html += f'''\n                <a href="{spec['slug']}" class="px-3.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-full text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-colors shadow-2xs">
                     <span>{spec['emoji']}</span> {spec['title_short']}
                     <span class="text-[10px] bg-slate-100 text-slate-500 font-black px-1.5 py-0.5 rounded-full">{hcount}</span>
                 </a>'''
-
-    # 2. FEATURED EDITORIAL CARDS — top 3 problem guides (Wirecutter style)
-    problem_specs = [s for s in CATEGORY_LISTICLE_SPECS if s.get("is_problem")]
-    for spec in problem_specs[:3]:
-        hcount = sum(1 for p in products if spec["match"](p))
-        if hcount == 0:
-            continue
-        # Derive a short editorial blurb from the intro (first sentence, trimmed)
-        blurb = spec["intro"]
-        if len(blurb) > 145:
-            blurb = blurb[:142].rsplit(" ", 1)[0] + "..."
-        card_h1 = spec["h1"].replace("{n}", str(hcount)).replace("{year}", str(_now.year))
-        featured_cards_html += f'''\n            <a href="{spec['slug']}" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-orange-400 hover:shadow-lg transition-all flex flex-col justify-between">
+        else:
+            # Option A: Editorial Guide Cards (ALL problems)
+            blurb = spec["intro"]
+            if len(blurb) > 135:
+                blurb = blurb[:132].rsplit(" ", 1)[0] + "..."
+            card_h1 = spec["h1"].replace("{n}", str(hcount)).replace("{year}", str(_now.year))
+            problem_cards_html += f'''\n            <a href="{spec['slug']}" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-orange-400 hover:shadow-lg transition-all flex flex-col justify-between">
                 <div>
                     <div class="flex items-center gap-2 mb-2.5">
                         <span class="text-xl p-1.5 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
@@ -1136,32 +1123,24 @@ def generate_production_microsites():
             </a>
         </div>
 
-        <!-- HYBRID ELEMENT 1: Topic Pills (Option B - Clean Sub-Nav) -->
-        <div class="mb-8 space-y-3 bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-xs">
-            <div>
-                <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-2">📁 Hab Kategori Produk</span>
-                <div class="flex flex-wrap gap-2">
-                    {cat_pills_html}
-                </div>
-            </div>
-            <div class="pt-3 border-t border-slate-100">
-                <span class="text-[11px] font-black text-orange-600 uppercase tracking-widest block mb-2">🎯 Panduan Mengikut Masalah & Solusi</span>
-                <div class="flex flex-wrap gap-2">
-                    {prob_pills_html}
-                </div>
+        <!-- ELEMENT 1: Category Pills (Option B - Clean Sub-Nav) -->
+        <div class="mb-8 bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-xs">
+            <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-2.5">📁 Hab Kategori Produk</span>
+            <div class="flex flex-wrap gap-2">
+                {cat_pills_html}
             </div>
         </div>
 
-        <!-- HYBRID ELEMENT 2: Featured Editorial Guides (Option A - Wirecutter Style Cards) -->
+        <!-- ELEMENT 2: Problem & Solution Editorial Guides (Option A - ALL problems as Wirecutter Style Cards) -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-3.5">
                 <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>⭐ Panduan Editorial Terpilih</span>
+                    <span>🎯 Panduan Mengikut Masalah & Solusi</span>
                 </h2>
-                <span class="text-[11px] font-bold text-slate-400">Paling Banyak Dibaca</span>
+                <span class="text-[11px] font-bold text-slate-400">Panduan Solusi</span>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {featured_cards_html}
+                {problem_cards_html}
             </div>
         </div>
 
