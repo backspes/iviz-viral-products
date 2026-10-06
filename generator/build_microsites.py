@@ -98,7 +98,7 @@ TEMPLATE_HTML = """<!DOCTYPE html>
                 <span>iviz <span class="text-orange-500 font-bold">Picks</span></span>
             </a>
             <div class="hidden md:flex items-center gap-5 text-xs font-bold text-slate-600">
-                <a href="index.html" class="hover:text-slate-900 transition-colors">Katalog</a>
+                <a href="index.html" class="hover:text-slate-900 transition-colors">Pilihan Utama</a>
                 <a href="about.html" class="hover:text-slate-900 transition-colors">Mengenai Kami</a>
                 <a href="editorial-policy.html" class="hover:text-slate-900 transition-colors">Polisi Semakan</a>
                 <a href="privacy-policy.html" class="hover:text-slate-900 transition-colors">Privasi</a>
@@ -113,7 +113,7 @@ TEMPLATE_HTML = """<!DOCTYPE html>
         <!-- Mobile Dropdown Menu -->
         <div id="nav-mobile-menu" class="md:hidden hidden border-t border-slate-100 bg-white/98 backdrop-blur-md">
             <nav class="max-w-4xl mx-auto px-4 py-2 flex flex-col text-sm font-bold text-slate-700">
-                <a href="index.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Katalog</a>
+                <a href="index.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Pilihan Utama</a>
                 <a href="about.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Mengenai Kami</a>
                 <a href="editorial-policy.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Polisi Semakan</a>
                 <a href="privacy-policy.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Polisi Privasi</a>
@@ -219,19 +219,19 @@ TEMPLATE_HTML = """<!DOCTYPE html>
                             <span class="text-sm text-slate-400 line-through font-semibold">{{original_price}}</span>
                         </div>
                         <p class="text-[11px] text-slate-500 mt-2">
-                            *Harga disemak secara berkala daripada stor pengedar rasmi di platform e-dagang.
+                            *Harga dan ketersediaan disemak secara berkala mengikut pengedar rasmi berdaftar.
                         </p>
                     </div>
 
                     <!-- CTA Button -->
                     <a href="{{affiliate_url}}" target="_blank" rel="nofollow noopener" 
                        class="w-full bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold py-4 px-6 rounded-xl text-center transition-all flex items-center justify-center gap-2 text-sm md:text-base shadow-lg shadow-orange-500/25 hover:shadow-orange-500/35 hover:-translate-y-0.5 active:translate-y-0">
-                        <span>Semak Harga Terkini di Stor Rasmi</span>
+                        <span>Semak Tawaran di {{merchant_platform}}</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                     
                     <p class="text-[11px] text-slate-500 text-center mt-2.5">
-                        Pautan dihalakan terus ke halaman produk di {{merchant_platform}}.
+                        Pautan dihalakan terus ke halaman produk rasmi di {{merchant_platform}}.
                     </p>
 
                     <!-- Social Share Action Bar -->
@@ -752,8 +752,14 @@ def generate_category_listicles(dist_dir, products):
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{desc}">
     <meta property="og:url" content="https://link.iviztrading.com/{slug}">
-    <meta property="og:site_name" content="iviz Picks Malaysia">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:site_name" content="iviz Picks">
+    <meta property="og:image" content="https://link.iviztrading.com/og-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{desc}">
+    <meta name="twitter:image" content="https://link.iviztrading.com/og-preview.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -980,24 +986,58 @@ def generate_production_microsites():
     for slug, count in group_counts.items():
         tab_buttons_html += f'''\n            <button onclick="filterGroup('{slug}', this)" class="tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">{group_names[slug]} ({count})</button>'''
 
-    # Build Listicle Hub banner dynamically (split into Main Categories and Problem Solutions)
-    cat_banner_html = ""
-    prob_banner_html = ""
+    # ==========================================================================
+    # HYBRID LAYOUT: Topic Pills (Option B) + Featured Editorial Cards (Option A)
+    # ==========================================================================
+    # 1. TOPIC PILLS — horizontal quick-nav bar (categories + problems)
+    cat_pills_html = ""
+    prob_pills_html = ""
+    featured_cards_html = ""
+
     for spec in CATEGORY_LISTICLE_SPECS:
         hcount = sum(1 for p in products if spec["match"](p))
         if hcount == 0:
             continue
-        card_html = f'''\n            <a href="{spec['slug']}" class="p-3.5 bg-white border border-slate-200 hover:border-orange-400 rounded-xl flex items-center gap-3 transition-all group shadow-xs">
-                <span class="text-2xl p-2 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
-                <div class="min-w-0">
-                    <span class="text-xs font-extrabold text-slate-900 group-hover:text-orange-600 block truncate">{spec['title_short']}</span>
-                    <span class="text-[11px] text-slate-500">{hcount} produk ulasan →</span>
+
+        # --- Pills ---
+        if spec.get("is_problem"):
+            prob_pills_html += f'''\n                <a href="{spec['slug']}" class="px-3.5 py-1.5 bg-orange-50 hover:bg-orange-100 text-orange-800 border border-orange-200/70 rounded-full text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-colors shadow-2xs">
+                    <span>{spec['emoji']}</span> {spec['title_short']}
+                    <span class="text-[10px] bg-orange-200 text-orange-900 font-black px-1.5 py-0.5 rounded-full">{hcount}</span>
+                </a>'''
+        else:
+            cat_pills_html += f'''\n                <a href="{spec['slug']}" class="px-3.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-full text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-colors shadow-2xs">
+                    <span>{spec['emoji']}</span> {spec['title_short']}
+                    <span class="text-[10px] bg-slate-100 text-slate-500 font-black px-1.5 py-0.5 rounded-full">{hcount}</span>
+                </a>'''
+
+    # 2. FEATURED EDITORIAL CARDS — top 3 problem guides (Wirecutter style)
+    problem_specs = [s for s in CATEGORY_LISTICLE_SPECS if s.get("is_problem")]
+    for spec in problem_specs[:3]:
+        hcount = sum(1 for p in products if spec["match"](p))
+        if hcount == 0:
+            continue
+        # Derive a short editorial blurb from the intro (first sentence, trimmed)
+        blurb = spec["intro"]
+        if len(blurb) > 145:
+            blurb = blurb[:142].rsplit(" ", 1)[0] + "..."
+        card_h1 = spec["h1"].replace("{n}", str(hcount)).replace("{year}", str(_now.year))
+        featured_cards_html += f'''\n            <a href="{spec['slug']}" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-orange-400 hover:shadow-lg transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <span class="text-xl p-1.5 bg-orange-50 rounded-lg shrink-0">{spec['emoji']}</span>
+                        <span class="text-[10px] font-black text-orange-700 bg-orange-50 border border-orange-200/70 px-2 py-0.5 rounded uppercase tracking-wide">Panduan Solusi</span>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm group-hover:text-orange-600 transition-colors leading-snug">{card_h1}</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">{blurb}</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400 group-hover:text-orange-600 transition-colors">
+                    <span>{hcount} Produk Ulasan</span>
+                    <span class="flex items-center gap-1">Baca Panduan
+                        <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
                 </div>
             </a>'''
-        if spec.get("is_problem"):
-            prob_banner_html += card_html
-        else:
-            cat_banner_html += card_html
 
     # Rebuild Index Hub
     index_html = f"""<!DOCTYPE html>
@@ -1005,17 +1045,21 @@ def generate_production_microsites():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iviz Picks — Direktori Ulasan Produk & Panduan Belian Malaysia</title>
-    <meta name="description" content="Direktori ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan pendaftaran NPRA KKM, SIRIM, dan pensijilan keselamatan.">
+    <title>iviz Picks — Panduan Ulasan & Pilihan Produk Terbaik Malaysia</title>
+    <meta name="description" content="Panduan ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan pendaftaran NPRA KKM, SIRIM, dan pensijilan keselamatan.">
     <!-- OpenGraph / Social Meta -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="iviz Picks — Direktori Ulasan Produk & Panduan Belian Malaysia">
-    <meta property="og:description" content="Direktori ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan pendaftaran NPRA KKM, SIRIM, dan pensijilan keselamatan.">
+    <meta property="og:title" content="iviz Picks — Panduan Ulasan & Pilihan Produk Terbaik Malaysia">
+    <meta property="og:description" content="Panduan ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan pendaftaran NPRA KKM, SIRIM, dan pensijilan keselamatan.">
     <meta property="og:url" content="https://link.iviztrading.com/">
-    <meta property="og:site_name" content="iviz Picks Malaysia">
+    <meta property="og:site_name" content="iviz Picks">
+    <meta property="og:image" content="https://link.iviztrading.com/og-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="iviz Picks — Direktori Ulasan Produk & Panduan Belian Malaysia">
-    <meta name="twitter:description" content="Direktori ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan keselamatan NPRA & SIRIM.">
+    <meta name="twitter:title" content="iviz Picks — Panduan Ulasan & Pilihan Produk Terbaik Malaysia">
+    <meta name="twitter:description" content="Panduan ulasan editorial bebas produk trending di pasaran Malaysia. Dilengkapi semakan keselamatan NPRA & SIRIM.">
+    <meta name="twitter:image" content="https://link.iviztrading.com/og-preview.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -1035,7 +1079,7 @@ def generate_production_microsites():
                 <span>iviz <span class="text-orange-500 font-bold">Picks</span></span>
             </a>
             <div class="hidden md:flex items-center gap-5 text-xs font-bold text-slate-600">
-                <a href="index.html" class="hover:text-slate-900 transition-colors">Katalog</a>
+                <a href="index.html" class="hover:text-slate-900 transition-colors">Pilihan Utama</a>
                 <a href="about.html" class="hover:text-slate-900 transition-colors">Mengenai Kami</a>
                 <a href="editorial-policy.html" class="hover:text-slate-900 transition-colors">Polisi Semakan</a>
                 <a href="privacy-policy.html" class="hover:text-slate-900 transition-colors">Privasi</a>
@@ -1050,7 +1094,7 @@ def generate_production_microsites():
         <!-- Mobile Dropdown Menu -->
         <div id="nav-mobile-menu" class="md:hidden hidden border-t border-slate-100 bg-white/98 backdrop-blur-md">
             <nav class="max-w-4xl mx-auto px-4 py-2 flex flex-col text-sm font-bold text-slate-700">
-                <a href="index.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Katalog</a>
+                <a href="index.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Pilihan Utama</a>
                 <a href="about.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Mengenai Kami</a>
                 <a href="editorial-policy.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Polisi Semakan</a>
                 <a href="privacy-policy.html" class="py-3 border-b border-slate-100 hover:text-orange-600 transition-colors">Polisi Privasi</a>
@@ -1069,7 +1113,7 @@ def generate_production_microsites():
                 <span>iviz Picks • Semakan Editorial Bebas {{current_year}}</span>
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Katalog Ulasan & Panduan Belian Malaysia
+                Pilihan Produk Terbaik & Panduan Belian Malaysia
             </h1>
             <p class="text-slate-600 text-sm md:text-base mt-3 max-w-xl mx-auto leading-relaxed">
                 Analisis ulasan objektif berasaskan data pembeli terverifikasi dan semakan piawaian rasmi (NPRA KKM, SIRIM, MCMC).
@@ -1077,7 +1121,7 @@ def generate_production_microsites():
         </div>
 
         <!-- 3rd Party Verification Callout -->
-        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 mb-8 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs">
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 mb-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs">
             <div class="flex items-center gap-3.5">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-500 text-white flex items-center justify-center font-black shrink-0 text-base shadow-md shadow-emerald-500/20">
                     ✓
@@ -1092,26 +1136,32 @@ def generate_production_microsites():
             </a>
         </div>
 
-        <!-- Category Hubs Banner -->
-        <div class="mb-6">
-            <h2 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 flex items-center gap-1.5">
-                <span>📁 Hab Kategori Produk</span>
-            </h2>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {cat_banner_html}
+        <!-- HYBRID ELEMENT 1: Topic Pills (Option B - Clean Sub-Nav) -->
+        <div class="mb-8 space-y-3 bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-xs">
+            <div>
+                <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-2">📁 Hab Kategori Produk</span>
+                <div class="flex flex-wrap gap-2">
+                    {cat_pills_html}
+                </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+                <span class="text-[11px] font-black text-orange-600 uppercase tracking-widest block mb-2">🎯 Panduan Mengikut Masalah & Solusi</span>
+                <div class="flex flex-wrap gap-2">
+                    {prob_pills_html}
+                </div>
             </div>
         </div>
 
-        <!-- Problem-Focused Listicle Hubs Banner -->
-        <div class="mb-8 bg-gradient-to-br from-orange-50/60 to-amber-50/60 border border-orange-200/80 rounded-2xl p-4 sm:p-5 shadow-xs">
-            <div class="flex items-center justify-between mb-3">
-                <h2 class="text-xs font-black text-orange-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>🎯 Pilihan Mengikut Masalah & Solusi</span>
+        <!-- HYBRID ELEMENT 2: Featured Editorial Guides (Option A - Wirecutter Style Cards) -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between mb-3.5">
+                <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
+                    <span>⭐ Panduan Editorial Terpilih</span>
                 </h2>
-                <span class="text-[10px] bg-orange-500 text-white font-black px-2 py-0.5 rounded-md">Popular</span>
+                <span class="text-[11px] font-bold text-slate-400">Paling Banyak Dibaca</span>
             </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {prob_banner_html}
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {featured_cards_html}
             </div>
         </div>
 

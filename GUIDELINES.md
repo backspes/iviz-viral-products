@@ -101,5 +101,5 @@ Bila menambah produk baharu:
 1. Masukkan entri ke dalam `data/trending_products.json` mengikut skema di atas.
 2. Jalankan penjana: `python3 generator/build_microsites.py`.
 3. Jalankan ujian semakan perkataan dilarang bagi memastikan tiada unsur Indonesia / typo.
-4. Deploy ke Cloudflare Pages: `wrangler pages deploy dist --project-name=store-iviztrading`.
+4. Deploy ke Cloudflare Pages: `wrangler pages deploy dist --project-name=picks-iviztrading`.
 5. Bersihkan cache CDN Cloudflare (*purge_everything*).

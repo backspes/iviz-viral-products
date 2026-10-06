@@ -22,7 +22,7 @@ load_env()
 
 project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 dist_dir = os.path.join(project_dir, "dist")
-project_name = "store-iviztrading"
+project_name = "picks-iviztrading"
 
 wrangler_bin = "/root/node_modules/.bin/wrangler"
 

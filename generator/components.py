@@ -14,7 +14,7 @@ Dijaga oleh: apply_global_chrome() dalam build_microsites.py
 # NAVIGATION LINKS (satu tempat sahaja untuk kemas kini)
 # ---------------------------------------------------------------
 NAV_LINKS = [
-    ("index.html", "Katalog"),
+    ("index.html", "Pilihan Utama"),
     ("about.html", "Mengenai Kami"),
     ("editorial-policy.html", "Polisi Semakan"),
     ("privacy-policy.html", "Privasi"),
@@ -22,7 +22,7 @@ NAV_LINKS = [
 ]
 
 MOBILE_NAV_LINKS = [
-    ("index.html", "Katalog"),
+    ("index.html", "Pilihan Utama"),
     ("about.html", "Mengenai Kami"),
     ("editorial-policy.html", "Polisi Semakan"),
     ("privacy-policy.html", "Polisi Privasi"),
