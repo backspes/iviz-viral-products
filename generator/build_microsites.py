@@ -565,6 +565,9 @@ def match_problem_category(p, problem_type):
 # WHITELIST EKSPLISIT: ID produk yang SAH untuk setiap hab masalah.
 # Semak manual setiap kali tambah produk baharu. JANGAN tambah secara rambang.
 # ==============================================================================
+# WHITELIST EKSPLISIT: ID produk yang SAH untuk setiap hab masalah.
+# Semak manual setiap kali tambah produk baharu. JANGAN tambah secara rambang.
+# ==============================================================================
 PROBLEM_HUB_PRODUCT_IDS = {
     # Masalah jerawat, kulit berminyak & pori tersumbat
     "kulit_berminyak": {
@@ -577,18 +580,17 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "cetaphil-gentle-exfoliating-salicylic-cleanser",
         "cerave-foaming-cleanser-473ml",
     },
-    # Masalah jeragat, parut hitam & tona kulit tak sekata
+    # Masalah jeragat, parut hitam & tona kulit tak sekata (Serum pencerah & rawatan jeragat SAHAJA)
     "jeragat_parut": {
+        "skintific-symwhite-377-dark-spot-serum-20ml",
         "anua-niacinamide-10-txa-4-dark-spot-serum",
         "the-ordinary-niacinamide-10-zinc-1",
         "glad2glow-10-niacinamide-pomegranate-serum-17ml",
-        "glad2glow-body-serum-set",
         "aiken-5x-ceramide-bright-vitamin-c-serum-15ml",
-        "nivea-extra-bright-c-and-e-vitamin-body-lotion-320ml",
         "hada-labo-softening-whitening-face-wash-100g",
         "nivea-men-bright-c-hya-wash-foam-100g",
     },
-    # Masalah kulit kering, mengelupas & skin barrier rosak
+    # Masalah kulit kering, mengelupas & skin barrier rosak (Ceramides, Hyaluronic, Snail Mucin)
     "kulit_kering": {
         "skintific-5x-ceramide-moisture-gel",
         "the-originote-hyalucera-moisturizer-gel",
@@ -596,38 +598,40 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "hada-labo-hydrating-lotion-light-170ml",
         "laneige-water-bank-blue-hyaluronic-serum",
         "cosrx-advanced-snail-96-mucin-power-essence",
-        "glad2glow-pomegranate-niacinamide-moisturizer",
     },
-    # Masalah diet sihat: kurangkan minyak & gula (air fryer + periuk low-sugar SAHAJA)
+    # Masalah diet sihat: kurangkan minyak & gula (Air Fryer, Periuk Low-Sugar, Penimbang Gram, Blender Fruit)
     "diet_sihat": {
         "tefal-5l-low-sugar-rice-cooker",
         "gaabor-air-fryer-3-5l-smokeless-oil-free",
         "gaabor-smokeless-air-fryer-4l",
+        "admore-digital-kitchen-scale-5kg",
+        "maxeko-portable-smoothie-blender-cup",
     },
-    # Masalah sakit pinggang & postur duduk lama (kerusi + kusyen lumbar SAHAJA)
+    # Masalah sakit pinggang & postur duduk lama (Kerusi Ergonomik, Kusyen Lumbar, Laptop Stand)
     "sakit_pinggang": {
         "boldlux-memory-foam-backrest-cushion",
         "ttracing-swift-x-2020-gaming-chair",
+        "ergonomic-foldable-aluminum-laptop-stand",
     },
-    # Masalah bulu kucing, habuk & kualiti udara rumah (vakum rumah + penapis udara SAHAJA)
+    # Masalah bulu kucing, habuk & kualiti udara rumah (Penapis HEPA, Vakum Lantai, Vakum Hama Tilam, Lint Shaver)
     "bulu_habuk": {
         "xiaomi-smart-air-purifier-4-compact",
-        "xiaomi-mijia-smart-air-purifier-6",
         "deerma-dx300-vacuum-cleaner",
-        "deerma-ultrasonic-air-humidifier-f628",
+        "deerma-cordless-dust-mite-vacuum-cleaner",
+        "xiaomi-showsee-electric-lint-remover",
     },
-    # Masalah kereta kotor & keselesaan pemanduan (aksesori kereta SAHAJA)
+    # Masalah ruang kereta kotor & bersepah (Vakum Kereta, Tong Sampah Kabin, Box But Lipat, Phone Holder)
     "kereta_bersih": {
         "wireless-car-vacuum-cleaner-handheld",
-        "70mai-dash-cam-a500s-pro-plus-gps",
-        "dashcam-a22-3-camera-dvr-recorder",
+        "foldable-car-trunk-organizer-waterproof",
+        "foldable-hanging-car-trash-can-waterproof",
         "baseus-360-rotation-magnetic-car-holder",
         "baseus-primetrip-vp2-car-charger-60w",
-        "ugreen-bluetooth-5-4-car-receiver-70601",
     },
-    # Masalah pakaian berkedut & berbulu (steamer + lint remover SAHAJA)
+    # Masalah pakaian berkedut & berbulu (Steamer Lipat Travel, Garment Steamer, Lint Remover)
     "pakaian_kemas": {
         "panasonic-ni-ghd021-handheld-garment-steamer",
+        "tobi-portable-travel-garment-steamer-handheld",
         "xiaomi-showsee-electric-lint-remover",
     },
 }
