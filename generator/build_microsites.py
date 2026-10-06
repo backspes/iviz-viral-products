@@ -548,6 +548,43 @@ CATEGORY_LISTICLE_SPECS = [
         "intro": "Alatan penjagaan pakaian moden yang melicinkan kedutan dan membuang bulu fabrik dengan pantas, tanpa perlu mengeluarkan papan seterika.",
         "match": lambda p: match_problem_category(p, "pakaian_kemas"),
         "is_problem": True
+    },
+
+    # --------------------------------------------------------------------------
+    # HAB LISTICLE PSIKOLOGI, GAYA HIDUP & HADIAH (INTENT & LIFE-STAGE HUBS)
+    # --------------------------------------------------------------------------
+    {
+        "slug": "idea-hadiah-housewarming-birthday.html",
+        "title_short": "Idea Hadiah & Housewarming",
+        "emoji": "🎁",
+        "meta_title": "{n} Idea Hadiah Housewarming & Hari Jadi Bawah RM100 Malaysia ({year})",
+        "meta_desc": "Panduan {n} idea hadiah housewarming dan hari jadi berguna bawah RM100 yang gerenti dipakai tuan rumah ({year}).",
+        "h1": "{n} Idea Hadiah Housewarming & Hari Jadi Bawah RM100 Paling Berguna ({year})",
+        "intro": "Senarai idea hadiah praktikal, estetik, dan bernilai tinggi bawah RM100 yang sesuai untuk kenduri masuk rumah baharu, hari jadi kawan, atau majlis pertukaran hadiah.",
+        "match": lambda p: match_problem_category(p, "hadiah_housewarming"),
+        "is_problem": True
+    },
+    {
+        "slug": "starter-pack-rumah-sewa-asrama.html",
+        "title_short": "Starter Pack Rumah Sewa",
+        "emoji": "📦",
+        "meta_title": "{n} Starter Pack Barang Wajib Masuk Rumah Sewa & Asrama ({year})",
+        "meta_desc": "Senarai semak {n} barang elektrik dan alatan asas jimat ruang wajib ada untuk penyewa rumah pertama atau pelajar asrama ({year}).",
+        "h1": "{n} Starter Pack Barang Wajib Ada untuk Masuk Rumah Sewa & Asrama ({year})",
+        "intro": "Panduan permulaan hidup berdikari: peralatan elektrik kompak, alatan memasak jimat tenaga, dan perkakas pembersihan penting yang tahan lasak dan mudah dibawa pindah.",
+        "match": lambda p: match_problem_category(p, "starter_pack_rumah_sewa"),
+        "is_problem": True
+    },
+    {
+        "slug": "gajet-penampilan-kemas-glow-up.html",
+        "title_short": "Gajet Penampilan Kemas",
+        "emoji": "✨",
+        "meta_title": "{n} Gajet & Produk Penampilan Kemas Profesional Malaysia ({year})",
+        "meta_desc": "Bandingkan {n} alatan penjagaan pakaian, dandanan, dan skincare ringkas untuk penampilan segak dan profesional setiap hari ({year}).",
+        "h1": "{n} Gajet & Produk Penjagaan Diri untuk Penampilan Sentiasa Kemas ({year})",
+        "intro": "Rutin ringkas dan alatan pintar yang memastikan pakaian bebas kedutan, fabrik bebas bulu, serta wajah segar bertenaga untuk keyakinan harian.",
+        "match": lambda p: match_problem_category(p, "rutin_penampilan_kemas"),
+        "is_problem": True
     }
 ]
 
@@ -633,6 +670,32 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "tobi-portable-travel-garment-steamer-handheld",
         "xiaomi-showsee-electric-lint-remover",
     },
+    # Niat Hadiah Housewarming & Birthday Bawah RM100
+    "hadiah_housewarming": {
+        "gaabor-air-fryer-3-5l-smokeless-oil-free",
+        "tyeso-vacuum-insulated-tumbler-750ml",
+        "xiaomi-smart-air-purifier-4-compact",
+        "baseus-bowie-wm02-earbuds",
+        "admore-digital-kitchen-scale-5kg",
+        "maxeko-portable-smoothie-blender-cup",
+    },
+    # Niat Starter Pack Rumah Sewa & Asrama
+    "starter_pack_rumah_sewa": {
+        "tefal-5l-low-sugar-rice-cooker",
+        "panasonic-ni-ghd021-handheld-garment-steamer",
+        "deerma-dx300-vacuum-cleaner",
+        "boldlux-memory-foam-backrest-cushion",
+        "tobi-portable-travel-garment-steamer-handheld",
+        "gaabor-smokeless-air-fryer-4l",
+    },
+    # Niat Rutin & Gajet Penampilan Kemas
+    "rutin_penampilan_kemas": {
+        "xiaomi-showsee-electric-lint-remover",
+        "panasonic-ni-ghd021-handheld-garment-steamer",
+        "tobi-portable-travel-garment-steamer-handheld",
+        "skintific-5x-ceramide-moisture-gel",
+        "skintific-symwhite-377-dark-spot-serum-20ml",
+    },
 }
 
 # ==============================================================================
@@ -670,6 +733,18 @@ PROBLEM_GUARDRAIL_RULES = {
     "pakaian_kemas": {
         "negative": ["shaver muka", "pencukur janggut", "hair dryer"],
         "required": ["steamer", "lint", "remover", "seterika", "iron"]
+    },
+    "hadiah_housewarming": {
+        "negative": ["ubat", "patch", "cleanser", "sabun"],
+        "required": ["air fryer", "tumbler", "purifier", "earbuds", "scale", "blender"]
+    },
+    "starter_pack_rumah_sewa": {
+        "negative": ["earbuds", "tws", "dashcam", "holder"],
+        "required": ["rice cooker", "steamer", "vacuum", "cushion", "air fryer"]
+    },
+    "rutin_penampilan_kemas": {
+        "negative": ["air fryer", "rice cooker", "vacuum", "purifier", "dashcam"],
+        "required": ["steamer", "lint", "remover", "ceramide", "serum", "skincare"]
     },
 }
 
