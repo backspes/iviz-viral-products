@@ -562,7 +562,8 @@ CATEGORY_LISTICLE_SPECS = [
         "h1": "{n} Idea Hadiah Housewarming & Hari Jadi Bawah RM100 Paling Berguna ({year})",
         "intro": "Senarai idea hadiah praktikal, estetik, dan bernilai tinggi bawah RM100 yang sesuai untuk kenduri masuk rumah baharu, hari jadi kawan, atau majlis pertukaran hadiah.",
         "match": lambda p: match_problem_category(p, "hadiah_housewarming"),
-        "is_problem": True
+        "is_problem": False,
+        "is_intent": True
     },
     {
         "slug": "starter-pack-rumah-sewa-asrama.html",
@@ -573,7 +574,8 @@ CATEGORY_LISTICLE_SPECS = [
         "h1": "{n} Starter Pack Barang Wajib Ada untuk Masuk Rumah Sewa & Asrama ({year})",
         "intro": "Panduan permulaan hidup berdikari: peralatan elektrik kompak, alatan memasak jimat tenaga, dan perkakas pembersihan penting yang tahan lasak dan mudah dibawa pindah.",
         "match": lambda p: match_problem_category(p, "starter_pack_rumah_sewa"),
-        "is_problem": True
+        "is_problem": False,
+        "is_intent": True
     },
     {
         "slug": "gajet-penampilan-kemas-glow-up.html",
@@ -584,7 +586,8 @@ CATEGORY_LISTICLE_SPECS = [
         "h1": "{n} Gajet & Produk Penjagaan Diri untuk Penampilan Sentiasa Kemas ({year})",
         "intro": "Rutin ringkas dan alatan pintar yang memastikan pakaian bebas kedutan, fabrik bebas bulu, serta wajah segar bertenaga untuk keyakinan harian.",
         "match": lambda p: match_problem_category(p, "rutin_penampilan_kemas"),
-        "is_problem": True
+        "is_problem": False,
+        "is_intent": True
     }
 ]
 
@@ -1144,9 +1147,13 @@ def generate_production_microsites():
         tab_buttons_html += f'''\n            <button onclick="filterGroup('{slug}', this)" class="tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">{group_names[slug]} ({count})</button>'''
 
     # ==========================================================================
-    # HYBRID LAYOUT: Categories as Pills (B) + ALL Problems as Editorial Cards (A)
+    # HYBRID LAYOUT:
+    # 1. Categories as Icon Pills
+    # 2. Buying Psychology & Life-Stage Hubs (Intent Guides)
+    # 3. Problem & Solution Hubs (Technical Fixes)
     # ==========================================================================
     cat_pills_html = ""
+    intent_cards_html = ""
     problem_cards_html = ""
 
     for spec in CATEGORY_LISTICLE_SPECS:
@@ -1154,12 +1161,34 @@ def generate_production_microsites():
         if hcount == 0:
             continue
 
-        if not spec.get("is_problem"):
+        if not spec.get("is_problem") and not spec.get("is_intent"):
             # Vertical Icon Card for Horizontal Scroll (2-line label, no truncation)
             cat_pills_html += f'''\n                <a href="{spec['slug']}" class="flex flex-col items-center justify-start gap-2 p-3 pt-3.5 bg-white hover:bg-orange-50/50 border border-slate-200 hover:border-orange-400 rounded-2xl w-[6.5rem] h-[7.25rem] shrink-0 transition-all shadow-xs group text-center">
                     <span class="text-2xl leading-none p-1.5 bg-slate-50 group-hover:bg-orange-100/60 rounded-xl transition-colors">{spec['emoji']}</span>
                     <span class="text-[11px] font-extrabold text-slate-800 group-hover:text-orange-600 leading-[1.15] line-clamp-2 break-words w-full">{spec['title_short']}</span>
                 </a>'''
+        elif spec.get("is_intent"):
+            # Buying Psychology / Life Stage Guide Cards
+            blurb = spec["intro"]
+            if len(blurb) > 135:
+                blurb = blurb[:132].rsplit(" ", 1)[0] + "..."
+            card_h1 = spec["h1"].replace("{n}", str(hcount)).replace("{year}", str(_now.year))
+            intent_cards_html += f'''\n            <a href="{spec['slug']}" class="group bg-gradient-to-br from-white to-amber-50/30 p-5 rounded-2xl border border-amber-200/70 hover:border-amber-400 hover:shadow-lg transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 mb-2.5">
+                        <span class="text-xl p-1.5 bg-amber-100/70 rounded-lg shrink-0">{spec['emoji']}</span>
+                        <span class="text-[10px] font-black text-amber-800 bg-amber-100/80 border border-amber-300/70 px-2 py-0.5 rounded uppercase tracking-wide">Fasa & Niat Hidup</span>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm group-hover:text-amber-600 transition-colors leading-snug">{card_h1}</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">{blurb}</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-amber-100 flex items-center justify-between text-xs font-bold text-slate-400 group-hover:text-amber-600 transition-colors">
+                    <span>{hcount} Produk Terpilih</span>
+                    <span class="flex items-center gap-1">Lihat Pilihan
+                        <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                </div>
+            </a>'''
         else:
             # Option A: Editorial Guide Cards (ALL problems)
             blurb = spec["intro"]
@@ -1288,7 +1317,20 @@ def generate_production_microsites():
             </div>
         </div>
 
-        <!-- ELEMENT 2: Problem & Solution Editorial Guides (Option A) -->
+        <!-- ELEMENT 2: Intent & Psychology Guides -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xs font-black text-amber-900 uppercase tracking-widest flex items-center gap-1.5">
+                    <span>💡 Panduan Niat & Psikologi Pembelian</span>
+                </h2>
+                <span class="text-[11px] font-bold text-amber-600 uppercase">Fasa Hidup</span>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {intent_cards_html}
+            </div>
+        </div>
+
+        <!-- ELEMENT 3: Problem & Solution Editorial Guides (Option A) -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
