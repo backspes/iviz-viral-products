@@ -588,6 +588,90 @@ CATEGORY_LISTICLE_SPECS = [
         "match": lambda p: match_problem_category(p, "rutin_penampilan_kemas"),
         "is_problem": False,
         "is_intent": True
+    },
+    {
+        "slug": "kelengkapan-pelajar-asrama-universiti.html",
+        "title_short": "Kelengkapan Pelajar Asrama",
+        "emoji": "🎓",
+        "meta_title": "{n} Kelengkapan Wajib Pelajar Asrama & Universiti Malaysia ({year})",
+        "meta_desc": "Senarai semak {n} barang elektrik dan kelengkapan asas wajib ada untuk bilik asrama dan universiti — jimat ruang & tenaga ({year}).",
+        "h1": "{n} Kelengkapan Wajib Pelajar Asrama & Universiti Paling Praktikal ({year})",
+        "intro": "Peralatan serbaguna berkuasa rendah yang menjimatkan ruang dan bil elektrik, direka khas untuk memudahkan kehidupan harian pelajar di kampus.",
+        "match": lambda p: match_problem_category(p, "pelajar_asrama"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "peralatan-rumah-mesra-keluarga-bayi.html",
+        "title_short": "Rumah Mesra Keluarga & Bayi",
+        "emoji": "👶",
+        "meta_title": "{n} Peralatan Rumah Mesra Keluarga & Anak Kecil Malaysia ({year})",
+        "meta_desc": "Bandingkan {n} alatan kebersihan, pensterilan, dan keselamatan rumah terbaik untuk keluarga dengan bayi dan anak kecil ({year}).",
+        "h1": "{n} Peralatan Rumah Mesra Keluarga & Anak Kecil Paling Dipercayai ({year})",
+        "intro": "Panduan alatan penjagaan kesihatan kediaman, penapis udara bebas alergen, dan perkakas pensterilan selamat untuk kesejahteraan si manja.",
+        "match": lambda p: match_problem_category(p, "keluarga_bayi"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "peralatan-dapur-jimat-masa-bujang.html",
+        "title_short": "Dapur Bujang Jimat Masa",
+        "emoji": "🍳",
+        "meta_title": "{n} Peralatan Dapur & Rumah Jimat Masa untuk Bujang ({year})",
+        "meta_desc": "Pilihan {n} gajet dapur ringkas dan perkakas rumah pantas untuk bujang sibuk yang ingin jimat masa memasak dan mengemas ({year}).",
+        "h1": "{n} Peralatan Dapur & Rumah Jimat Masa untuk Kehidupan Bujang ({year})",
+        "intro": "Perkakas kompak satu hidangan yang pantas dipanaskan dan mudah dibersihkan, sesuai untuk individu berkerjaya yang mahukan keselesaan maksimum.",
+        "match": lambda p: match_problem_category(p, "bujang_sibuk"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "gajet-aksesori-travel-outstation.html",
+        "title_short": "Gajet Kaki Travel & Outstation",
+        "emoji": "✈️",
+        "meta_title": "{n} Gajet & Aksesori Wajib Ada untuk Kaki Travel ({year})",
+        "meta_desc": "Bandingkan {n} powerbank, pengecas pantas GaN, dan perkakas mudah lipat terbaik untuk penerbangan dan urusan luar kawasan ({year}).",
+        "h1": "{n} Gajet & Aksesori Travel Terbaik untuk Perjalanan Lancar ({year})",
+        "intro": "Kelengkapan kompak dan tahan lasak yang memastikan semua peranti anda kekal bertenaga serta pakaian kekal rapi semasa mengembara.",
+        "match": lambda p: match_problem_category(p, "kaki_travel"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "kelengkapan-gaya-hidup-cergas-fitness.html",
+        "title_short": "Gaya Hidup Cergas & Fitness",
+        "emoji": "🏃‍♂️",
+        "meta_title": "{n} Kelengkapan Gaya Hidup Cergas & Fitness di Rumah ({year})",
+        "meta_desc": "Senarai {n} pengisar protein, penimbang diet tepat, dan penjejak aktiviti terbaik untuk sokong matlamat kesihatan harian ({year}).",
+        "h1": "{n} Kelengkapan Gaya Hidup Cergas & Penjagaan Kesihatan ({year})",
+        "intro": "Alatan praktikal yang membantu pemantauan pemakanan seimbang, pengambilan hidrasi optimum, serta pemulihan otot selepas bersenam.",
+        "match": lambda p: match_problem_category(p, "fitness_kesihatan"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "setup-meja-kerja-minimalis-estetik.html",
+        "title_short": "Setup Meja Kerja Minimalis",
+        "emoji": "🖥️",
+        "meta_title": "{n} Aksesori Setup Meja Kerja Minimalis & Produktif ({year})",
+        "meta_desc": "Panduan {n} aksesori meja kerja estetik, lampu monitor, dan papan kekunci ergonomik untuk ruang kerja kemas dan selesa ({year}).",
+        "h1": "{n} Aksesori Setup Meja Kerja Minimalis untuk Produktiviti ({year})",
+        "intro": "Inspirasi susun atur meja bebas serabut dengan alatan berprestasi tinggi yang menyokong ergonomik postur dan fokus berpanjangan.",
+        "match": lambda p: match_problem_category(p, "setup_minimalis"),
+        "is_problem": False,
+        "is_intent": True
+    },
+    {
+        "slug": "barang-viral-berbaloi-bawah-rm50.html",
+        "title_short": "Pilihan Berbaloi Bawah RM50",
+        "emoji": "💰",
+        "meta_title": "{n} Barang Viral Shopee Bawah RM50 yang Paling Berbaloi ({year})",
+        "meta_desc": "Senarai {n} produk trending dan berkualiti tinggi bawah RM50 daripada stor rasmi yang terbukti bernilai setiap ringgit ({year}).",
+        "h1": "{n} Barang Viral Bawah RM50 Paling Berbaloi & Tahan Lasak ({year})",
+        "intro": "Pilihan bijak bajet rendah: produk kegunaan harian tulen dengan skor ulasan tinggi yang membuktikan kualiti premium tidak semestinya mahal.",
+        "match": lambda p: match_problem_category(p, "bajet_bawah_rm50"),
+        "is_problem": False,
+        "is_intent": True
     }
 ]
 
@@ -699,6 +783,68 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "skintific-5x-ceramide-moisture-gel",
         "skintific-symwhite-377-dark-spot-serum-20ml",
     },
+    # Persona: Pelajar Asrama & Universiti
+    "pelajar_asrama": {
+        "khind-rc360-big-rice-cooker-keep-warm",
+        "xiaomi-youlg-electric-gooseneck-kettle",
+        "pineng-pn951-20000mah-powerbank-built-in-cable",
+        "anker-soundcore-r50i-nc-wireless-earbuds",
+        "tobi-portable-travel-garment-steamer-handheld",
+        "xiaomi-showsee-electric-lint-remover",
+        "jisulife-handheld-fan-ultra-2-9000mah",
+    },
+    # Persona: Keluarga & Anak Kecil
+    "keluarga_bayi": {
+        "samu-giken-baby-booster-dining-chair-bbc7003",
+        "samu-giken-mini-portable-uv-sterilizer-box",
+        "xiaomi-smart-air-purifier-4-compact",
+        "deerma-cordless-dust-mite-vacuum-cleaner",
+        "stainless-steel-304-thermal-insulated-food-jar",
+        "omron-blood-pressure-monitor-hem-7120",
+        "tp-link-tapo-c120-outdoor-security-camera",
+    },
+    # Persona: Bujang Sibuk
+    "bujang_sibuk": {
+        "gaabor-air-fryer-3-5l-smokeless-oil-free",
+        "tefal-5l-low-sugar-rice-cooker",
+        "maxeko-portable-smoothie-blender-cup",
+        "deerma-dx300-vacuum-cleaner",
+        "panasonic-ni-ghd021-handheld-garment-steamer",
+    },
+    # Persona: Kaki Travel & Outstation
+    "kaki_travel": {
+        "pineng-pn951-20000mah-powerbank-built-in-cable",
+        "ugreen-nexode-65w-gan-charger-3port",
+        "anker-soundcore-r50i-nc-wireless-earbuds",
+        "tyeso-vacuum-insulated-tumbler-750ml",
+        "tobi-portable-travel-garment-steamer-handheld",
+        "jisulife-handheld-fan-ultra-2-9000mah",
+    },
+    # Persona: Fitness & Kesihatan
+    "fitness_kesihatan": {
+        "admore-digital-kitchen-scale-5kg",
+        "maxeko-portable-smoothie-blender-cup",
+        "xiaomi-smart-band-9-pro-amoled",
+        "tyeso-vacuum-insulated-tumbler-750ml",
+        "boldlux-memory-foam-backrest-cushion",
+    },
+    # Persona: Setup Meja Minimalis
+    "setup_minimalis": {
+        "baseus-i-wok-series-monitor-light-bar",
+        "ergonomic-foldable-aluminum-laptop-stand",
+        "keychron-q5-max-wireless-mechanical-keyboard",
+        "ugreen-10in1-usb-c-transfer-hub-80133",
+        "ugreen-wired-keyboard-mouse-combo-mk003",
+    },
+    # Persona: Bajet Bawah RM50
+    "bajet_bawah_rm50": {
+        "baseus-bowie-wm02-earbuds",
+        "baseus-crystal-shine-100w-fast-charging-cable",
+        "tyeso-vacuum-insulated-tumbler-750ml",
+        "xiaomi-showsee-electric-lint-remover",
+        "cosrx-acne-pimple-master-patch-24pcs",
+        "aiken-tea-tree-oil-facial-cleanser-100g",
+    },
 }
 
 # ==============================================================================
@@ -748,6 +894,34 @@ PROBLEM_GUARDRAIL_RULES = {
     "rutin_penampilan_kemas": {
         "negative": ["air fryer", "rice cooker", "vacuum", "purifier", "dashcam"],
         "required": ["steamer", "lint", "remover", "ceramide", "serum", "skincare"]
+    },
+    "pelajar_asrama": {
+        "negative": ["air purifier", "vacuum cleaner", "monitor light", "dashcam"],
+        "required": ["rice cooker", "kettle", "powerbank", "earbuds", "steamer", "lint", "fan"]
+    },
+    "keluarga_bayi": {
+        "negative": ["gaming chair", "keyboard", "laptop stand", "dashcam"],
+        "required": ["bottle", "sterilizer", "purifier", "vacuum", "food jar", "pressure monitor", "camera", "chair", "booster"]
+    },
+    "bujang_sibuk": {
+        "negative": ["powerbank", "earbuds", "keyboard", "baby"],
+        "required": ["air fryer", "rice cooker", "blender", "vacuum", "steamer"]
+    },
+    "kaki_travel": {
+        "negative": ["air purifier", "rice cooker", "monitor light", "keyboard"],
+        "required": ["powerbank", "charger", "earbuds", "tumbler", "steamer", "fan"]
+    },
+    "fitness_kesihatan": {
+        "negative": ["charger", "earbuds", "keyboard", "dashcam"],
+        "required": ["scale", "blender", "band", "tumbler", "cushion"]
+    },
+    "setup_minimalis": {
+        "negative": ["air fryer", "rice cooker", "steamer", "serum"],
+        "required": ["light bar", "laptop stand", "keyboard", "hub", "mouse"]
+    },
+    "bajet_bawah_rm50": {
+        "negative": ["air fryer", "vacuum cleaner", "monitor light", "mechanical keyboard"],
+        "required": ["earbuds", "cable", "tumbler", "lint", "patch", "cleanser"]
     },
 }
 
