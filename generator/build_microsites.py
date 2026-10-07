@@ -1,4 +1,15 @@
-import json
+import json, re
+
+def strict_clean(title):
+    # Buang emoji, simbol, tag promosi [..], [..], New, dsb.
+    title = re.sub(r'[\U00010000-\U0010ffff]', '', title)
+    title = re.sub(r'[\u2600-\u27bf\u2300-\u23ff☃◎🕯️©✨🔥★☆⚡]+', '', title)
+    title = re.sub(r'^(?:\[[^\]]+\]|【[^】]+】)\s*', '', title)
+    title = re.sub(r'^(?:New|Ready Stock|In Stock|Hot)\s+', '', title, flags=re.IGNORECASE)
+    title = re.sub(r'^[\u4e00-\u9fff\s]+', '', title)
+    title = re.sub(r'^[^\w\s]+', '', title)
+    title = re.sub(r'[^\w\s\)]+$', '', title)
+    return title.strip()
 import os
 import re
 
@@ -990,7 +1001,8 @@ def generate_segment_directory(dist_dir, products, _now):
             # Show top 3 sample product titles inside card with clean truncated bullets
             samples_html = ""
             for sp in matched[:3]:
-                samples_html += f'<li class="truncate text-[11px] text-slate-600 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0"></span><span class="truncate">{sp["name"]}</span></li>\n'
+                clean_name = strict_clean(sp["name"])
+                samples_html += f'<li class="truncate text-[11px] text-slate-600 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0"></span><span class="truncate">{clean_name}</span></li>\n'
                 
             grid_cards += f'''
             <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 hover:border-orange-400 hover:shadow-lg transition-all flex flex-col justify-between group">
