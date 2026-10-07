@@ -780,10 +780,11 @@ PROBLEM_HUB_PRODUCT_IDS = {
     "hadiah_housewarming": {
         "gaabor-air-fryer-3-5l-smokeless-oil-free",
         "tyeso-vacuum-insulated-tumbler-750ml",
-        "xiaomi-smart-air-purifier-4-compact",
         "baseus-bowie-wm02-earbuds",
         "admore-digital-kitchen-scale-5kg",
         "maxeko-portable-smoothie-blender-cup",
+        "montigo-ace-bottle-950ml",
+        "portable-electric-usb-juicer-blender-580ml",
     },
     # Niat Starter Pack Rumah Sewa & Asrama
     "starter_pack_rumah_sewa": {
@@ -903,8 +904,8 @@ PROBLEM_GUARDRAIL_RULES = {
         "required": ["steamer", "lint", "remover", "seterika", "iron"]
     },
     "hadiah_housewarming": {
-        "negative": ["ubat", "patch", "cleanser", "sabun"],
-        "required": ["air fryer", "tumbler", "purifier", "earbuds", "scale", "blender"]
+        "negative": ["serum", "cleanser", "shampoo", "deodorant", "sunscreen", "toner", "pelembap", "cushion", "vacuum", "steamer", "rice cooker", "purifier", "keyboard"],
+        "required": ["air fryer", "tumbler", "earbuds", "kitchen scale", "blender", "bottle", "juicer"]
     },
     "starter_pack_rumah_sewa": {
         "negative": ["earbuds", "tws", "dashcam", "holder"],
@@ -1363,6 +1364,39 @@ def generate_production_microsites():
     products.sort(key=lambda p: (p.get("added_at", ""), p.get("editorial_score", 0)), reverse=True)
 
     print(f"Loaded {len(products)} production products.")
+
+    # GUARDRAIL: Buang fail HTML orphan (microsite produk yang telah dipadam dari
+    # katalog) supaya tiada halaman basi (harga/tajuk lama) kekal dalam dist/.
+    # Halaman bukan-produk (index, direktori, listicle hub, trust) dijana semula
+    # setiap build, jadi kita senaraikan nama sahnya dan hanya buang selebihnya.
+    _valid_html = {p["id"] + ".html" for p in products}
+    _non_product_html = {
+        "index.html", "kategori.html", "segmen-pembeli.html", "panduan-keperluan.html",
+        "about.html", "editorial-policy.html", "privacy-policy.html", "contact.html",
+        "404.html", "offline.html", "sitemap.html",
+    }
+    try:
+        for _spec in CATEGORY_LISTICLE_SPECS:
+            _slug = _spec.get("slug", "")
+            if _slug:
+                _non_product_html.add(_slug if _slug.endswith(".html") else _slug + ".html")
+    except NameError:
+        pass
+    for _prob in ("PROBLEM_HUB_PRODUCT_IDS",):
+        pass
+    _orphans = 0
+    for _fn in os.listdir(dist_dir):
+        if not _fn.endswith(".html"):
+            continue
+        if _fn in _valid_html or _fn in _non_product_html:
+            continue
+        try:
+            os.remove(os.path.join(dist_dir, _fn))
+            _orphans += 1
+        except Exception:
+            pass
+    if _orphans:
+        print(f" Removed {_orphans} orphan product pages.")
 
     # Dynamic date (Bahasa Melayu) & schema validity
     import datetime as _dt
