@@ -131,8 +131,8 @@ TEMPLATE_HTML = """<!DOCTYPE html>
         </div>
     </header>
 
-    <main class="max-w-3xl mx-auto px-4 py-6 md:py-10 w-full">
-        
+    <main class="max-w-3xl mx-auto px-4 pt-6 pb-32 md:py-10 w-full">
+
         <!-- Breadcrumb -->
         <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
             <a href="index.html" class="hover:text-orange-600 font-medium transition-colors">Utama</a>
@@ -329,15 +329,15 @@ TEMPLATE_HTML = """<!DOCTYPE html>
         </div>
 
         <!-- Sticky Mobile Bottom Bar -->
-        <div class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t border-slate-200 z-40 md:hidden flex items-center justify-between gap-3 shadow-2xl">
-            <div>
-                <span class="text-[10px] text-slate-500 block uppercase font-extrabold">Harga Promosi:</span>
-                <span class="text-base font-black text-slate-900">{{shopee_price}}</span>
+        <div class="fixed bottom-0 left-0 right-0 p-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] bg-white/95 backdrop-blur-md border-t border-slate-200/90 z-40 md:hidden flex items-center justify-between gap-3 shadow-2xl">
+            <div class="shrink-0">
+                <span class="text-[10px] text-slate-500 block uppercase font-extrabold leading-tight">Harga Promosi:</span>
+                <span class="text-base font-black text-slate-900 leading-tight">{{shopee_price}}</span>
             </div>
             <a href="{{affiliate_url}}" target="_blank" rel="nofollow noopener" 
-               class="bg-gradient-to-r from-orange-500 to-amber-500 text-white font-extrabold py-2.5 px-4 rounded-xl text-xs flex items-center gap-1.5 shadow-md shadow-orange-500/20">
+               class="bg-gradient-to-r from-orange-500 to-amber-500 text-white font-extrabold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md shadow-orange-500/20 min-h-[44px] flex-grow text-center">
                 <span>Semak di Stor Rasmi</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
 
@@ -1721,15 +1721,15 @@ def generate_production_microsites():
                         <p class="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">{prod['hook']}</p>
                     </div>
                 </div>
-                <div class="flex items-center justify-between mt-4 pt-3 border-t border-slate-100">
-                    <div class="flex items-baseline gap-2.5">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-3 border-t border-slate-100">
+                    <div class="flex flex-wrap items-baseline gap-2">
                         <span class="text-lg md:text-xl font-black text-slate-900">{prod['shopee_price']}</span>
                         <span class="text-xs text-slate-400 line-through font-semibold">{prod['original_price']}</span>
                         <span class="text-[11px] text-amber-700 font-extrabold bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">{prod['discount']}</span>
                     </div>
-                    <span class="text-xs font-extrabold text-orange-600 group-hover:translate-x-1 transition-transform flex items-center gap-1.5">
-                        <span>Baca Ulasan Penuh</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <span class="text-xs font-extrabold text-orange-600 flex items-center gap-1.5 sm:group-hover:translate-x-1 transition-transform shrink-0">
+                        <span>Baca Ulasan</span>
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
                 </div>
             </a>

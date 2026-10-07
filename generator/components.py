@@ -22,14 +22,14 @@ NAV_LINKS = [
 ]
 
 MOBILE_NAV_LINKS = [
-    ("index.html", "Pilihan Utama"),
-    ("kategori.html", "Semua Kategori Produk"),
-    ("segmen-pembeli.html", "Segmen Pembeli & Gaya Hidup"),
-    ("panduan-keperluan.html", "Panduan Mengikut Keperluan"),
-    ("about.html", "Mengenai Kami"),
-    ("editorial-policy.html", "Polisi Semakan"),
-    ("privacy-policy.html", "Polisi Privasi"),
-    ("contact.html", "Hubungi Kami"),
+    ("index.html", "🏠 Pilihan Utama"),
+    ("kategori.html", "📁 Semua Kategori Produk"),
+    ("segmen-pembeli.html", "👥 Segmen Pembeli & Gaya Hidup"),
+    ("panduan-keperluan.html", "🎯 Panduan Mengikut Keperluan"),
+    ("about.html", "📖 Mengenai Kami"),
+    ("editorial-policy.html", "🛡️ Polisi Semakan"),
+    ("privacy-policy.html", "🔒 Polisi Privasi"),
+    ("contact.html", "✉️ Hubungi Kami"),
 ]
 
 
@@ -46,7 +46,7 @@ def _mobile_links():
         is_last = i == len(MOBILE_NAV_LINKS) - 1
         border = "" if is_last else " border-b border-slate-100"
         parts.append(
-            f'                <a href="{href}" class="py-3{border} hover:text-orange-600 transition-colors">{label}</a>'
+            f'                <a href="{href}" class="flex items-center gap-2 py-3 px-2{border} hover:text-orange-600 hover:bg-slate-50/80 rounded-lg transition-all min-h-[44px]">{label}</a>'
         )
     return "\n".join(parts)
 
@@ -83,7 +83,7 @@ GLOBAL_HEADER = f'''    <!-- GLOBAL HEADER (komponen dikongsi — jangan edit ma
 # GLOBAL FOOTER (E-E-A-T trust links + penafian)
 # ---------------------------------------------------------------
 GLOBAL_FOOTER = '''    <!-- GLOBAL FOOTER (komponen dikongsi — jangan edit manual per halaman) -->
-    <footer class="bg-white border-t border-slate-200 py-10 px-4 text-xs text-slate-500 mt-12 mb-16 md:mb-0">
+    <footer class="bg-white border-t border-slate-200 py-10 px-4 text-xs text-slate-500 mt-12 mb-20 md:mb-0">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-2.5 font-bold text-slate-900">
                 <span class="bg-gradient-to-tr from-orange-500 to-amber-400 text-white w-5 h-5 rounded flex items-center justify-center text-[11px] font-black shadow-sm">i</span>
