@@ -76,6 +76,22 @@ Setiap halaman ulasan microsite produk mesti mengandungi elemen berikut:
 
 ---
 
+## 4b. Involve Asia API Reference (WAJIB rujuk untuk apa-apa kerja affiliate)
+
+Fail rujukan rasmi disimpan dalam repo ini — rujuk SEBELUM jana/kemas kini pautan affiliate:
+
+- `docs/involve-asia/skill.md` — panduan penuh: auth, 9 endpoint, parameter, gotchas, error model.
+- `docs/involve-asia/llms.txt` — ringkasan operasi: base URL, rate limit (60 req/min), had 1,000 deeplink/30 hari, sub-ID.
+- `docs/involve-asia/openapi.yaml` — spesifikasi OpenAPI 3.1 (untuk codegen/Postman).
+
+Fakta kritikal akaun ini:
+- Kunci API: `INVOLVE_ASIA_KEY` + `INVOLVE_ASIA_SECRET` dalam `/root/.env` (jangan dedah dalam output).
+- Publisher aff_id: `122839`, Property ID: `39493`, Shopee MY Offer ID (tracking): `103878`.
+- Pautan WAJIB guna shortlink rasmi `invl.me/clo...` (auto-atribut ke akaun). Format `aff_m` manual DIBLOK Shopee → redirect ke homepage (komisen hilang).
+- `/deeplink/generate` untuk Shopee pulang HTTP 500 (ralat kekal, jangan retry) — guna shortlink sedia ada atau dapatkan dari dashboard Involve Asia.
+
+---
+
 ## 5. Taksonomi 2 Peringkat (2-Tier Taxonomy)
 
 Semua produk baharu mesti dipetakan mengikut hierarki:
