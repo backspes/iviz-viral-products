@@ -987,30 +987,30 @@ def generate_segment_directory(dist_dir, products, _now):
             card_h1 = spec["h1"].replace("{n}", str(n)).replace("{year}", str(year))
             blurb = spec["intro"]
             
-            # Show top 3 sample product titles inside card
+            # Show top 3 sample product titles inside card with clean truncated bullets
             samples_html = ""
             for sp in matched[:3]:
-                samples_html += f'<li class="truncate text-[11px] text-slate-500">• {sp["name"]}</li>\n'
+                samples_html += f'<li class="truncate text-[11px] text-slate-600 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0"></span><span class="truncate">{sp["name"]}</span></li>\n'
                 
             grid_cards += f'''
-            <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:border-orange-400 hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 hover:border-orange-400 hover:shadow-lg transition-all flex flex-col justify-between group">
                 <div>
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="text-2xl p-2 bg-slate-100 rounded-xl">{spec["emoji"]}</span>
-                        <div>
-                            <span class="text-xs font-black text-slate-900 block">{spec["title_short"]}</span>
-                            <span class="text-[10px] text-slate-400 font-bold">{n} Produk Terkurasi</span>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-2xl p-2.5 bg-slate-100 rounded-xl shrink-0 group-hover:scale-105 transition-transform">{spec["emoji"]}</span>
+                        <div class="min-w-0">
+                            <span class="text-xs font-black text-slate-900 block truncate">{spec["title_short"]}</span>
+                            <span class="inline-flex items-center text-[10px] font-bold text-orange-700 bg-orange-50 border border-orange-200/60 px-1.5 py-0.5 rounded-md mt-0.5">{n} Pilihan Terpilih</span>
                         </div>
                     </div>
-                    <h2 class="text-sm font-extrabold text-slate-900 leading-snug mb-2">{card_h1}</h2>
-                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">{blurb}</p>
-                    <ul class="space-y-1 mb-4 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <h2 class="text-sm font-extrabold text-slate-900 leading-snug mb-1.5 group-hover:text-orange-600 transition-colors">{card_h1}</h2>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed line-clamp-2">{blurb}</p>
+                    <ul class="space-y-1.5 mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
                         {samples_html}
                     </ul>
                 </div>
-                <a href="{spec['slug']}" class="inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-orange-600 transition-colors text-center">
+                <a href="{spec['slug']}" class="inline-flex items-center justify-center gap-2 w-full min-h-[44px] py-3 px-4 rounded-xl text-xs font-extrabold text-white bg-slate-900 hover:bg-orange-600 active:scale-[0.98] transition-all text-center shadow-sm">
                     <span>Buka Panduan Penuh ({n})</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
             </div>
             '''
@@ -1028,17 +1028,22 @@ def generate_segment_directory(dist_dir, products, _now):
     <style>body {{ font-family: 'Plus Jakarta Sans', sans-serif; }}</style>
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between antialiased">
-    <main class="max-w-4xl mx-auto px-4 py-8 w-full">
-        <div class="mb-8">
-            <div class="flex items-center gap-2 text-xs font-bold text-slate-400 mb-2">
-                <a href="index.html" class="hover:text-slate-900">Utama</a>
-                <span>/</span>
-                <span class="text-slate-900">{title}</span>
-            </div>
-            <h1 class="text-2xl md:text-4xl font-black text-slate-900 tracking-tight">{title}</h1>
-            <p class="text-slate-600 text-xs md:text-sm mt-2 font-medium max-w-2xl leading-relaxed">{subtitle}</p>
+    <main class="max-w-4xl mx-auto px-4 pt-6 pb-20 md:py-10 w-full">
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center gap-2 text-xs font-bold text-slate-400 mb-4" aria-label="Breadcrumb">
+            <a href="index.html" class="hover:text-slate-900 transition-colors">Utama</a>
+            <span>/</span>
+            <span class="text-slate-900">{title}</span>
+        </nav>
+        
+        <!-- Header Hero -->
+        <div class="mb-6 sm:mb-8 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight">{title}</h1>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2 font-medium max-w-2xl leading-relaxed">{subtitle}</p>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Cards Grid -->
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {grid_cards}
         </div>
     </main>
