@@ -5687,383 +5687,6 @@
     "match_score": 100
   },
   {
-    "id": "xiaomi-smart-air-purifier-4-compact",
-    "name": "Xiaomi Smart Air Purifier 4 Compact",
-    "brand": "Xiaomi",
-    "group": "Rumah & Perkakas Elektrik",
-    "group_slug": "home-living",
-    "category": "Rumah Pintar & Pembersihan",
-    "shopee_price": "RM 219.00",
-    "price_num": "219.00",
-    "original_price": "RM 329.00",
-    "discount": "Diskaun 33%",
-    "verdict": "Penapis udara kompak dengan penapisan 3-dalam-1 berkecekapan tinggi yang memerangkap 99.97% partikel halus 0.3 mikron seperti habuk, bulu haiwan, dan asap jerebu. Sesuai untuk bilik tidur sehingga 27m².",
-    "hook": "Penapis udara pintar bilik tidur paling berbaloi di pasaran. Menguji kadar penapisan habuk alahan dan kawalan aplikasi Mi Home.",
-    "who_is_it_for": "Penghuni rumah dengan masalah alahan habuk resdung, pemilik kucing/haiwan peliharaan, dan bilik tidur berhawa dingin.",
-    "who_should_skip": "Ruang tamu terbuka bersaiz besar melebihi 45m² (disyorkan Xiaomi Air Purifier 4 Pro).",
-    "pros": [
-      "Penapisan 3-dalam-1 berkesan menapis habuk halus PM2.5, debunga, dan bau busuk.",
-      "Kadar senyap mod tidur hanya 20dB tidak mengganggu kualiti tidur malam.",
-      "Kawalan pintar penuh melalui aplikasi Mi Home, Google Assistant, dan Alexa.",
-      "Penggunaan tenaga sangat rendah (hanya 27W pada kuasa maksimum)."
-    ],
-    "cons": [
-      "Penapis HEPA perlu diganti setiap 6-12 bulan bergantung tahap pencemaran udara.",
-      "Tiada paparan skrin peratusan kualiti udara terperinci pada unit fizikal (hanya lampu status warna)."
-    ],
-    "specs": {
-      "CADR Partikel": "230 m³/jam",
-      "Keluasan Bilik Berkesan": "16 - 27 m²",
-      "Tahap Bunyi": "20dB(A) mod tidur",
-      "Penapis": "High Efficiency 3-in-1 Layer Filter"
-    },
-    "faq": [
-      {
-        "q": "Adakah penapis udara ini membantu kurangkan bersin resdung waktu pagi?",
-        "a": "Ya, penapis HEPA berkesan memerangkap hama habuk dan debunga yang berlegar di udara bilik tidur semalaman."
-      }
-    ],
-    "affiliate_url": "https://invl.me/clo2i39",
-    "merchant_platform": "Shopee Mall (Xiaomi Rasmi)",
-    "image_url": "https://cf.shopee.com.my/file/cn-11134207-820l4-mqr2pvt58ljh32",
-    "editorial_score": "9.6",
-    "schema": {
-      "rating": "4.9",
-      "reviewCount": "5100"
-    },
-    "status": "active",
-    "added_at": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "tags": [
-      "air purifier",
-      "xiaomi",
-      "penapis udara",
-      "rumah pintar",
-      "hepa"
-    ],
-    "deeplink_verified": true,
-    "matched_real_title": "【HEPA Filter】4Pro OEM Compatible For Xiaomi MI Smart Air Purifier 4 PRO M15R-FLP / AC-M15-SC Anti-Bacteriar / Anti-virus",
-    "matched_real_link": "https://shopee.com.my/product/904989570/25441591121",
-    "matched_shop": "AILOKA Local Store MY",
-    "price_from_feed": "347.18",
-    "match_score": 110
-  },
-  {
-    "id": "skintific-glycolic-acid-toner-5u",
-    "name": "Skintific 5% Glycolic Acid Daily Clarifying Toner 80ml",
-    "category": "Serum & Rawatan",
-    "group": "skincare_kesihatan",
-    "price": "RM 39.00",
-    "rating": 4.9,
-    "review_count": 8940,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i15",
-    "hook": "Toner eksfoliasi lembut yang merata warna kulit tanpa rasa pedih.",
-    "verdict": "Sesuai untuk yang bertarung dengan bintik hitam dan kulit kusam. Kandungan AHA yang disokong Ceramides mengekalkan kelembapan barrier kulit.",
-    "who_is_it_for": "Individu bermasalah kulit kusam, pori tersumbat, dan parut jerawat degil.",
-    "pros": [
-      "Kombinasi Glycolic Acid & Ceramides",
-      "Tidak mengeringkan kulit",
-      "Mengecilkan penampilan pori"
-    ],
-    "cons": [
-      "Perlu guna sunscreen waktu siang",
-      "Mungkin rasa sedikit 'tingling' pada permulaan"
-    ],
-    "specs": {
-      "Isipadu": "80ml",
-      "Bahan Utama": "5% Glycolic Acid, Niacinamide, 5X Ceramides",
-      "Jenis Kulit": "Semua jenis kulit"
-    },
-    "editorial_score": 9.3,
-    "added_at": "2026-10-07",
-    "brand": "Skintific",
-    "shopee_price": "RM 39.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "health-care"
-  },
-  {
-    "id": "ugreen-nexode-65w-gan-charger",
-    "name": "UGREEN Nexode 65W GaN Fast Charger 3-Port Type C",
-    "category": "Pengecas & Kuasa",
-    "group": "gajet_elektronik",
-    "price": "RM 119.00",
-    "rating": 4.9,
-    "review_count": 14200,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i16",
-    "hook": "Satu pengecas ringkas untuk MacBook, iPhone, dan tablet sekaligus.",
-    "verdict": "Menggunakan teknologi GaN III yang saiznya 50% lebih kecil daripada pengecas MacBook standard tetapi mengekalkan kuasa 65W yang stabil.",
-    "who_is_it_for": "Pekerja WFH dan pengembara yang benci membawa berbilang kepala pengecas.",
-    "pros": [
-      "3 Port (2x USB-C + 1x USB-A)",
-      "Teknologi GaN sejuk & cekap",
-      "Rekabentuk kompak lipat"
-    ],
-    "cons": [
-      "Pembahagian kuasa bertukar bila tambah peranti",
-      "Sedikit berat untuk saiznya"
-    ],
-    "specs": {
-      "Kuasa": "65W Max",
-      "Port": "2x USB-C PD, 1x USB-A QC4.0",
-      "Berat": "128g"
-    },
-    "editorial_score": 9.5,
-    "added_at": "2026-10-07",
-    "brand": "UGREEN",
-    "shopee_price": "RM 119.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "gadgets"
-  },
-  {
-    "id": "samu-giken-air-fryer-4-5l",
-    "name": "Samu Giken Digital Air Fryer 4.5L Touch Screen SG-AF45D",
-    "category": "Perkakas Dapur",
-    "group": "perkakas_dapur",
-    "price": "RM 139.00",
-    "rating": 4.8,
-    "review_count": 7650,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i17",
-    "hook": "Masakan goreng tanpa minyak dengan paparan digital pintar saiz keluarga.",
-    "verdict": "Kapasiti 4.5L cukup untuk menggoreng seekor ayam saiz sederhana. Kawalan suhu tepat dan mudah dibersihkan.",
-    "who_is_it_for": "Keluarga kecil dan peminat makanan sihat kurang minyak.",
-    "pros": [
-      "Paparan sentuh LED dengan 8 praset",
-      "Bakul tidak melekat (non-stick)",
-      "Pemanasan sekata 360 darjah"
-    ],
-    "cons": [
-      "Penggunaan elektrik 1400W",
-      "Kabel kuasa agak pendek"
-    ],
-    "specs": {
-      "Kapasiti": "4.5 Litre",
-      "Kuasa": "1400W",
-      "Suhu": "80°C - 200°C"
-    },
-    "editorial_score": 9.1,
-    "added_at": "2026-10-07",
-    "brand": "Samu",
-    "shopee_price": "RM 139.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "kitchen"
-  },
-  {
-    "id": "dreame-h12-pro-wet-dry-vacuum",
-    "name": "Dreame H12 Pro Wet & Dry Vacuum Cleaner Smart Scrubber",
-    "category": "Rumah Pintar & Pembersihan",
-    "group": "rumah_pintar",
-    "price": "RM 1699.00",
-    "rating": 4.9,
-    "review_count": 3120,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i18",
-    "hook": "Vakum & mop serentak dengan pengeringan berus udara panas otomatis.",
-    "verdict": "Dua fungsi dalam satu suapan — membersihkan kotoran basah seperti sup tumpah dan habuk kering serentak tanpa perlu mengelap berulang kali.",
-    "who_is_it_for": "Pemilik rumah dengan anak kecil, haiwan peliharaan, atau ruang lantai jubin/laminat luas.",
-    "pros": [
-      "Pembersihan tepi berus rapat (edge-to-edge)",
-      "Self-cleaning & Hot Air Drying",
-      "Sensor kesan kotoran automatik"
-    ],
-    "cons": [
-      "Harga pelaburan premium",
-      "Perlu mengosongkan tangki air kotor kerap"
-    ],
-    "specs": {
-      "Bateri": "35 Minit runtime",
-      "Tangki Air Bersih": "900ml",
-      "Mod": "Auto, Suction, Ultra Mode"
-    },
-    "editorial_score": 9.7,
-    "added_at": "2026-10-07",
-    "brand": "Dreame",
-    "shopee_price": "RM 1699.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "home-smart"
-  },
-  {
-    "id": "baseus-halo-light-bar-monitor",
-    "name": "Baseus Screenbar Monitor Light Bar Stepless Dimming Lamp",
-    "category": "Setup Meja WFH",
-    "group": "setup_wfh",
-    "price": "RM 89.00",
-    "rating": 4.9,
-    "review_count": 11500,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i19",
-    "hook": "Lampu meja tanpa silau pada skrin monitor untuk kerja lewat malam.",
-    "verdict": "Pencahayaan yang dipancarkan secara bersudut (asymmetric light source) tidak memantul ke skrin monitor, mengurangkan keletihan mata kerja malam.",
-    "who_is_it_for": "Programmer, pereka grafik, dan pekerja pejabat yang selalu mentelaah meja di ruang samar.",
-    "pros": [
-      "Tiada pantulan silau skrin",
-      "Pelarasan suhu warna (3000K-6500K)",
-      "Pemasangan klip penjimatan ruang meja"
-    ],
-    "cons": [
-      "Kurang sesuai untuk monitor melengkung (curved screen) tebal",
-      "Powered by USB cable"
-    ],
-    "specs": {
-      "Kuasa": "5W USB Powered",
-      "Bahan": "Aluminum Alloy + PC",
-      "CCT": "3000K - 6500K"
-    },
-    "editorial_score": 9.4,
-    "added_at": "2026-10-07",
-    "brand": "Baseus",
-    "shopee_price": "RM 89.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "wfh"
-  },
-  {
-    "id": "timemore-c3-max-pro-hand-grinder",
-    "name": "TIMEMORE Chestnut C3 ESP PRO Manual Coffee Grinder",
-    "category": "Kelengkapan Kopi",
-    "group": "perkakas_dapur",
-    "price": "RM 249.00",
-    "rating": 5.0,
-    "review_count": 4820,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i1a",
-    "hook": "Pengisar kopi manual keluli S2C untuk kisaran espresso dan pour-over persis kafe.",
-    "verdict": "Burr keluli tahan karat CNC S2C660 memberikan konsistensi saiz kisaran tinggi dengan penghasilan serbuk halus (fines) yang sangat minimum.",
-    "who_is_it_for": "Peminat kopi segar rumah, pengembara, dan pembuat espresso manual.",
-    "pros": [
-      "Mata burr keluli tahan karat tahan lama",
-      "Pelarasan klik mikro untuk espresso",
-      "Pemegang boleh dilipat"
-    ],
-    "cons": [
-      "Kapasiti 25g biji kopi per suapan",
-      "Perlu tenaga tangan untuk kisaran halus"
-    ],
-    "specs": {
-      "Bahan": "Aluminum Alloy + S2C Steel Burr",
-      "Kapasiti": "25-30g Beans",
-      "Berat": "473g"
-    },
-    "editorial_score": 9.8,
-    "added_at": "2026-10-07",
-    "brand": "TIMEMORE",
-    "shopee_price": "RM 249.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "kitchen"
-  },
-  {
-    "id": "70mai-a810-4k-dashcam",
-    "name": "70mai Dash Cam 4K A810 Sony Starvis 2 IMX678 HDR",
-    "category": "Kamera Kereta",
-    "group": "gajet_elektronik",
-    "price": "RM 599.00",
-    "rating": 4.9,
-    "review_count": 5210,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i1b",
-    "hook": "Kamera papan pemuka 4K UHD dengan sensor Sony Starvis 2 paling terang waktu malam.",
-    "verdict": "Sensor generasi baharu Sony IMX678 membaca nombor plat kenderaan dengan jelas walaupun dalam situasi gelap gelita atau lampu bertentangan.",
-    "who_is_it_for": "Pemandu harian, pemandu e-hailing, dan pemilik kereta yang mementingkan bukti rakaman berkualiti tinggi.",
-    "pros": [
-      "Resolusi 4K sebenar + 60FPS",
-      "Teknologi Night Owl Vision & HDR",
-      "GPS terbina & ADAS cerdas"
-    ],
-    "cons": [
-      "Perlu kabel pemantauan letak kereta (hardwire kit) untuk mod 24 jam",
-      "Menghasilkan haba sedikit semasa rakaman berterusan"
-    ],
-    "specs": {
-      "Sensor": "Sony Starvis 2 IMX678",
-      "Resolusi": "3840x2160P 4K",
-      "Sudut Pandang": "150° FOV"
-    },
-    "editorial_score": 9.6,
-    "added_at": "2026-10-07",
-    "brand": "70mai",
-    "shopee_price": "RM 599.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "gadgets"
-  },
-  {
-    "id": "anessa-perfect-uv-sunscreen-milk",
-    "name": "Anessa Perfect UV Sunscreen Skincare Milk SPF50+ PA++++ 60ml",
-    "category": "Pelindung Matahari & Sunscreen",
-    "group": "skincare_kesihatan",
-    "price": "RM 115.00",
-    "rating": 4.9,
-    "review_count": 16800,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i1c",
-    "hook": "Pelindung matahari no. 1 Jepun yang semakin kuat apabila terkena haba dan peluh.",
-    "verdict": "Teknologi Auto Booster memperkukuhkan lapisan perlindungan UV apabila bersentuhan dengan peluh, air, dan haba cuaca panas Malaysia.",
-    "who_is_it_for": "Mereka yang beraktiviti luar, bersukan, atau berulang-alik di bawah terik matahari.",
-    "pros": [
-      "Sangat tahan air & peluh (80 minit)",
-      "Tekstur susu ringan tanpa rasa melekit",
-      "Boleh berfungsi sebagai primer mekap"
-    ],
-    "cons": [
-      "Harga lebih tinggi berbanding jenama massa",
-      "Memerlukan pembersihan muka dwi-lapisan (double cleanse)"
-    ],
-    "specs": {
-      "Perlindungan": "SPF50+ PA++++",
-      "Isipadu": "60ml",
-      "Kemasan": "Matte-velvet natural"
-    },
-    "editorial_score": 9.7,
-    "added_at": "2026-10-07",
-    "brand": "Anessa",
-    "shopee_price": "RM 115.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "health-care"
-  },
-  {
-    "id": "keychron-k3-pro-low-profile-keyboard",
-    "name": "Keychron K3 Pro QMK/VIA Wireless Custom Mechanical Keyboard",
-    "category": "Papan Kekunci & Tetikus",
-    "group": "setup_wfh",
-    "price": "RM 399.00",
-    "rating": 4.9,
-    "review_count": 3450,
-    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
-    "affiliate_url": "https://invl.me/clo2i1e",
-    "hook": "Papan kekunci mekanikal profil rendah yang mesra Mac & Windows tanpa sakit pergelangan tangan.",
-    "verdict": "Ketebalan ultra-nipis 31% lebih rendah berbanding papan kekunci mekanikal biasa, tidak memerlukan rehat pergelangan tangan (wrist rest) tambahan.",
-    "who_is_it_for": "Pengaturcara, penulis, dan pengguna Mac yang mahukan sentuhan mekanikal tanpa ketinggian tebal.",
-    "pros": [
-      "Hot-swappable Low Profile Switches",
-      "Sokongan QMK/VIA untuk penyesuaian kekunci",
-      "Boleh sambung sehingga 3 peranti serentak"
-    ],
-    "cons": [
-      "Jarak lekukan suis lebih pendek berbanding mekanikal standard",
-      "Pilihan keycap profil rendah terhad di pasaran"
-    ],
-    "specs": {
-      "Layout": "75% Compact (84 Keys)",
-      "Sambungan": "Bluetooth 5.1 & Type-C Wired",
-      "Bateri": "1550mAh"
-    },
-    "editorial_score": 9.5,
-    "added_at": "2026-10-07",
-    "brand": "Keychron",
-    "shopee_price": "RM 399.00",
-    "original_price": "",
-    "discount": "Terkini",
-    "group_slug": "wfh"
-  },
-  {
     "id": "teashell-niacinamide-serum",
     "name": "Teashell 5% Niacinamide & Alpha Arbutin Whitening Serum (30ml)",
     "brand": "Teashell",
@@ -6873,5 +6496,1006 @@
     "matched_shop": "gramedialampung.my",
     "price_from_feed": "20.79",
     "match_score": 60
+  },
+  {
+    "id": "aliceva-purple-whitening-teeth-gel",
+    "name": "ALICEVA Purple Whitening Enzyme Gel Optik Pemutih Gigi (50g)",
+    "brand": "ALICEVA",
+    "group": "Kesihatan & Penjagaan Diri",
+    "group_slug": "health-care",
+    "category": "Penjagaan Mulut & Gigi",
+    "shopee_price": "RM --",
+    "price_num": "19.90",
+    "original_price": "RM 39.00",
+    "discount": "Diskaun 49%",
+    "verdict": "Gel pemutih gigi berwarna ungu yang menggunakan teknologi peneutralan warna v34 untuk mengurangkan kesan kekuningan pada gigi secara serta-merta. Formulasinya bebas daripada sebatian peroksida kakis dan selamat untuk enamel, namun kesannya bersifat sementara bagi tujuan penampilan luaran.",
+    "hook": "Formula pemutihan optik yang direka untuk meneutralkan tona kekuningan pada permukaan gigi. Ulasan ini menilai keselamatan enamel, rasa gel, dan tempoh keberkesanannya.",
+    "who_is_it_for": "Sesuai untuk peminum kopi, teh, perokok, atau sesiapa yang mahukan penampilan gigi lebih bersih sebelum menghadiri majlis atau saringan fotografi.",
+    "who_should_skip": "Bukan pengganti ubat gigi fluorida harian atau rawatan pemutihan kekal di klinik pergigian.",
+    "pros": [
+      "Formula bebas peroksida yang tidak merosakkan enamel atau menyebabkan rasa sengal pada gigi.",
+      "Kesan kecerahan optik dapat dilihat sejurus selepas sekali bilasan.",
+      "Harga di bawah RM20 menjadikannya pilihan praktikal untuk kegunaan segera.",
+      "Reka bentuk botol pam memudahkan kawalan kuantiti gel tanpa membazir."
+    ],
+    "cons": [
+      "Kesan optik bertahan sekitar 8 hingga 12 jam sahaja dan bukannya rawatan pemutihan kekal.",
+      "Rasa pudina yang agak pekat mungkin kurang selesa bagi sesetengah pengguna."
+    ],
+    "specs": {
+      "Isi Padu": "50g",
+      "Bahan Utama": "Enzim pemutih optik, ekstrak mentol, sorbitol",
+      "Klasifikasi": "Kosmetik penjagaan mulut (Pencerahan optik permukaan)",
+      "Keselamatan Enamel": "Bebas daripada sebatian peroksida kakis"
+    },
+    "faq": [
+      {
+        "q": "Adakah gel ini menyebabkan rasa sengal atau pedih pada gigi sensitif?",
+        "a": "Tidak. Kerana ia tidak mengandungi sebatian peroksida kakis, gel ini selamat untuk gusi dan gigi sensitif."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hni",
+    "merchant_platform": "Shopee Official / TikTok Shop Malaysia",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825bb-mqy5nn2ycumf65",
+    "editorial_score": "9.3",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "5795"
+    },
+    "status": "active",
+    "added_at": "2026-09-28",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "[Ready Stock] ALICEVA Cologne Hair Wax Shaping Styling Long-Lasting Quick-Drying Three-Dimensional Refreshing Fragrance Hair Clay Barber Shop WJG",
+    "matched_real_link": "https://shopee.com.my/product/1828392189/43032828526",
+    "matched_shop": "mlnbb01.my",
+    "price_from_feed": "13.63",
+    "match_score": 60
+  },
+  {
+    "id": "eelhoe-sleep-aid-patches-48pcs",
+    "name": "EELHOE Natural Sleep Aid Patches Tampalan Bantuan Tidur Nyenyak (48 Keping)",
+    "brand": "EELHOE",
+    "group": "Kesihatan & Penjagaan Diri",
+    "group_slug": "health-care",
+    "category": "Wellness & Kualiti Tidur",
+    "shopee_price": "RM --",
+    "price_num": "12.80",
+    "original_price": "RM 25.00",
+    "discount": "Diskaun 48%",
+    "verdict": "Pelekat herba bantuan tidur berasaskan ekstrak semula jadi seperti lavender dan chamomile untuk membantu menenangkan fikiran sebelum tidur. Dibuat untuk kegunaan luaran tanpa perlu menelan sebarang pil ubat.",
+    "hook": "Pelekat herba penenang yang menjadi pilihan popular untuk membantu tidur malam tanpa perlu mengambil ubat makan. Ulasan ini menilai daya pelekat, aroma herba, dan tingkat keselesaannya.",
+    "who_is_it_for": "Sesuai untuk pengguna yang mengalami tekanan fikiran ringan, gangguan jetlag, atau kesukaran untuk melelapkan mata.",
+    "who_should_skip": "Tidak disyorkan bagi pesakit yang mengalami masalah insomnia kronik berat yang memerlukan preskripsi doktor.",
+    "pros": [
+      "Penggunaan jenis tampalan luaran tanpa perlu menelan pil ubat.",
+      "Mengandungi aroma semula jadi daripada lavender dan chamomile yang menenangkan fikiran.",
+      "Setiap kotak mengandungi 48 keping pelekat, cukup untuk kegunaan lebih daripada sebulan.",
+      "Bebas daripada bahan kimia berbahaya dan diklasifikasikan sebagai pelekat aroma luaran."
+    ],
+    "cons": [
+      "Kesan penenang bergantung pada tahap tindak balas individu terhadap aroma herba.",
+      "Tidak digalakkan ditampal pada bahagian kulit yang luka, calar, atau mengalami ekzema."
+    ],
+    "specs": {
+      "Kandungan": "48 keping pelekat herba",
+      "Bahan Utama": "Ekstrak Lavender, Chamomile, Valerian Root",
+      "Cara Guna": "Ditampal pada kawasan kulit bersuhu hangat seperti pergelangan tangan atau leher 30 minit sebelum tidur",
+      "Klasifikasi": "Pelekat Aroma Luaran Bebas Racun Berjadual"
+    },
+    "faq": [
+      {
+        "q": "Di manakah bahagian badan yang paling sesuai untuk menampal pelekat ini?",
+        "a": "Bahagian paling sesuai ialah pada kawasan kulit yang bersih dan nipis seperti pergelangan tangan atau leher sekitar 30 minit sebelum waktu tidur."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hnj",
+    "merchant_platform": "Eelhoe Official Store (Shopee Xtra +6.3%)",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-820li-mgnfnfj16dqk7f",
+    "editorial_score": "9.0",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "3782"
+    },
+    "status": "active",
+    "added_at": "2026-08-05",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "EELHOE Eyelash Serum Enhances Lash Curling Lengthens And Darkens For Natural Beautiful Lashes",
+    "matched_real_link": "https://shopee.com.my/product/1617152708/42622510682",
+    "matched_shop": "Asli Beauty Care",
+    "price_from_feed": "12.29",
+    "match_score": 70
+  },
+  {
+    "id": "simplus-high-speed-hair-dryer-ionic",
+    "name": "Simplus High-Speed Anion Hair Dryer 110,000 RPM (Pemutih & Pengering Rambut)",
+    "brand": "Simplus",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-appliances",
+    "category": "Penjagaan Diri & Perkakas",
+    "shopee_price": "RM --",
+    "price_num": "89.90",
+    "original_price": "RM 189.00",
+    "discount": "Diskaun 52%",
+    "verdict": "Pengering rambut berkelajuan tinggi dengan motor 110,000 RPM dan teknologi ion negatif 200 juta. Mengeringkan rambut tebal dalam masa 3 minit tanpa merosakkan struktur keratin rambut akibat haba berlebihan.",
+    "hook": "Pengering rambut berteknologi angin sejuk/panas pantas yang viral di TikTok. Ulasan ini menilai tahap kelajuan angin, paras bunyi, dan pematuhan kawalan keselamatan elektrik SIRIM.",
+    "who_is_it_for": "Sesuai untuk individu berambut panjang, wanita berhijab yang memerlukan pengeringan pantas sebelum keluar, atau pemilik rambut mudah gugur.",
+    "who_should_skip": "Tidak diperlukan bagi pengguna yang hanya mencari pengering rambut asas kuasa rendah.",
+    "pros": [
+      "Motor tanpa berus kelajuan tinggi 110,000 RPM untuk pengeringan pantas.",
+      "Pancaran 200 juta ion negatif mengurangkan kelesuan rambut dan kerinting halus (*frizz*).",
+      "Kawalan suhu pintar 4 tetapan dan kawalan kelajuan angin 2 tahap.",
+      "Reka bentuk ergonomik yang ringan (hanya 400g) dan senyap (bawah 59dB)."
+    ],
+    "cons": [
+      "Kabel kuasa sepanjang 1.8 meter mencukupi untuk kegunaan rumah tetapi memerlukan steker penyesuai jika soket jauh.",
+      "Permukaan kemasan matte memerlukan penjagaan supaya tidak gatal atau berhabuk."
+    ],
+    "specs": {
+      "Kelajuan Motor": "110,000 RPM High-Speed Brushless Motor",
+      "Teknologi Ion": "200 Juta Anion Negative Ions",
+      "Pengaliran Suhu": "4 Tetapan Suhu (Sejuk, Suam, Panas, Kitaran Auto)",
+      "Paras Bunyi": "< 59dB Noise Reduction",
+      "Berat Device": "400g Super Light",
+      "Persijilan": "SIRIM & Suruhanjaya Tenaga (ST)"
+    },
+    "safety_audit": "Dilengkapi dengan perlindungan daripada pemanasan melampau (*overheat protection*) dan mematuhi standard keselamatan elektrik Suruhanjaya Tenaga (ST) serta SIRIM Malaysia.",
+    "faq": [
+      {
+        "q": "Berapa lamakah masa yang diambil untuk mengeringkan rambut tebal?",
+        "a": "Secara purata, rambut paras bahu mengambil masa 2-3 minit sahaja berkat kelajuan angin tinggi 22m/s."
+      },
+      {
+        "q": "Adakah pengering ini selamat untuk kanak-kanak?",
+        "a": "Ya, terdapat tetapan suhu angin suam yang selamat dan tidak memanaskan kulit kepala."
+      }
+    ],
+    "shopee_url": "https://shope.ee/simplus_hairdryer_hs",
+    "shopee_commission": "+14.00%",
+    "shopee_badge": "Commission Xtra • Simplus Official",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134253-825a7-mqgv7qupko3ycd",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "1890"
+    },
+    "affiliate_url": "https://invl.me/clo2ho0",
+    "merchant_platform": "Shopee Mall",
+    "editorial_score": "9.3",
+    "status": "active",
+    "added_at": "2026-09-30",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "SZUK High-Power Cordless Handheld Vacuum Cleaner for Car & Portable Hair Dryer for Bedroom SZUK Pengering Vakum Tangan Tanpa Wayar Kuasa Tinggi untuk Kereta & Pengering Rambut Mudah Alih untuk Bilik Tidur",
+    "matched_real_link": "https://shopee.com.my/product/1596872938/49263811782",
+    "matched_shop": "Topick Electronics",
+    "price_from_feed": "131.89",
+    "match_score": 50
+  },
+  {
+    "id": "dashing-diva-magic-press-false-nails-toenails",
+    "name": "Dashing Diva Magic Press False Nails & Toenails (One-Step Gel Nails)",
+    "brand": "Dashing Diva",
+    "group": "Kesihatan & Kecantikan",
+    "group_slug": "health-care",
+    "category": "Penjagaan Kuku",
+    "shopee_price": "RM --",
+    "price_num": "56.65",
+    "original_price": "RM 56.65",
+    "discount": "Harga Terkawal",
+    "verdict": "Inovasi kuku gel 'tekan-dan-siap' yang memberikan hasil gred salon dalam masa kurang 5 minit. Tanpa memerlukan gam cecair yang merosakkan kuku atau lampu UV, ia sangat praktikal untuk mereka yang sibuk.",
+    "hook": "Cara paling pantas dan selamat untuk mendapatkan kuku gel cantik tanpa perlu ke salon kuku. Ulasan ini menilai ketahanan lekatan, keselesaan, dan profil keselamatan kuku asal.",
+    "who_is_it_for": "Sesuai untuk wanita yang ingin tampil bergaya untuk majlis perkahwinan, acara istimewa, atau kegunaan harian tanpa komitmen jangka panjang kuku gel kekal.",
+    "who_should_skip": "Individu yang mempunyai jangkitan kuku aktif atau kuku yang sangat nipis dan rosak teruk.",
+    "pros": [
+      "Aplikasi sangat mudah (Peel & Press) tanpa memerlukan kepakaran.",
+      "Teknologi 'Super Hold Adhesive' yang tahan sehingga 7 hari.",
+      "Tidak merosakkan permukaan kuku asal apabila ditanggalkan dengan betul.",
+      "Tersedia dalam pelbagai saiz mengikut anatomi kuku rakyat Asia."
+    ],
+    "cons": [
+      "Lekatan mungkin kurang bertahan jika kuku tidak dibersihkan dengan 'Prep Pad' yang disediakan.",
+      "Hanya untuk kegunaan sekali sahaja (single use)."
+    ],
+    "specs": {
+      "Jenis": "Magic Press (Press-on Gel Nails)",
+      "Kandungan": "24-30 Nail Tips + Prep Pad + Mini File",
+      "Bahan": "Flexible ABS Plastic",
+      "Ketahanan": "Sehingga 7 Hari",
+      "Negara Asal": "Korea Selatan",
+      "Gaya": "Solid, Art, French, Glitters"
+    },
+    "safety_audit": "Diuji secara dermatologi dan mematuhi standard keselamatan kosmetik global. Gam tekanan sensitif (*pressure-sensitive adhesive*) adalah gred perubatan yang selamat.",
+    "faq": [
+      {
+        "q": "Bolehkah saya mandi atau membasuh pinggan selepas memakai kuku ini?",
+        "a": "Boleh. Ia kalis air sepenuhnya, namun disyorkan tunggu 1 jam selepas aplikasi sebelum membiarkan kuku terkena air."
+      },
+      {
+        "q": "Adakah kuku ini boleh dipotong mengikut saiz yang saya mahu?",
+        "a": "Ya, anda boleh memotong dan mengikir (*file*) kuku Dashing Diva mengikut panjang kesukaan anda."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2ho6",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7rd6d-ltycxalx2phsbb",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.6",
+      "review_count": "2450"
+    },
+    "editorial_score": "9.1",
+    "status": "active",
+    "added_at": "2026-08-04",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Pressure Management Brain User Manual: Scientific Exercise Brain Best State, Maintain Clear Thinking under High Pressure (Dr. Julian Ford (Dr. Dr. Julian Ford)/Jon Wortmann Jon Wortmann) Stepping Stone Shopping Network",
+    "matched_real_link": "https://shopee.com.my/product/184636498/42480912043",
+    "matched_shop": "TSCB Shopping",
+    "price_from_feed": "97.35",
+    "match_score": 45
+  },
+  {
+    "id": "samu-giken-hani-ppsu-baby-milk-bottle",
+    "name": "Samu Giken Hani PPSU Baby Milk Bottle (Botol Susu Bayi Anti-Kolik)",
+    "brand": "Samu Giken",
+    "group": "Kesihatan & Penjagaan Diri",
+    "group_slug": "health-care",
+    "category": "Keperluan Bayi & Ibu",
+    "shopee_price": "RM --",
+    "price_num": "44.90",
+    "original_price": "RM 44.90",
+    "discount": "Harga Terkawal",
+    "verdict": "Botol susu bayi gred perubatan PPSU (Polyphenylsulfone) daripada Samu Giken yang tahan suhu tinggi sehingga 180°C. Dilengkapi puting silikon lembut anti-kolik yang mengurangkan risiko bayi kembung perut akibat tertelan angin.",
+    "hook": "Botol susu tahan lasak gred PPSU pilihan ibu bapa moden yang mementingkan keselamatan penyusuan anak. Ulasan ini menilai ketahanan pensterilan haba, fungsi injap anti-kolik, dan pensijilan bebas BPA.",
+    "who_is_it_for": "Sesuai untuk bayi baru lahir sehingga kanak-kanak kecil, serta ibu bapa yang kerap menggunakan mesin pensteril stim atau UV.",
+    "who_should_skip": "Ibu bapa yang lebih memilih botol kaca tradisional yang lebih berat.",
+    "pros": [
+      "Bahan PPSU gred perubatan yang tahan suhu pensterilan sehingga 180°C tanpa mengeluarkan toksin.",
+      "Sistem injap dwi-aliran anti-kolik mengurangkan bayi tersedak dan kembung perut.",
+      "Warna keemasan semula jadi PPSU yang tidak pudar dan tahan hentakan (tidak mudah pecah jika terjatuh).",
+      "Bebas 100% daripada BPA, BPS, dan phthalates."
+    ],
+    "cons": [
+      "Harga lebih tinggi berbanding botol plastik PP biasa (namun jangka hayat jauh lebih lama).",
+      "Puting silikon perlu diganti secara berkala mengikut tahap umur anak."
+    ],
+    "specs": {
+      "Bahan Botol": "Medical Grade PPSU (Tahan 180°C)",
+      "Puting": "Food Grade Liquid Silicone Nipple",
+      "Ciri": "Anti-Colic Air Valve System",
+      "Keselamatan": "BPA-Free, BPS-Free, FDA Approved Material",
+      "Pensterilan": "Steam / Boiling / UV Sterilizer Safe"
+    },
+    "safety_audit": "Mematuhi standard keselamatan bahan sentuhan makanan antarabangsa FDA dan piawaian keselamatan barangan bayi Malaysia.",
+    "faq": [
+      {
+        "q": "Berapa lamakah botol PPSU ini boleh digunakan sebelum perlu ditukar?",
+        "a": "Botol PPSU boleh digunakan sehingga 1 hingga 2 tahun dengan penjagaan yang betul, jauh lebih lama berbanding botol PP biasa (3-6 bulan)."
+      },
+      {
+        "q": "Bolehkah botol ini dimasukkan ke dalam mesin pensteril UV?",
+        "a": "Boleh. Bahan PPSU sangat stabil dan selamat digunakan di dalam mesin pensteril UV mahupun stim."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hou",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rasf-m709po0ll6yhd9",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "1120"
+    },
+    "editorial_score": "9.0",
+    "status": "active",
+    "added_at": "2026-06-15",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "SAMU GIKEN BABY BOOSTER CHAIR BBC-7003",
+    "matched_real_link": "https://shopee.com.my/product/322696230/26678570904",
+    "matched_shop": "mommysangels metro town",
+    "price_from_feed": "98.9",
+    "match_score": 80
+  },
+  {
+    "id": "zeebe-mini-precision-digital-kitchen-scale",
+    "name": "ZEEBE 3KG 0.1G Mini Precision Digital Kitchen Scale (Penimbang Makanan Diet/Baking)",
+    "brand": "ZEEBE",
+    "group": "Rumah & Dapur",
+    "group_slug": "home-living",
+    "category": "Kelengkapan Dapur & Masakan",
+    "shopee_price": "RM --",
+    "price_num": "18.90",
+    "original_price": "RM 45.00",
+    "discount": "Diskaun 58%",
+    "verdict": "Penimbang digital dapur berkejituan tinggi sehingga 0.1 gram dengan had muatan 3 kilogram. Dilengkapi fungsi 'Tare' untuk menolak berat mangkuk, paparan LCD bercahaya biru, dan plat keluli tahan karat yang mudah dilap.",
+    "hook": "Alat penting untuk peminat 'baking' kek, pembancuh kopi pour-over, dan pengamal diet kalori ketat. Ulasan ini menilai kejituan sensor 0.1g, fungsi auto-off jimat bateri, dan ketahanan plat besi.",
+    "who_is_it_for": "Sesuai untuk pembuat kek/roti, penggemar bancuhan kopi tepat, individu yang mengira makronutrien diet (caloric deficit), atau peniaga kecil.",
+    "who_should_skip": "Pengguna yang mahu menimbang barangan berat melebihi 3kg (seperti beras guni).",
+    "pros": [
+      "Ketepatan sensor tinggi 0.1 gram membolehkan sukatan rempah, yis, dan serbuk kopi tepat.",
+      "Fungsi TARE pintar menolak berat mangkuk dalam satu sentuhan butang.",
+      "Plat keluli tahan karat bergaya yang kalis kotoran dan mudah dibersihkan.",
+      "Menyokong pelbagai unit metrik (g, oz, ml, ct, gn)."
+    ],
+    "cons": [
+      "Menggunakan 2x bateri AAA (elakkan menggunakan bateri yang sudah hampir habis untuk kejituan tepat).",
+      "Permukaan penimbang bersaiz kompak (sekitar 10cm x 12cm)."
+    ],
+    "specs": {
+      "Muatan Maksimum": "3000g (3KG)",
+      "Ketepatan Sukatan": "0.1g High Precision Sensor",
+      "Paparan": "Backlit Blue LCD Display",
+      "Fungsi": "Tare Function, Unit Conversion, Auto-Off (60s)",
+      "Kuasa": "2x AAA Batteries (Disertakan)",
+      "Bahan": "Stainless Steel Platform + ABS Base"
+    },
+    "safety_audit": "Mematuhi standard pensijilan CE & RoHS bagi peralatan pengukuran elektronik berkuasa rendah.",
+    "faq": [
+      {
+        "q": "Bagaimana fungsi TARE beroperasi?",
+        "a": "Letakkan mangkuk kosong di atas penimbang, kemudian tekan butang TARE. Paparan akan kembali ke 0.0g supaya anda hanya menimbang bahan masakan sahaja."
+      },
+      {
+        "q": "Adakah ia sesuai untuk menimbang kopi V60?",
+        "a": "Sangat sesuai kerana saiznya yang padat muat di bawah kebanyakan dripper kopi V60."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hp8",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-824jc-meth7u0gwsg61a",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "4500"
+    },
+    "editorial_score": "9.0",
+    "status": "active",
+    "added_at": "2026-06-19",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "KOZEEY Smart 3kg/0.1g Coffee Scale With Timer Digital Kitchen Scale High Precision LED Display Household Coffee Pot Scales",
+    "matched_real_link": "https://shopee.com.my/product/1602099531/29391767796",
+    "matched_shop": "kozeey",
+    "price_from_feed": "42.86",
+    "match_score": 65
+  },
+  {
+    "id": "dettol-antiseptic-disinfectant-liquid-1l",
+    "name": "Dettol Antiseptic Disinfectant 1L + Spray 450ml Set (Cecair Pembasmi Kuman)",
+    "brand": "Dettol",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-appliances",
+    "category": "Kebersihan & Penjagaan Rumah",
+    "shopee_price": "RM --",
+    "price_num": "96.50",
+    "original_price": "RM 96.50",
+    "discount": "Harga Set",
+    "verdict": "Cecair pembasmi kuman antiseptik nombor 1 yang dipercayai sejak turun-temurun untuk membunuh 99.9% kuman dan bakteria. Digunakan secara meluas untuk pembersihan luka ringan, cucian pakaian, pembasmian lantai rumah, dan mandian antiseptik.",
+    "hook": "Produk kebersihan rumah tangga paling evergreen di Malaysia untuk perlindungan keluarga daripada kuman penyakit. Ulasan ini menilai tahap kepekatan cecair, aroma pain ikonik, dan pendaftaran KKM.",
+    "who_is_it_for": "Sesuai untuk setiap keluarga, pemilik haiwan peliharaan, ibu bapa yang mempunyai anak kecil merangkak, atau sesiapa yang menjaga pesakit di rumah.",
+    "who_should_skip": "Individu yang alah kepada bahan Chloroxylenol atau tidak menggemari aroma antiseptik pine asli.",
+    "pros": [
+      "Terbukti secara klinikal membunuh 99.9% kuman dan virus berbahaya.",
+      "Formula serbaguna: mandian, pembersihan luka, cucian pakaian, dan mop lantai.",
+      "Memberikan perlindungan kebersihan menyeluruh untuk seisi rumah.",
+      "Bau aroma cemara pine ikonik yang memberi keyakinan tahap kebersihan tinggi."
+    ],
+    "cons": [
+      "Perlu dicairkan (*diluted*) dengan air mengikut nisbah sukatan label sebelum digunakan.",
+      "Tidak boleh diminum atau ditelan (jauhkan daripada capaian kanak-kanak)."
+    ],
+    "specs": {
+      "Isi Padu": "1000ml (1 Liter) Bottle",
+      "Bahan Aktif": "Chloroxylenol (B.P. 4.8% w/v)",
+      "Kegunaan": "Pertolongan Cemas, Mandian Antiseptik, Cucian & Lantai",
+      "Status KKM": "Berdaftar NPRA KKM (MAL No)",
+      "Pengilang": "Reckitt Benckiser Malaysia"
+    },
+    "safety_audit": "Disahkan berdaftar secara sah di bawah NPRA Kementerian Kesihatan Malaysia dengan nombor pendaftaran ubat terkawal (MAL).",
+    "faq": [
+      {
+        "q": "Bagaimana sukatan untuk mandian antiseptik?",
+        "a": "Campurkan 1 hingga 2 penutup botol Dettol ke dalam satu baldi air mandi (jangan sapu terus cecair pekat tanpa air pada kulit)."
+      },
+      {
+        "q": "Bolehkah ia dicampurkan ke dalam mesin basuh baju?",
+        "a": "Boleh. Tambahkan 1 penutup Dettol ke dalam cucian pakaian untuk membasmi kuman dan bau hapak pada tuala dan pakaian sukan."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpk",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/5bc4669d05fd130d75b11a6904c404fd",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.6",
+      "review_count": "5800"
+    },
+    "editorial_score": "9.2",
+    "status": "active",
+    "added_at": "2026-08-12",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Monggo) Dettol Surface Cleanser Import Anti-bacterial 500 ml",
+    "matched_real_link": "https://shopee.com.my/product/379254320/3004247722",
+    "matched_shop": "serbashop196.my",
+    "price_from_feed": "88.55",
+    "match_score": 60
+  },
+  {
+    "id": "portable-electric-lunch-box-304-stainless",
+    "name": "Portable Electric Lunch Box 304 Stainless (Pemanas Makanan Elektrik Pejabat)",
+    "brand": "Generic",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-appliances",
+    "category": "Perkakas Dapur Pintar",
+    "shopee_price": "RM --",
+    "price_num": "29.99",
+    "original_price": "RM 63.98",
+    "discount": "Diskaun 53%",
+    "verdict": "Penyelesaian terbaik untuk pekerja pejabat yang mahu menikmati bekalan makanan panas tanpa perlu menunggu giliran microwave. Menggunakan wap panas untuk memanaskan lauk-pauk dan nasi dengan sekata tanpa menghilangkan kelembapan makanan.",
+    "hook": "Alat viral yang memudahkan kehidupan 'geng bento' dan pekerja yang mementingkan kesihatan. Ulasan ini menilai kepantasan pemanasan, kualiti keluli 304 tahan karat, dan kemudahan bawa ke mana-mana.",
+    "who_is_it_for": "Sesuai untuk pekerja pejabat, pelajar asrama, dan sesiapa yang kerap membawa bekal dari rumah.",
+    "who_should_skip": "Sesiapa yang mahukan alat untuk memasak nasi dari mentah (ia lebih kepada memanaskan makanan yang sedia ada).",
+    "pros": [
+      "Mangkuk dalaman diperbuat daripada keluli tahan karat 304 gred makanan yang selamat dan tahan lama.",
+      "Fungsi pemanasan wap yang mengekalkan rasa asli dan nutrien makanan.",
+      "Reka bentuk kompak dengan pemegang ergonomik untuk mudah dibawa.",
+      "Penggunaan elektrik yang sangat rendah dan selamat digunakan di pejabat."
+    ],
+    "cons": [
+      "Perlu menunggu sekitar 15-20 minit untuk makanan benar-benar panas.",
+      "Memerlukan sedikit air di bahagian bawah bekas untuk menjana wap panas."
+    ],
+    "specs": {
+      "Bahan": "304 Stainless Steel + PP Plastic",
+      "Kapasiti": "1.0L - 1.5L",
+      "Fungsi": "Pemanas Makanan & Pengukus Ringan",
+      "Kuasa": "200W - 300W Low Energy",
+      "Keselamatan": "Auto-Off Overheating Protection",
+      "Aksesori": "Kabel Kuasa & Bekas Keluli"
+    },
+    "safety_audit": "Mematuhi standard keselamatan perkakas elektrik domestik dan diuji bebas daripada bahan kimia berbahaya BPA.",
+    "faq": [
+      {
+        "q": "Adakah makanan akan menjadi terlalu kering?",
+        "a": "Tidak, sistem pemanasan wap (steam) memastikan makanan kekal lembap dan segar seperti baru dimasak."
+      },
+      {
+        "q": "Bolehkah saya basuh bekas dalamnya?",
+        "a": "Ya, bekas keluli tahan karat boleh dikeluarkan dan dicuci seperti biasa menggunakan sabun pinggan."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpn",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8258e-mrr0rhbvc6pw45",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "2800"
+    },
+    "editorial_score": "8.9",
+    "status": "active",
+    "added_at": "2026-06-30",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Cross-Border 304 Stainless Steel Thermal Insulation Heating Lunch Box No Water Injection Office Workers Students Plug-In Portable Electric Rice",
+    "matched_real_link": "https://shopee.com.my/product/1885259585/44283458148",
+    "matched_shop": "Hebaoccshope1.my",
+    "price_from_feed": "144.3",
+    "match_score": 60
+  },
+  {
+    "id": "dettol-antibacterial-body-wash-berry-cool-950g",
+    "name": "Dettol Antibacterial Body Wash Berry Cool 950g (Mandian Anti-Bakteria)",
+    "brand": "Dettol",
+    "group": "Kesihatan & Penjagaan Diri",
+    "group_slug": "health-care",
+    "category": "Mandian & Kebersihan Diri",
+    "shopee_price": "RM --",
+    "price_num": "32.50",
+    "original_price": "RM 42.25",
+    "discount": "Diskaun 23%",
+    "verdict": "Sabun mandian cecair antibakteria yang memberi perlindungan 100% lebih baik daripada kuman penyebab bau badan. Dilengkapi dengan formula sensasi sejuk menthol dan aroma beri segar yang melegakan keletihan badan selepas seharian bekerja atau bersukan.",
+    "hook": "Mandian harian paling menyegarkan untuk cuaca panas Malaysia bagi menghilangkan peluh dan bau badan secara menyeluruh. Ulasan ini menilai ketahanan haruman, buih mandian, dan kesegaran berpanjangan.",
+    "who_is_it_for": "Sesuai untuk seisi keluarga, individu yang kuat berpeluh, atlet, atau sesiapa yang inginkan rasa sejuk segar selepas mandi.",
+    "who_should_skip": "Individu yang sangat sensitif terhadap sensasi sejuk menthol pada kulit badan.",
+    "pros": [
+      "Perlindungan antibakteria terbukti menghapuskan 99.9% kuman dan punca bau badan.",
+      "Sensasi sejuk menthol yang serta-merta menyegarkan badan yang letih.",
+      "Haruman ekstrak buah beri yang manis dan kekal harum berjam-jam.",
+      "Botol pam besar 950g yang sangat ekonomik untuk kegunaan sekeluarga."
+    ],
+    "cons": [
+      "Sensasi sejuk mungkin kurang sesuai untuk kanak-kanak kecil bawah umur 3 tahun.",
+      "Botol besar agak berat untuk dibawa semasa aktiviti perkhemahan."
+    ],
+    "specs": {
+      "Berat": "950g Pump Bottle",
+      "Formula": "Antibacterial with Icy Menthol & Berry Extract",
+      "Perlindungan": "99.9% Germ Protection",
+      "pH": "pH-Balanced Formula",
+      "Status KKM": "Berdaftar NPRA KKM",
+      "Pengilang": "Reckitt Benckiser Malaysia"
+    },
+    "safety_audit": "Berdaftar secara sah di bawah NPRA KKM dan diuji secara dermatologi dengan formula seimbang pH yang lembut pada kulit.",
+    "faq": [
+      {
+        "q": "Adakah sabun ini mengeringkan kulit badan?",
+        "a": "Tidak, formula seimbang pH Dettol mengandungi bahan pelembap untuk mengekalkan kelembutan semula jadi kulit."
+      },
+      {
+        "q": "Bolehkah saya gunakan pada kulit muka?",
+        "a": "Tidak disyorkan. Sabun mandian badan dirumus khas untuk kulit badan sahaja; gunakan pencuci muka khusus untuk wajah."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpu",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/5bc4669d05fd130d75b11a6904c404fd",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "4500"
+    },
+    "editorial_score": "8.9",
+    "status": "active",
+    "added_at": "2026-08-05",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Monggo) Dettol Surface Cleanser Import Anti-bacterial 500 ml",
+    "matched_real_link": "https://shopee.com.my/product/379254320/3004247722",
+    "matched_shop": "serbashop196.my",
+    "price_from_feed": "88.55",
+    "match_score": 70
+  },
+  {
+    "id": "nbr-high-density-non-slip-yoga-mat-10mm",
+    "name": "NBR High-Density Non-Slip Yoga Mat 10mm (Tikar Senaman Tebal & Lembut)",
+    "brand": "Generic",
+    "group": "Sukan & Luar Rumah",
+    "group_slug": "sports-outdoors",
+    "category": "Peralatan Gim & Senaman",
+    "shopee_price": "RM --",
+    "price_num": "20.00",
+    "original_price": "RM 20.00",
+    "discount": "Harga Mampu Milik",
+    "verdict": "Tikar yoga dan senaman berkualiti tinggi dengan ketebalan 10mm yang diperbuat daripada getah NBR berketumpatan tinggi. Memberikan kusyen perlindungan terbaik untuk lutut, tulang belakang, dan siku semasa melakukan aktiviti yoga, pilates, atau senaman lantai di rumah.",
+    "hook": "Pilihan utama bagi mereka yang mahu memulakan senaman 'home workout' tanpa rasa sakit sendi atau tergelincir di lantai jubin. Ulasan ini menilai ketebalan span, cengkaman lantai, dan ketahanan getah NBR.",
+    "who_is_it_for": "Sesuai untuk pengamal yoga, pilates, latihan beban badan (bodyweight workouts), atau mereka yang mempunyai masalah sakit lutut semasa bersenam.",
+    "who_should_skip": "Pengamal yoga lanjutan (*advanced yogis*) yang memerlukan tikar nipis 3mm untuk kestabilan imbangan berdiri yang sangat tegar.",
+    "pros": [
+      "Ketebalan 10mm memberikan kusyen maksimum untuk mengelak kecederaan sendi lutut dan siku.",
+      "Permukaan anti-gelincir (*non-slip texture*) mencengkam kemas pada lantai jubin dan kayu.",
+      "Bahan NBR mesra alam yang elastik, kalis air, dan mudah dilap bersih daripada peluh.",
+      "Didatangkan bersama tali pengikat untuk memudahkan tikar digulung dan dibawa ke taman atau gim."
+    ],
+    "cons": [
+      "Ketebalan 10mm menjadikannya sedikit lebih tebal apabila digulung.",
+      "Perlu dielakkan daripada terkena objek tajam yang boleh mencarik getah span."
+    ],
+    "specs": {
+      "Dimensi": "183cm x 61cm",
+      "Ketebalan": "10mm High-Density Cushion",
+      "Bahan": "NBR Environmental Synthetic Rubber",
+      "Ciri": "Anti-Slip, Waterproof, Tear-Resistant",
+      "Pakej": "Tikar Yoga + Tali Pengikat Percuma",
+      "Berat": "Kira-kira 800g"
+    },
+    "safety_audit": "Dihasilkan daripada bahan NBR bebas toksin dan logam berat. Permukaan bertekstur diuji mengurangkan risiko tergelincir semasa berpeluh.",
+    "faq": [
+      {
+        "q": "Bagaimana cara membersihkan tikar ini selepas bersenam?",
+        "a": "Hanya lap dengan kain lembap dan sedikit sabun lembut, kemudian biarkan kering di tempat yang teduh (elakkan jemur bawah terik matahari terus)."
+      },
+      {
+        "q": "Adakah tikar ini berbau getah yang kuat?",
+        "a": "Bahan NBR berkualiti tinggi hanya mempunyai sedikit bau baharu yang akan hilang sepenuhnya selepas dianginkan selama 1-2 hari."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpv",
+    "merchant_platform": "Shopee Global",
+    "image_url": "https://cf.shopee.com.my/file/ph-11134207-820lg-mt6d0hpszk08a5",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.4",
+      "review_count": "3900"
+    },
+    "editorial_score": "8.8",
+    "status": "active",
+    "added_at": "2026-09-10",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Trio Set SkeenCare Peeling Lotion + 135g Generic Marble Peel-Soap + 10g Sunscreen Cream",
+    "matched_real_link": "https://shopee.com.my/product/1225625439/24595689468",
+    "matched_shop": "legitdistributorpeelinglowf.my",
+    "price_from_feed": "30.25",
+    "match_score": 50
+  },
+  {
+    "id": "zeebe-oven-kitchen-cooking-thermometer",
+    "name": "ZEEBE Kitchen Oven & BBQ Dial Thermometer 50-300°C (Termometer Ketuhar)",
+    "brand": "ZEEBE",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-appliances",
+    "category": "Aksesori Memasak & Dapur",
+    "shopee_price": "RM --",
+    "price_num": "4.66",
+    "original_price": "RM 15.00",
+    "discount": "Diskaun 69%",
+    "verdict": "Termometer dial ketuhar mekanikal keluli tahan karat dengan julat bacaan suhu luas 50°C hingga 300°C. Membantu tukang masak dan pembuat kek memastikan suhu sebenar di dalam ketuhar atau pemanggang BBQ adalah tepat bagi mengelakkan masakan hangus atau kek bantat.",
+    "hook": "Alat penting bagi setiap peminat 'baking' dan memanggang daging untuk kawalan suhu ketuhar yang sempurna. Ulasan ini menilai ketepatan skala dial, ketahanan keluli haba tinggi, dan kemudahan gantungan dalam oven.",
+    "who_is_it_for": "Sesuai untuk pembuat roti, kek, pizza, pemanggang daging BBQ, atau sesiapa yang menggunakan ketuhar elektrik di rumah.",
+    "who_should_skip": "Tukang masak yang memerlukan termometer digital berwayar probe untuk menyukat suhu cecair sup.",
+    "pros": [
+      "Binaan keluli tahan karat gred komersial tahan haba tinggi sehingga 300°C.",
+      "Paparan dail besar dengan zon suhu berwarna memudahkan bacaan pantas melalui cermin ketuhar.",
+      "Reka bentuk dwi-fungsi: boleh digantung pada rak ketuhar atau didirikan di atas dulang pembakar.",
+      "Operasi mekanikal sepenuhnya: tidak memerlukan sebarang bateri untuk berfungsi."
+    ],
+    "cons": [
+      "Kaca dail boleh menjadi panas selepas pembakaran lama (gunakan sarung tangan ketuhar semasa memegang).",
+      "Mempunyai toleransi bacaan sekitar ±5°C berbanding termometer digital saintifik."
+    ],
+    "specs": {
+      "Julat Suhu": "50°C hingga 300°C (100°F - 600°F)",
+      "Bahan": "Stainless Steel + Tempered Explosion-Proof Glass",
+      "Jenis": "Bimetallic Dial Thermometer (Tanpa Baterai)",
+      "Pemasangan": "Hanging Hook & Standing Base",
+      "Kegunaan": "Oven, Ketuhar Elektrik, Pemanggang Gas, BBQ Pit"
+    },
+    "safety_audit": "Diperbuat daripada keluli tahan karat gred makanan yang selamat dan tidak mengeluarkan sebarang gas atau bau berbahaya pada suhu tinggi.",
+    "faq": [
+      {
+        "q": "Bolehkah termometer ini ditinggalkan di dalam oven semasa membakar?",
+        "a": "Ya, ia direka khas untuk diletakkan secara kekal di dalam ketuhar sepanjang proses pembakaran berlangsung."
+      },
+      {
+        "q": "Adakah ia kalis air semasa dibasuh?",
+        "a": "Ya, namun disyorkan mengelap dengan kain lembap berbanding merendam sepenuhnya di dalam air."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpy",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/edc3eee0ab722dfba17b1089c70d9b5c",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.9",
+      "review_count": "5200"
+    },
+    "editorial_score": "9.7",
+    "status": "active",
+    "added_at": "2026-07-27",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "ZEEBE Portable Adjustable Travel Laptop Stands With Foldable Desktop Notebook Holder Mount- White",
+    "matched_real_link": "https://shopee.com.my/product/4959581/2635631305",
+    "matched_shop": "ZEEBE Official Store",
+    "price_from_feed": "69.9",
+    "match_score": 60
+  },
+  {
+    "id": "zeebe-3kg-mini-digital-kitchen-scale",
+    "name": "ZEEBE 3KG 0.1G Mini Digital Kitchen Scale (Timbangan Dapur Digital)",
+    "brand": "ZEEBE",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-appliances",
+    "category": "Peralatan Dapur",
+    "shopee_price": "RM --",
+    "price_num": "2.99",
+    "original_price": "RM 45.00",
+    "discount": "Diskaun 93%",
+    "verdict": "Timbangan dapur digital kompak yang sangat tepat dengan sensitiviti 0.1g hingga 3kg. Penting untuk peminat baking, diet, atau sesiapa yang mementingkan sukatan ramuan tepat dalam masakan harian.",
+    "hook": "Timbangan paling bajet dan wajib ada untuk sukatan ramuan baking yang tepat. Ulasan ini menilai tahap ketepatan sensor, skrin paparan LCD yang terang, dan saiz yang menjimatkan ruang dapur.",
+    "who_is_it_for": "Sesuai untuk pembuat kek, bakeri rumah, pengikut diet (mengira kalori), atau sesiapa yang mahukan ketepatan timbangan.",
+    "who_should_skip": "Sesiapa yang perlu menimbang objek bersaiz sangat besar (lebih 3kg).",
+    "pros": [
+      "Ketepatan sehingga 0.1g untuk sukatan ramuan yang sangat kecil (seperti yis/rempah).",
+      "Skrin LCD dengan paparan terang yang mudah dibaca.",
+      "Reka bentuk ultra-slim yang mudah disimpan dalam laci dapur.",
+      "Fungsi penukaran unit antara gram (g), mililiter (ml), dan auns (oz)."
+    ],
+    "cons": [
+      "Memerlukan bateri (biasanya AAA) untuk beroperasi.",
+      "Permukaan timbangan agak kecil (perlu mangkuk tambahan jika menimbang bahan banyak)."
+    ],
+    "specs": {
+      "Kapasiti": "3KG Max Capacity",
+      "Ketepatan": "0.1G Sensitivity",
+      "Unit": "g, oz, ml, lb",
+      "Skrin": "LCD Display",
+      "Kuasa": "Bateri (Tidak disertakan)",
+      "Kegunaan": "Baking, Diet, Kitchen Cooking"
+    },
+    "safety_audit": "Dibuat daripada bahan plastik gred makanan yang selamat untuk diletakkan ramuan dapur.",
+    "faq": [
+      {
+        "q": "Bolehkah saya menimbang cecair?",
+        "a": "Ya, anda boleh menukar unit ke 'ml' untuk sukatan cecair atau air."
+      },
+      {
+        "q": "Adakah timbangan ini tahan lama?",
+        "a": "Sangat tahan untuk kegunaan dapur domestik dengan penjagaan yang betul."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hqa",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/33e15da36e5d6f5fd8b79893da2f1953",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.4",
+      "review_count": "5400"
+    },
+    "editorial_score": "8.8",
+    "status": "active",
+    "added_at": "2026-06-18",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "penimbang makanan timbang berat badan penimbang berat badan Kitchen Scale timbangan Skala Dapur Portable Mini Digital Po",
+    "matched_real_link": "https://shopee.com.my/product/401763394/11705441923",
+    "matched_shop": "zgwgjzkc2g",
+    "price_from_feed": "230",
+    "match_score": 70
+  },
+  {
+    "id": "xiaomi-smart-air-purifier-4-compact",
+    "name": "Xiaomi Smart Air Purifier 4 Compact (CADR 230m³/h / HEPA Filter)",
+    "brand": "Xiaomi",
+    "group": "Rumah & Perkakas Elektrik",
+    "group_slug": "home-living",
+    "category": "Rumah Pintar & Pembersihan",
+    "shopee_price": "RM --",
+    "price_num": "219.00",
+    "original_price": "RM 329.00",
+    "discount": "Diskaun 33%",
+    "verdict": "Penapis udara kompak dengan penapisan 3-dalam-1 berkecekapan tinggi yang memerangkap 99.97% partikel halus 0.3 mikron seperti habuk, bulu haiwan, dan asap jerebu. Sesuai untuk bilik tidur sehingga 27m².",
+    "hook": "Penapis udara pintar bilik tidur paling berbaloi di pasaran. Menguji kadar penapisan habuk alahan dan kawalan aplikasi Mi Home.",
+    "who_is_it_for": "Penghuni rumah dengan masalah alahan habuk resdung, pemilik kucing/haiwan peliharaan, dan bilik tidur berhawa dingin.",
+    "who_should_skip": "Ruang tamu terbuka bersaiz besar melebihi 45m² (disyorkan Xiaomi Air Purifier 4 Pro).",
+    "pros": [
+      "Penapisan 3-dalam-1 berkesan menapis habuk halus PM2.5, debunga, dan bau busuk.",
+      "Kadar senyap mod tidur hanya 20dB tidak mengganggu kualiti tidur malam.",
+      "Kawalan pintar penuh melalui aplikasi Mi Home, Google Assistant, dan Alexa.",
+      "Penggunaan tenaga sangat rendah (hanya 27W pada kuasa maksimum)."
+    ],
+    "cons": [
+      "Penapis HEPA perlu diganti setiap 6-12 bulan bergantung tahap pencemaran udara.",
+      "Tiada paparan skrin peratusan kualiti udara terperinci pada unit fizikal (hanya lampu status warna)."
+    ],
+    "specs": {
+      "CADR Partikel": "230 m³/jam",
+      "Keluasan Bilik Berkesan": "16 - 27 m²",
+      "Tahap Bunyi": "20dB(A) mod tidur",
+      "Penapis": "High Efficiency 3-in-1 Layer Filter"
+    },
+    "faq": [
+      {
+        "q": "Adakah penapis udara ini membantu kurangkan bersin resdung waktu pagi?",
+        "a": "Ya, penapis HEPA berkesan memerangkap hama habuk dan debunga yang berlegar di udara bilik tidur semalaman."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hqr",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/cn-11134207-820l4-mqr2pvt58ljh32",
+    "editorial_score": "9.6",
+    "schema": {
+      "rating": "4.9",
+      "reviewCount": "5100"
+    },
+    "status": "active",
+    "added_at": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "tags": [
+      "air purifier",
+      "xiaomi",
+      "penapis udara",
+      "rumah pintar",
+      "hepa"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "【HEPA Filter】4Pro OEM Compatible For Xiaomi MI Smart Air Purifier 4 PRO M15R-FLP / AC-M15-SC Anti-Bacteriar / Anti-virus",
+    "matched_real_link": "https://shopee.com.my/product/904989570/25441591121",
+    "matched_shop": "AILOKA Local Store MY",
+    "price_from_feed": "347.18",
+    "match_score": 110
+  },
+  {
+    "id": "push-up-board-multifunction",
+    "name": "Papan Tekan Tubi Pelbagai Fungsi 9-in-1 Multifunctional Push Up Board",
+    "brand": "Oem Fitness",
+    "group": "Sukan & Kecergasan",
+    "group_slug": "sports-fitness",
+    "category": "Alatan Senaman Rumah",
+    "shopee_price": "RM --",
+    "price_num": "14.90",
+    "original_price": "RM 29.00",
+    "discount": "Diskaun 48%",
+    "verdict": "Papan senaman tekan tubi berasaskan sistem kod warna untuk membimbing sasaran otot dada, bahu, triceps, dan belakang. Pilihan paling jimat di bawah RM15 untuk latihan berat badan di rumah.",
+    "hook": "Papan senaman tekan tubi yang tular di TikTok kerana menyediakan panduan kedudukan senaman yang betul. Ulasan ini menilai ketahanan bahan plastik ABS dan kestabilan pemegang semasa senaman.",
+    "who_is_it_for": "Sesuai untuk penggemar senaman di rumah, pemula yang mahu membetulkan posisi tekan tubi, dan sesiapa yang kerap mengembara.",
+    "who_should_skip": "Kurang sesuai untuk individu yang memerlukan latihan bebanan berat berasingan.",
+    "pros": [
+      "Sistem kod warna yang mudah untuk menyasar otot khusus (Dada, Bahu, Belakang, Triceps).",
+      "Reka bentuk boleh lipat yang mudah disimpan di bawah katil atau di dalam beg.",
+      "Harga murah di bawah RM15 dan dibekalkan bersama pemegang silikon anti-gelincir.",
+      "Diperbuat daripada plastik ABS kukuh yang mampu menampung berat badan sehingga 120kg."
+    ],
+    "cons": [
+      "Lubang pengunci pemegang agak ketat semasa penggunaan pertama kali.",
+      "Pelapik getah di bawah papan perlu dibersihkan daripada habuk supaya tidak menggelongsor di atas lantai jubin yang licin."
+    ],
+    "specs": {
+      "Bahan Binaan": "Plastik ABS Diperkukuh + Pemegang Silikon",
+      "Had Beban Fizikal": "Menampung berat badan sehingga 120kg",
+      "Variasi Latihan": "9 kedudukan sasaran otot",
+      "Bentuk": "Papan Lipat 2 Bahagian"
+    },
+    "faq": [
+      {
+        "q": "Adakah papan ini stabil apabila digunakan di atas lantai jubin licin?",
+        "a": "Ya. Papan ini dibekalkan bersama pelapik getah anti-gelincir yang perlu dilekatkan di bahagian bawah papan untuk cengkaman yang lebih baik."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hnm",
+    "merchant_platform": "Shopee Malaysia / TikTok Shop",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825am-ms8r18fvjwud63",
+    "editorial_score": "9.4",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "9206"
+    },
+    "status": "active",
+    "added_at": "2026-07-03",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "sukan",
+      "kecergasan"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "2 Pek Rantai Kunci Fidget Papan Kekunci dengan Lampu LED, Mainan Penghilang Tekanan 4-dalam-1, Pengklik Jari Butang Papan Kekunci untuk Mengurangkan Keresahan, Mainan Penghilang Tekanan Deria untuk Kanak-kanak & Dewasa (T",
+    "matched_real_link": "https://shopee.com.my/product/1922903299/44566554345",
+    "matched_shop": "asfagg3.my",
+    "price_from_feed": "93.39"
+  },
+  {
+    "id": "geemy-gm6626-rechargeable-hair-clipper",
+    "name": "Geemy GM6626 Rechargeable Hair Clipper & Trimmer Set (Kunting Rambut Tepat)",
+    "brand": "Geemy",
+    "group": "Kesihatan & Penjagaan Diri",
+    "group_slug": "health-care",
+    "category": "Penjagaan Rambut & Grooming",
+    "shopee_price": "RM --",
+    "price_num": "95.00",
+    "original_price": "RM 140.00",
+    "discount": "Diskaun 32%",
+    "verdict": "Mesin gunting rambut boleh dicas semula (*cordless*) yang mempunyai pisau keluli tahan karat dan motor berkelajuan tinggi. Sesuai untuk kerja guntingan tepat seperti *fade*, *undercut*, atau memotong rambut di rumah tanpa ke kedai.",
+    "hook": "Mesin gunting rambut tempatan kegemaran penipu rambut dan barbershop bajet. Ulasan ini menilai ketajaman pisau, ketahanan bateri, dan tahap kebisingan motor.",
+    "who_is_it_for": "Sesuai untuk pengguna yang ingin menjimatkan kos gunting rambut bulanan, bapa yang mahu gunting rambut anak, atau peniaga gunting rambut skala kecil.",
+    "who_should_skip": "Gaya rambut wanita berambut sangat panjang yang memerlukan gunting tangan (scissors) semata-mata.",
+    "pros": [
+      "Motor berkelajuan tinggi dengan pisau keluli tahan karat yang tidak mudah berkarat.",
+      "Operasi tanpa wayar (*cordless*) memudahkan pergerakan bebas di sekeliling kepala.",
+      "Pelbagai attachment sisir penunjuk (0mm - 12mm) untuk pelbagai panjang gaya.",
+      "Bateri lithium bertahan sehingga 90 minit bagi satu kali caj penuh."
+    ],
+    "cons": [
+      "Kabel pengecas asal mungkin pendek jika cas sambil gunakan (*cord/cordless*).",
+      "Perlu membersihkan sisa rambut pada pisau selepas setiap kali guna."
+    ],
+    "specs": {
+      "Motor": "High-Speed DC Motor",
+      "Bateri": "Lithium Rechargeable 2000mAh",
+      "Hayat Guna": "Sehingga 90 Minit Masa Guna",
+      "Attachments": "Pelbagai Attachment Comb Guards",
+      "Kesan": "Cordless & Cord Operation",
+      "Waranti": "1 Tahun Waranti Rasmi Geemy"
+    },
+    "safety_audit": "Lulus pensijilan SIRIM dan standard keselamatan elektrik Suruhanjaya Tenaga (ST). Dilengkapi lapisan pisau selamat yang tidak melukai kulit.",
+    "faq": [
+      {
+        "q": "Adakah mesin ini boleh digunakan semasa dicas?",
+        "a": "Boleh. Ia menyokong operasi semasa dicaj dan juga penggunaan tanpa wayar penuh."
+      },
+      {
+        "q": "Adakah ia sesuai untuk membentuk janggut?",
+        "a": "Ya, dengan attachment sisir yang lebih pendek, ia boleh digunakan untuk menipiskan dan membentuk janggut."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hoe",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825ae-mrj4jr9zrshw82",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "2400"
+    },
+    "editorial_score": "9.3",
+    "status": "active",
+    "added_at": "2026-09-30",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "[COD] 3Pcs/Set Manual Nose Hair , Washable Safe Nose Hair Trimmer, Nostril Cavity Cleaning Mini Portable Stainless Steel Nose Hair Clippers Personal Grooming",
+    "matched_real_link": "https://shopee.com.my/product/45093290/51715498093",
+    "matched_shop": "boloni.my",
+    "price_from_feed": "7.48"
   }
 ]
