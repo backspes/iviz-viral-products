@@ -694,14 +694,31 @@ CATEGORY_LISTICLE_SPECS = [
     }
 ]
 
+def parse_numeric_price(p):
+    raw = str(p.get("shopee_price") or p.get("price") or "0")
+    c = re.sub(r"[^\d.]", "", raw)
+    try:
+        return float(c)
+    except Exception:
+        return 9999.0
+
+
 def match_problem_category(p, problem_type):
     """
-    GUARDRAIL: Padanan produk ke hab masalah HANYA melalui whitelist ID eksplisit.
-    JANGAN guna padanan keyword/regex lagi — ia menyebabkan produk tak berkaitan
-    tersalah masuk (cth: 'cushion' padan 'backrest cushion', 'vacuum' padan 'vacuum sealer').
-    Setiap ID di bawah telah disemak manual supaya 100% relevan dengan masalah tersebut.
+    GUARDRAIL: Padanan produk ke hab masalah HANYA melalui whitelist ID eksplisit
+    serta tapisan hard-cap harga numerik automatik untuk segmen bajet.
     """
-    return p.get("id") in PROBLEM_HUB_PRODUCT_IDS.get(problem_type, set())
+    if p.get("id") not in PROBLEM_HUB_PRODUCT_IDS.get(problem_type, set()):
+        return False
+    
+    # HARD CAP HARGA: Tolak jika melebihi had bajet
+    price = parse_numeric_price(p)
+    if problem_type in ("hadiah_housewarming",) and price > 100.0:
+        return False
+    if problem_type in ("bajet_bawah_rm50",) and price > 50.0:
+        return False
+        
+    return True
 
 
 # ==============================================================================
