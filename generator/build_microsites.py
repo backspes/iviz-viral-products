@@ -963,6 +963,106 @@ def _kw_match(keyword, text):
     return re.search(r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])", text) is not None
 
 
+def generate_segment_directory(dist_dir, products, _now):
+    """
+    ARKITEKTUR ENTERPRISE: Jana 3 Laman Direktori Rasmi
+    1. dist/kategori.html - Semua 5 Kategori Pasaran Utama
+    2. dist/segmen-pembeli.html - Semua 10 Segmen Pembeli & Gaya Hidup
+    3. dist/panduan-keperluan.html - Semua 8 Panduan Keperluan & Solusi
+    """
+    year = _now.year
+    pids_by_spec = {}
+    for spec in CATEGORY_LISTICLE_SPECS:
+        matched = [p for p in products if spec["match"](p)]
+        matched.sort(key=lambda p: (p.get("added_at", ""), p.get("editorial_score", 0)), reverse=True)
+        pids_by_spec[spec["slug"]] = (spec, matched)
+
+    def _build_page(filename, title, subtitle, specs_list):
+        grid_cards = ""
+        for spec in specs_list:
+            spec_obj, matched = pids_by_spec.get(spec["slug"], (spec, []))
+            n = len(matched)
+            if n == 0:
+                continue
+            card_h1 = spec["h1"].replace("{n}", str(n)).replace("{year}", str(year))
+            blurb = spec["intro"]
+            
+            # Show top 3 sample product titles inside card
+            samples_html = ""
+            for sp in matched[:3]:
+                samples_html += f'<li class="truncate text-[11px] text-slate-500">• {sp["name"]}</li>\n'
+                
+            grid_cards += f'''
+            <div class="bg-white rounded-2xl border border-slate-200 p-5 hover:border-orange-400 hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-2xl p-2 bg-slate-100 rounded-xl">{spec["emoji"]}</span>
+                        <div>
+                            <span class="text-xs font-black text-slate-900 block">{spec["title_short"]}</span>
+                            <span class="text-[10px] text-slate-400 font-bold">{n} Produk Terkurasi</span>
+                        </div>
+                    </div>
+                    <h2 class="text-sm font-extrabold text-slate-900 leading-snug mb-2">{card_h1}</h2>
+                    <p class="text-xs text-slate-600 mb-3 leading-relaxed">{blurb}</p>
+                    <ul class="space-y-1 mb-4 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                        {samples_html}
+                    </ul>
+                </div>
+                <a href="{spec['slug']}" class="inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-orange-600 transition-colors text-center">
+                    <span>Buka Panduan Penuh ({n})</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+            '''
+
+        page_html = f'''<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} — iviz Picks Malaysia</title>
+    <meta name="description" content="{subtitle}">
+    <link rel="canonical" href="https://link.iviztrading.com/{filename}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>body {{ font-family: 'Plus Jakarta Sans', sans-serif; }}</style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between antialiased">
+    <main class="max-w-4xl mx-auto px-4 py-8 w-full">
+        <div class="mb-8">
+            <div class="flex items-center gap-2 text-xs font-bold text-slate-400 mb-2">
+                <a href="index.html" class="hover:text-slate-900">Utama</a>
+                <span>/</span>
+                <span class="text-slate-900">{title}</span>
+            </div>
+            <h1 class="text-2xl md:text-4xl font-black text-slate-900 tracking-tight">{title}</h1>
+            <p class="text-slate-600 text-xs md:text-sm mt-2 font-medium max-w-2xl leading-relaxed">{subtitle}</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {grid_cards}
+        </div>
+    </main>
+</body>
+</html>
+'''
+        with open(os.path.join(dist_dir, filename), "w", encoding="utf-8") as f:
+            f.write(page_html)
+
+    # 1. Categories
+    cats = [s for s in CATEGORY_LISTICLE_SPECS if not s.get("is_problem") and not s.get("is_intent")]
+    _build_page("kategori.html", "Semua Kategori Produk", "Direktori lengkap 5 segmen pasaran teras iviz Picks — Skincare, Gajet, Perkakas Dapur, Rumah Pintar, dan Setup WFH.", cats)
+
+    # 2. Buyer Segments
+    intents = [s for s in CATEGORY_LISTICLE_SPECS if s.get("is_intent")]
+    _build_page("segmen-pembeli.html", "Segmen Pembeli & Gaya Hidup", "Koleksi panduan mengikut situasi hidup — Pelajar, Keluarga, Kaki Travel, Bujang, Fitness, Hadiah, dan Bajet.", intents)
+
+    # 3. Need Guides
+    problems = [s for s in CATEGORY_LISTICLE_SPECS if s.get("is_problem")]
+    _build_page("panduan-keperluan.html", "Panduan Mengikut Keperluan", "Senarai ulasan berfokuskan solusi masalah — Jeragat, Kulit Berminyak, Sakit Pinggang, Bulu Kucing, dan Kereta.", problems)
+
+    print(" Generated Enterprise Architecture Directories: dist/kategori.html, dist/segmen-pembeli.html, dist/panduan-keperluan.html")
+
+
 def validate_problem_hub_guardrails(products):
     """
     Sahkan kesahihan dan integriti produk untuk setiap hab masalah:
@@ -1027,6 +1127,8 @@ def generate_category_listicles(dist_dir, products):
 
     for spec in CATEGORY_LISTICLE_SPECS:
         matched = [p for p in products if spec["match"](p)]
+        # SORT: Produk terbaru di atas dalam setiap listicle
+        matched.sort(key=lambda p: (p.get("added_at", ""), p.get("editorial_score", 0)), reverse=True)
         n = len(matched)
         if n == 0:
             continue
@@ -1200,6 +1302,9 @@ def generate_production_microsites():
 
     with open(data_path, "r", encoding="utf-8") as f:
         products = json.load(f)
+
+    # SORT: Produk terbaru (added_at) di atas terlebih dahulu
+    products.sort(key=lambda p: (p.get("added_at", ""), p.get("editorial_score", 0)), reverse=True)
 
     print(f"Loaded {len(products)} production products.")
 
@@ -1424,6 +1529,23 @@ def generate_production_microsites():
                 </div>
             </a>'''
 
+    # ------------------------------------------------------------------
+    # ENTERPRISE IA: Featured (terhad) di homepage + direktori penuh
+    # ------------------------------------------------------------------
+    def _featured(cards_html, limit):
+        # Bahagikan dengan tag pembuka <a href, tapi simpan tag tersebut
+        parts = re.split(r'(?=<a href)', cards_html)
+        # Ambil bahagian yang bermula dengan <a href
+        cards = [p for p in parts if p.strip().startswith("<a href")]
+        trimmed = cards[:limit]
+        return "".join(trimmed)
+
+    intent_cards_html_featured = _featured(intent_cards_html, 3)
+    problem_cards_html_featured = _featured(problem_cards_html, 3)
+
+    # Direktori segmen (arketktur hub-and-spoke standard enterprise)
+    generate_segment_directory(dist_dir, products, _now)
+
     # Rebuild Index Hub
     index_html = f"""<!DOCTYPE html>
 <html lang="ms">
@@ -1521,37 +1643,40 @@ def generate_production_microsites():
             </a>
         </div>
 
-        <!-- ELEMENT 1: Category Hubs (Side-scrolling Icon-Grid) -->
+        <!-- ELEMENT 1: Category Hubs -->
         <div class="mb-8">
-            <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest block mb-4 ml-1">📁 Hab Kategori Produk</span>
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-black text-slate-400 uppercase tracking-widest">📁 Kategori Produk Utama</span>
+                <a href="kategori.html" class="text-orange-600 font-bold text-xs hover:underline">Lihat Semua →</a>
+            </div>
             <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar -mx-4 px-4 mask-fade-right">
                 {cat_pills_html}
             </div>
         </div>
 
-        <!-- ELEMENT 2: Collections & Gift Ideas -->
+        <!-- ELEMENT 2: Featured Collections -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-amber-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>💡 Idea Beli-belah & Hadiah</span>
+                    <span>💡 Koleksi & Idea Pilihan</span>
                 </h2>
-                <span class="text-[11px] font-bold text-amber-600 uppercase">Koleksi Pilihan</span>
+                <a href="segmen-pembeli.html" class="text-amber-600 font-bold text-xs hover:underline">Lihat Semua Segmen →</a>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {intent_cards_html}
+                {intent_cards_html_featured}
             </div>
         </div>
 
-        <!-- ELEMENT 3: Shopping Guides by Need -->
+        <!-- ELEMENT 3: Featured Guides -->
         <div class="mb-8">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
-                    <span>🎯 Pilihan Mengikut Keperluan</span>
+                    <span>🎯 Panduan Keperluan Editor</span>
                 </h2>
-                <span class="text-[11px] font-bold text-slate-400 uppercase">Pilihan Editor</span>
+                <a href="panduan-keperluan.html" class="text-orange-600 font-bold text-xs hover:underline">Lihat Semua Panduan →</a>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {problem_cards_html}
+                {problem_cards_html_featured}
             </div>
         </div>
 
@@ -1680,7 +1805,7 @@ def generate_production_microsites():
     <priority>0.8</priority>
   </url>""")
 
-    for trust_page in ["about.html", "editorial-policy.html", "privacy-policy.html", "contact.html"]:
+    for trust_page in ["kategori.html", "segmen-pembeli.html", "panduan-keperluan.html", "about.html", "editorial-policy.html", "privacy-policy.html", "contact.html"]:
         sitemap_entries.append(f"""  <url>
     <loc>https://link.iviztrading.com/{trust_page}</loc>
     <lastmod>{today_iso}</lastmod>

@@ -15,14 +15,17 @@ Dijaga oleh: apply_global_chrome() dalam build_microsites.py
 # ---------------------------------------------------------------
 NAV_LINKS = [
     ("index.html", "Pilihan Utama"),
+    ("kategori.html", "Kategori"),
+    ("segmen-pembeli.html", "Segmen Pembeli"),
+    ("panduan-keperluan.html", "Panduan Keperluan"),
     ("about.html", "Mengenai Kami"),
-    ("editorial-policy.html", "Polisi Semakan"),
-    ("privacy-policy.html", "Privasi"),
-    ("contact.html", "Hubungi"),
 ]
 
 MOBILE_NAV_LINKS = [
     ("index.html", "Pilihan Utama"),
+    ("kategori.html", "Semua Kategori Produk"),
+    ("segmen-pembeli.html", "Segmen Pembeli & Gaya Hidup"),
+    ("panduan-keperluan.html", "Panduan Mengikut Keperluan"),
     ("about.html", "Mengenai Kami"),
     ("editorial-policy.html", "Polisi Semakan"),
     ("privacy-policy.html", "Polisi Privasi"),
