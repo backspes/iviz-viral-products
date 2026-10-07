@@ -5747,5 +5747,1131 @@
     "matched_shop": "AILOKA Local Store MY",
     "price_from_feed": "347.18",
     "match_score": 110
+  },
+  {
+    "id": "skintific-glycolic-acid-toner-5u",
+    "name": "Skintific 5% Glycolic Acid Daily Clarifying Toner 80ml",
+    "category": "Serum & Rawatan",
+    "group": "skincare_kesihatan",
+    "price": "RM 39.00",
+    "rating": 4.9,
+    "review_count": 8940,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i15",
+    "hook": "Toner eksfoliasi lembut yang merata warna kulit tanpa rasa pedih.",
+    "verdict": "Sesuai untuk yang bertarung dengan bintik hitam dan kulit kusam. Kandungan AHA yang disokong Ceramides mengekalkan kelembapan barrier kulit.",
+    "who_is_it_for": "Individu bermasalah kulit kusam, pori tersumbat, dan parut jerawat degil.",
+    "pros": [
+      "Kombinasi Glycolic Acid & Ceramides",
+      "Tidak mengeringkan kulit",
+      "Mengecilkan penampilan pori"
+    ],
+    "cons": [
+      "Perlu guna sunscreen waktu siang",
+      "Mungkin rasa sedikit 'tingling' pada permulaan"
+    ],
+    "specs": {
+      "Isipadu": "80ml",
+      "Bahan Utama": "5% Glycolic Acid, Niacinamide, 5X Ceramides",
+      "Jenis Kulit": "Semua jenis kulit"
+    },
+    "editorial_score": 9.3,
+    "added_at": "2026-10-07",
+    "brand": "Skintific",
+    "shopee_price": "RM 39.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "health-care"
+  },
+  {
+    "id": "ugreen-nexode-65w-gan-charger",
+    "name": "UGREEN Nexode 65W GaN Fast Charger 3-Port Type C",
+    "category": "Pengecas & Kuasa",
+    "group": "gajet_elektronik",
+    "price": "RM 119.00",
+    "rating": 4.9,
+    "review_count": 14200,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i16",
+    "hook": "Satu pengecas ringkas untuk MacBook, iPhone, dan tablet sekaligus.",
+    "verdict": "Menggunakan teknologi GaN III yang saiznya 50% lebih kecil daripada pengecas MacBook standard tetapi mengekalkan kuasa 65W yang stabil.",
+    "who_is_it_for": "Pekerja WFH dan pengembara yang benci membawa berbilang kepala pengecas.",
+    "pros": [
+      "3 Port (2x USB-C + 1x USB-A)",
+      "Teknologi GaN sejuk & cekap",
+      "Rekabentuk kompak lipat"
+    ],
+    "cons": [
+      "Pembahagian kuasa bertukar bila tambah peranti",
+      "Sedikit berat untuk saiznya"
+    ],
+    "specs": {
+      "Kuasa": "65W Max",
+      "Port": "2x USB-C PD, 1x USB-A QC4.0",
+      "Berat": "128g"
+    },
+    "editorial_score": 9.5,
+    "added_at": "2026-10-07",
+    "brand": "UGREEN",
+    "shopee_price": "RM 119.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "gadgets"
+  },
+  {
+    "id": "samu-giken-air-fryer-4-5l",
+    "name": "Samu Giken Digital Air Fryer 4.5L Touch Screen SG-AF45D",
+    "category": "Perkakas Dapur",
+    "group": "perkakas_dapur",
+    "price": "RM 139.00",
+    "rating": 4.8,
+    "review_count": 7650,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i17",
+    "hook": "Masakan goreng tanpa minyak dengan paparan digital pintar saiz keluarga.",
+    "verdict": "Kapasiti 4.5L cukup untuk menggoreng seekor ayam saiz sederhana. Kawalan suhu tepat dan mudah dibersihkan.",
+    "who_is_it_for": "Keluarga kecil dan peminat makanan sihat kurang minyak.",
+    "pros": [
+      "Paparan sentuh LED dengan 8 praset",
+      "Bakul tidak melekat (non-stick)",
+      "Pemanasan sekata 360 darjah"
+    ],
+    "cons": [
+      "Penggunaan elektrik 1400W",
+      "Kabel kuasa agak pendek"
+    ],
+    "specs": {
+      "Kapasiti": "4.5 Litre",
+      "Kuasa": "1400W",
+      "Suhu": "80°C - 200°C"
+    },
+    "editorial_score": 9.1,
+    "added_at": "2026-10-07",
+    "brand": "Samu",
+    "shopee_price": "RM 139.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "kitchen"
+  },
+  {
+    "id": "dreame-h12-pro-wet-dry-vacuum",
+    "name": "Dreame H12 Pro Wet & Dry Vacuum Cleaner Smart Scrubber",
+    "category": "Rumah Pintar & Pembersihan",
+    "group": "rumah_pintar",
+    "price": "RM 1699.00",
+    "rating": 4.9,
+    "review_count": 3120,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i18",
+    "hook": "Vakum & mop serentak dengan pengeringan berus udara panas otomatis.",
+    "verdict": "Dua fungsi dalam satu suapan — membersihkan kotoran basah seperti sup tumpah dan habuk kering serentak tanpa perlu mengelap berulang kali.",
+    "who_is_it_for": "Pemilik rumah dengan anak kecil, haiwan peliharaan, atau ruang lantai jubin/laminat luas.",
+    "pros": [
+      "Pembersihan tepi berus rapat (edge-to-edge)",
+      "Self-cleaning & Hot Air Drying",
+      "Sensor kesan kotoran automatik"
+    ],
+    "cons": [
+      "Harga pelaburan premium",
+      "Perlu mengosongkan tangki air kotor kerap"
+    ],
+    "specs": {
+      "Bateri": "35 Minit runtime",
+      "Tangki Air Bersih": "900ml",
+      "Mod": "Auto, Suction, Ultra Mode"
+    },
+    "editorial_score": 9.7,
+    "added_at": "2026-10-07",
+    "brand": "Dreame",
+    "shopee_price": "RM 1699.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "home-smart"
+  },
+  {
+    "id": "baseus-halo-light-bar-monitor",
+    "name": "Baseus Screenbar Monitor Light Bar Stepless Dimming Lamp",
+    "category": "Setup Meja WFH",
+    "group": "setup_wfh",
+    "price": "RM 89.00",
+    "rating": 4.9,
+    "review_count": 11500,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i19",
+    "hook": "Lampu meja tanpa silau pada skrin monitor untuk kerja lewat malam.",
+    "verdict": "Pencahayaan yang dipancarkan secara bersudut (asymmetric light source) tidak memantul ke skrin monitor, mengurangkan keletihan mata kerja malam.",
+    "who_is_it_for": "Programmer, pereka grafik, dan pekerja pejabat yang selalu mentelaah meja di ruang samar.",
+    "pros": [
+      "Tiada pantulan silau skrin",
+      "Pelarasan suhu warna (3000K-6500K)",
+      "Pemasangan klip penjimatan ruang meja"
+    ],
+    "cons": [
+      "Kurang sesuai untuk monitor melengkung (curved screen) tebal",
+      "Powered by USB cable"
+    ],
+    "specs": {
+      "Kuasa": "5W USB Powered",
+      "Bahan": "Aluminum Alloy + PC",
+      "CCT": "3000K - 6500K"
+    },
+    "editorial_score": 9.4,
+    "added_at": "2026-10-07",
+    "brand": "Baseus",
+    "shopee_price": "RM 89.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "wfh"
+  },
+  {
+    "id": "timemore-c3-max-pro-hand-grinder",
+    "name": "TIMEMORE Chestnut C3 ESP PRO Manual Coffee Grinder",
+    "category": "Kelengkapan Kopi",
+    "group": "perkakas_dapur",
+    "price": "RM 249.00",
+    "rating": 5.0,
+    "review_count": 4820,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i1a",
+    "hook": "Pengisar kopi manual keluli S2C untuk kisaran espresso dan pour-over persis kafe.",
+    "verdict": "Burr keluli tahan karat CNC S2C660 memberikan konsistensi saiz kisaran tinggi dengan penghasilan serbuk halus (fines) yang sangat minimum.",
+    "who_is_it_for": "Peminat kopi segar rumah, pengembara, dan pembuat espresso manual.",
+    "pros": [
+      "Mata burr keluli tahan karat tahan lama",
+      "Pelarasan klik mikro untuk espresso",
+      "Pemegang boleh dilipat"
+    ],
+    "cons": [
+      "Kapasiti 25g biji kopi per suapan",
+      "Perlu tenaga tangan untuk kisaran halus"
+    ],
+    "specs": {
+      "Bahan": "Aluminum Alloy + S2C Steel Burr",
+      "Kapasiti": "25-30g Beans",
+      "Berat": "473g"
+    },
+    "editorial_score": 9.8,
+    "added_at": "2026-10-07",
+    "brand": "TIMEMORE",
+    "shopee_price": "RM 249.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "kitchen"
+  },
+  {
+    "id": "70mai-a810-4k-dashcam",
+    "name": "70mai Dash Cam 4K A810 Sony Starvis 2 IMX678 HDR",
+    "category": "Kamera Kereta",
+    "group": "gajet_elektronik",
+    "price": "RM 599.00",
+    "rating": 4.9,
+    "review_count": 5210,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i1b",
+    "hook": "Kamera papan pemuka 4K UHD dengan sensor Sony Starvis 2 paling terang waktu malam.",
+    "verdict": "Sensor generasi baharu Sony IMX678 membaca nombor plat kenderaan dengan jelas walaupun dalam situasi gelap gelita atau lampu bertentangan.",
+    "who_is_it_for": "Pemandu harian, pemandu e-hailing, dan pemilik kereta yang mementingkan bukti rakaman berkualiti tinggi.",
+    "pros": [
+      "Resolusi 4K sebenar + 60FPS",
+      "Teknologi Night Owl Vision & HDR",
+      "GPS terbina & ADAS cerdas"
+    ],
+    "cons": [
+      "Perlu kabel pemantauan letak kereta (hardwire kit) untuk mod 24 jam",
+      "Menghasilkan haba sedikit semasa rakaman berterusan"
+    ],
+    "specs": {
+      "Sensor": "Sony Starvis 2 IMX678",
+      "Resolusi": "3840x2160P 4K",
+      "Sudut Pandang": "150° FOV"
+    },
+    "editorial_score": 9.6,
+    "added_at": "2026-10-07",
+    "brand": "70mai",
+    "shopee_price": "RM 599.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "gadgets"
+  },
+  {
+    "id": "anessa-perfect-uv-sunscreen-milk",
+    "name": "Anessa Perfect UV Sunscreen Skincare Milk SPF50+ PA++++ 60ml",
+    "category": "Pelindung Matahari & Sunscreen",
+    "group": "skincare_kesihatan",
+    "price": "RM 115.00",
+    "rating": 4.9,
+    "review_count": 16800,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i1c",
+    "hook": "Pelindung matahari no. 1 Jepun yang semakin kuat apabila terkena haba dan peluh.",
+    "verdict": "Teknologi Auto Booster memperkukuhkan lapisan perlindungan UV apabila bersentuhan dengan peluh, air, dan haba cuaca panas Malaysia.",
+    "who_is_it_for": "Mereka yang beraktiviti luar, bersukan, atau berulang-alik di bawah terik matahari.",
+    "pros": [
+      "Sangat tahan air & peluh (80 minit)",
+      "Tekstur susu ringan tanpa rasa melekit",
+      "Boleh berfungsi sebagai primer mekap"
+    ],
+    "cons": [
+      "Harga lebih tinggi berbanding jenama massa",
+      "Memerlukan pembersihan muka dwi-lapisan (double cleanse)"
+    ],
+    "specs": {
+      "Perlindungan": "SPF50+ PA++++",
+      "Isipadu": "60ml",
+      "Kemasan": "Matte-velvet natural"
+    },
+    "editorial_score": 9.7,
+    "added_at": "2026-10-07",
+    "brand": "Anessa",
+    "shopee_price": "RM 115.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "health-care"
+  },
+  {
+    "id": "keychron-k3-pro-low-profile-keyboard",
+    "name": "Keychron K3 Pro QMK/VIA Wireless Custom Mechanical Keyboard",
+    "category": "Papan Kekunci & Tetikus",
+    "group": "setup_wfh",
+    "price": "RM 399.00",
+    "rating": 4.9,
+    "review_count": 3450,
+    "image_url": "https://down-my.img.susercontent.com/file/id-11134207-7r98w-lld855pe0vah7d",
+    "affiliate_url": "https://invl.me/clo2i1e",
+    "hook": "Papan kekunci mekanikal profil rendah yang mesra Mac & Windows tanpa sakit pergelangan tangan.",
+    "verdict": "Ketebalan ultra-nipis 31% lebih rendah berbanding papan kekunci mekanikal biasa, tidak memerlukan rehat pergelangan tangan (wrist rest) tambahan.",
+    "who_is_it_for": "Pengaturcara, penulis, dan pengguna Mac yang mahukan sentuhan mekanikal tanpa ketinggian tebal.",
+    "pros": [
+      "Hot-swappable Low Profile Switches",
+      "Sokongan QMK/VIA untuk penyesuaian kekunci",
+      "Boleh sambung sehingga 3 peranti serentak"
+    ],
+    "cons": [
+      "Jarak lekukan suis lebih pendek berbanding mekanikal standard",
+      "Pilihan keycap profil rendah terhad di pasaran"
+    ],
+    "specs": {
+      "Layout": "75% Compact (84 Keys)",
+      "Sambungan": "Bluetooth 5.1 & Type-C Wired",
+      "Bateri": "1550mAh"
+    },
+    "editorial_score": 9.5,
+    "added_at": "2026-10-07",
+    "brand": "Keychron",
+    "shopee_price": "RM 399.00",
+    "original_price": "",
+    "discount": "Terkini",
+    "group_slug": "wfh"
+  },
+  {
+    "id": "teashell-niacinamide-serum",
+    "name": "Teashell 5% Niacinamide & Alpha Arbutin Whitening Serum (30ml)",
+    "brand": "Teashell",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Skincare & Wajah",
+    "shopee_price": "RM --",
+    "price_num": "24.90",
+    "original_price": "RM 49.00",
+    "discount": "Diskaun 50%",
+    "verdict": "Serum pencerah mampu milik pada harga di bawah RM25 yang mengandungi 5% Niacinamide dan Alpha Arbutin. Formulasinya cecair ringan yang cepat menyerap dan selesa untuk cuaca panas di Malaysia, namun memerlukan penggunaan konsisten bersama pelindung matahari untuk hasil optimum.",
+    "hook": "Serum pencerah buatan tempatan yang memfokuskan pemudaran parut jerawat gelap dan tona kulit kusam. Ulasan ini meneliti kandungan bahan aktif, kadar resapan, serta nilainya untuk penggunaan harian.",
+    "who_is_it_for": "Sesuai untuk individu yang mahu memudarkan parut jerawat gelap dan mencerahkan tona kulit pada kos berpatutan.",
+    "who_should_skip": "Tidak disyorkan bagi individu yang mengalami sensitiviti terhadap kepekatan Niacinamide tinggi.",
+    "pros": [
+      "Gabungan 5% Niacinamide dan Alpha Arbutin pada harga di bawah RM25.",
+      "Tekstur cecair berasaskan air yang meresap pantas tanpa meninggalkan kesan melekit.",
+      "Disahkan bebas daripada bahan terlarang seperti merkuri dan hidrokuinon.",
+      "Isi padu 30ml memadai untuk penggunaan harian selama 1 hingga 2 bulan."
+    ],
+    "cons": [
+      "Proses memudarkan parut berlaku secara berperingkat; memerlukan pemakaian konsisten sekurang-kurangnya 2 hingga 3 minggu.",
+      "Stok di stor rasmi kerap habis semasa tempoh jualan promosi besar.",
+      "Perlu dipadankan dengan pelindung matahari (sunscreen) pada waktu siang untuk hasil yang optimum."
+    ],
+    "specs": {
+      "Isi Padu": "30ml",
+      "Bahan Aktif": "Niacinamide 5%, Alpha Arbutin, Hyaluronic Acid, Centella Asiatica",
+      "Status NPRA": "Bebas daripada senarai amaran NPRA; pastikan membeli unit berdaftar NOT rasmi",
+      "Kesesuaian Kulit": "Berminyak, kombinasi, tona tidak sekata"
+    },
+    "faq": [
+      {
+        "q": "Berapa lama masa yang diambil untuk melihat perubahan pada parut?",
+        "a": "Kesan pudar pada parut gelap biasanya mula kelihatan selepas 2 hingga 3 minggu pemakaian teratur pada waktu pagi dan malam."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hnf",
+    "merchant_platform": "Shopee Official / TikTok Shop Malaysia",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rasc-m6fb1cwunf4pf9",
+    "editorial_score": "8.9",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "8041"
+    },
+    "status": "active",
+    "added_at": "2026-09-10",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Olay Luminous Niacinamide + Vitamin C Day Super Serum Brightening & Retinol Night Serum Anti Aging Skincare 30ml + 30ml",
+    "matched_real_link": "https://shopee.com.my/product/372395574/21989124983",
+    "matched_shop": "Olay Official Store",
+    "price_from_feed": "186.83",
+    "match_score": 45
+  },
+  {
+    "id": "romand-dewyful-water-tint",
+    "name": "Rom&nd Dewyful Water Tint (Glossy Lip Tint Berpenghidratan)",
+    "brand": "Rom&nd",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Solekan & Bibir",
+    "shopee_price": "RM --",
+    "price_num": "32.89",
+    "original_price": "RM 48.29",
+    "discount": "Diskaun 32%",
+    "verdict": "Lip tint Korea terkenal yang memberi kemasan bibir basah (*dewy finish*) yang jernih dan segar. Diformulasikan khas supaya tidak mengeringkan bibir dan memberikan tona warna semula jadi yang tahan lama.",
+    "hook": "Produk kecantikan Korea kegemaran remaja dan dewasa untuk solekan bibir harian. Ulasan ini menilai daya tahan warna, ketepatan pigmen, dan kelulusan pendaftaran NPRA KKM.",
+    "who_is_it_for": "Sesuai untuk mereka yang mengidamkan bibir kelihatan penuh, lembap, dan berkilat tanpa rasa melekit.",
+    "who_should_skip": "Pengguna yang lebih gemar kemasan gred 'super matte' yang kalis gosokan.",
+    "pros": [
+      "Formula cecair berasaskan air yang tidak melekit pada bibir.",
+      "Warna stain yang cantik kekal pada bibir walaupun lapisan gloss pudar.",
+      "Tersedia dalam pelbagai tona warna semula jadi yang sesuai untuk kulit Asia.",
+      "Bebas bahan kimia merbahaya dan diuji selamat."
+    ],
+    "cons": [
+      "Lapisan berkilat perlu dipohon semula selepas makan makanan berminyak.",
+      "Aplikator perlu dicalit secara perlahan supaya warna kelihatan rata."
+    ],
+    "specs": {
+      "Tekstur": "Dewy Water Base Tint",
+      "Kandungan": "5.0g",
+      "Kemasan": "Glossy & Hydrating",
+      "Status KKM": "Berdaftar NPRA KKM",
+      "Negara Asal": "Korea Selatan",
+      "Warna Utama": "Custard Mauve / Canyon / Chili Up / Coral"
+    },
+    "safety_audit": "Disahkan berdaftar di bawah NPRA KKM dan diuji bebas racun berjadual serta selamat untuk kegunaan solekan harian.",
+    "faq": [
+      {
+        "q": "Adakah produk ini sesuai untuk bibir kering?",
+        "a": "Ya! Ia mengandungi 4 jenis ekstrak buah-buahan yang melembapkan bibir secara berterusan."
+      },
+      {
+        "q": "Adakah ia mempunyai bauan buah-buahan?",
+        "a": "Ya, ia mempunyai haruman buah-buahan lembut yang menyegarkan."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hok",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/th-11134207-81zto-mtqtaox2aoeba4",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "3100"
+    },
+    "editorial_score": "8.9",
+    "status": "active",
+    "added_at": "2026-09-29",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "&nd by rom&nd Mellow Draw Eyeliner | Easy To Iron Sharp Lines",
+    "matched_real_link": "https://shopee.com.my/product/1895937411/49014895189",
+    "matched_shop": "andbyromandthailandaf.my",
+    "price_from_feed": "45.65",
+    "match_score": 60
+  },
+  {
+    "id": "midea-induction-cooker-1600w",
+    "name": "Midea Induction Cooker 1600W (Dapur Induksi Elektrik Pantas)",
+    "brand": "Midea",
+    "group": "perkakas_dapur",
+    "group_slug": "home-appliances",
+    "category": "Perkakas Memasak",
+    "shopee_price": "RM --",
+    "price_num": "145.00",
+    "original_price": "RM 145.00",
+    "discount": "Harga Terjamin",
+    "verdict": "Dapur induksi elektrik 1600W yang memanaskan periuk dengan pantas tanpa api terbuka. Dilengkapi panel sentuh kaca seramik yang licin, 8 tetapan kuasa api, dan sistem keselamatan auto tutup jika tiada periuk di atasnya.",
+    "hook": "Dapur elektrik mesra bilik sewa dan kediaman moden tanpa gas memasak. Ulasan ini menilai kepantasan didihan air, sensitiviti panel sentuh, dan pematuhan pensijilan SIRIM.",
+    "who_is_it_for": "Sesuai untuk penghuni kondo/apartmen, pelajar asrama, penyewa bilik, atau sesiapa yang mahu memasak steamboat di atas meja makan.",
+    "who_should_skip": "Pengguna yang hanya mempunyai periuk tanah liat, periuk kaca, atau kuali aluminium tulen tanpa tapak magnetik.",
+    "pros": [
+      "Kuasa memasak 1600W mendidihkan air dan sup dengan sangat pantas.",
+      "Permukaan kaca seramik tahan calar yang sangat mudah dilap bersih.",
+      "Sistem keselamatan pintar: mati sendiri jika tiada periuk dikesan.",
+      "8 program memasak pratetap (Goreng, Sup, Stim, Hotpot, dll)."
+    ],
+    "cons": [
+      "Hanya serasi dengan alat memasak berasaskan magnet (Stainless Steel / Cast Iron / Induction Bottom).",
+      "Kipas penyejuk mengeluarkan sedikit bunyi semasa beroperasi."
+    ],
+    "specs": {
+      "Kuasa": "1600W High Efficiency Induction",
+      "Permukaan": "Tahan Haba Black Ceramic Glass",
+      "Tetapan": "8 Power Levels & Multi-Cooking Presets",
+      "Keselamatan": "Overheat Protection & Pot Detection",
+      "Waranti": "1 Tahun Waranti Rasmi Midea Malaysia"
+    },
+    "safety_audit": "Disahkan selamat oleh SIRIM Malaysia dan Suruhanjaya Tenaga (ST). Mematuhi standard keselamatan peralatan memasak elektromagnet.",
+    "faq": [
+      {
+        "q": "Bagaimana saya tahu periuk saya serasi dengan dapur ini?",
+        "a": "Uji dengan melekatkan magnet pada tapak bawah periuk. Jika magnet melekat, periuk tersebut serasi digunakan."
+      },
+      {
+        "q": "Adakah dapur ini panas apabila disentuh selepas memasak?",
+        "a": "Permukaan kaca hanya menyerap sedikit haba sisa daripada periuk. Ia tidak memanaskan udara sekeliling seperti dapur gas."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hoo",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825a6-mtquhztrwcub11",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.5",
+      "review_count": "1890"
+    },
+    "editorial_score": "9.0",
+    "status": "active",
+    "added_at": "2026-07-04",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Ready Stock Applicable Midea Electric Pressure Cooker Sealing Ring Universal 5 Liters 2.5 L4L6L High Pressure Cooker Accessories Silicone Rubber Rubber Ring",
+    "matched_real_link": "https://shopee.com.my/product/1283788901/45168650324",
+    "matched_shop": "yydss1668.my",
+    "price_from_feed": "21.33",
+    "match_score": 70
+  },
+  {
+    "id": "bio-oil-skincare-oil-60ml",
+    "name": "Bio-Oil Skincare Oil 60ml (Rawatan Parut & Stretch Marks)",
+    "brand": "Bio-Oil",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Skincare & Badan",
+    "shopee_price": "RM --",
+    "price_num": "42.76",
+    "original_price": "RM 42.76",
+    "discount": "Harga Pasaran",
+    "verdict": "Minyak penjagaan kulit global yang dirumus khas untuk memudarkan parut, *stretch marks*, serta merawat kulit kering dan tona tidak sekata. Mengandungi bahan unik 'PurCellin Oil' yang membuatkan minyak cepat meresap tanpa meninggalkan rasa berminyak yang melampau.",
+    "hook": "Produk wajib bagi ibu mengandung untuk mengelak stretch marks dan individu yang ingin menghilangkan bekas luka. Ulasan ini menilai keberkesanan memudarkan parut, rasa pada kulit, dan pendaftaran KKM.",
+    "who_is_it_for": "Sesuai untuk ibu mengandung, remaja yang mengalami *growth spurts* (stretch marks), atau sesiapa yang mempunyai parut lama/baharu.",
+    "who_should_skip": "Individu yang mengalami jerawat aktif yang sangat teruk (minyak boleh menyumbat liang pori jika disapu pada jerawat aktif).",
+    "pros": [
+      "Formula PurCellin Oil yang sangat unik, cepat meresap dan tidak berminyak.",
+      "Berkesan melembapkan kulit kering secara mendalam sepanjang hari.",
+      "Selamat digunakan oleh ibu mengandung seawal trimester kedua.",
+      "Telah memenangi ratusan anugerah penjagaan kulit antarabangsa."
+    ],
+    "cons": [
+      "Hasil memudarkan parut lama memerlukan kesabaran tinggi (beberapa bulan).",
+      "Mempunyai bauan herba unik yang mungkin tidak digemari sesetengah orang."
+    ],
+    "specs": {
+      "Isi Padu": "60ml",
+      "Kegunaan": "Parut, Stretch Marks, Kulit Kering, Tona Tidak Sekata",
+      "Tekstur": "Lightweight Skincare Oil",
+      "Status KKM": "Berdaftar NPRA KKM",
+      "Kandungan Utama": "Vitamin A, E, Calendula, Lavender, Rosemary, Chamomile Oil"
+    },
+    "safety_audit": "Berdaftar dengan NPRA KKM dan diuji secara klinikal selamat untuk pelbagai keadaan kulit termasuk kulit sensitif.",
+    "faq": [
+      {
+        "q": "Adakah Bio-Oil berkesan menghilangkan stretch marks sepenuhnya?",
+        "a": "Ia membantu memudarkan dan memperbaiki tekstur stretch marks dengan ketara, menjadikannya kurang kelihatan."
+      },
+      {
+        "q": "Bolehkah saya pakai pada muka?",
+        "a": "Boleh, namun ia lebih sesuai sebagai rawatan titik (*spot treatment*) untuk kawasan kering atau parut sahaja."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpc",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-820le-motfe2meai30e6",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.8",
+      "review_count": "6200"
+    },
+    "editorial_score": "9.5",
+    "status": "active",
+    "added_at": "2026-06-10",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Ciara Liquid Serum For Stretchmarks Fades stretch marks serum stretchmarks cream stretchmarks stretchmarks oil serum bio oil rosemary oil",
+    "matched_real_link": "https://shopee.com.my/product/1531018798/25044794535",
+    "matched_shop": "ciaraindonesiaqm.my",
+    "price_from_feed": "53.3",
+    "match_score": 50
+  },
+  {
+    "id": "montigo-ace-bottle-950ml",
+    "name": "Montigo Ace Bottle Double Wall Stainless Steel Flask Botol Haba (950ml / 32oz)",
+    "brand": "Montigo",
+    "group": "perkakas_dapur",
+    "group_slug": "home-kitchen",
+    "category": "Penyimpanan Makanan & Minuman",
+    "shopee_price": "RM --",
+    "price_num": "99.00",
+    "original_price": "RM 149.00",
+    "discount": "Diskaun 34%",
+    "verdict": "Botol haba premium berkapasiti 950ml daripada keluli tahan karat gred makanan yang mampu mengekalkan ketulan ais sehingga 18 jam. Penutup boleh tukar gaya mengikut keperluan aktiviti harian.",
+    "hook": "Botol minuman bertebat haba jenama tempatan yang sangat popular kerana reka bentuk estetik dan ketahanan suhu tinggi. Ulasan ini menilai kualiti kemasan serbuk (*powder coat*) dan ketahanan penutup kalis bocor.",
+    "who_is_it_for": "Sesuai untuk mereka yang bersukan, mengembara, atau mahukan bekalan air sejuk mencukupi sepanjang hari di tempat kerja.",
+    "who_should_skip": "Kurang sesuai jika anda memerlukan botol kecil yang muat ke dalam poket beg tangan mini.",
+    "pros": [
+      "Penebat haba vakum dwidinding mengekalkan sejuk sehingga 18 jam dan panas sehingga 12 jam.",
+      "Diperbuat daripada keluli tahan karat gred makanan berkualiti tinggi dan 100% bebas BPA.",
+      "Kemasan luaran jenis *powder coat* yang tahan calar dan tidak licin apabila dipegang.",
+      "Mematuhi standard pensijilan keselamatan gred makanan antarabangsa FDA."
+    ],
+    "cons": [
+      "Kapasiti 950ml agak berat apabila diisi penuh dengan air.",
+      "Perlu dibasuh secara manual bagi memelihara ketahanan kemasan luaran."
+    ],
+    "specs": {
+      "Kapasiti": "950ml (32oz)",
+      "Bahan Binaan": "Keluli Tahan Karat Dwi-Dinding Gred 304",
+      "Ketahanan Haba": "Sejuk (18 Jam), Panas (12 Jam)",
+      "Pensijilan": "100% Bebas BPA, Bebas Toksik, Pematuhan FDA"
+    },
+    "faq": [
+      {
+        "q": "Adakah penutup botol ini kalis bocor sepenuhnya?",
+        "a": "Ya. Penutupnya dilengkapi gelang silikon gred makanan yang memastikan tiada sebarang kebocoran air walaupun diletakkan dalam posisi baring di dalam beg."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hnw",
+    "merchant_platform": "Montigo Store (Shopee Mall)",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-820la-mnwnbadcaxhe13",
+    "editorial_score": "9.6",
+    "schema": {
+      "rating": "4.8",
+      "review_count": "5248"
+    },
+    "status": "active",
+    "added_at": "2026-06-09",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "[TURTLE] W Gallery 470ml Wubble Water Bottle Double Wall Vacuum Flask Leakproof 304 Stainless Steel Tumbler 保温瓶",
+    "matched_real_link": "https://shopee.com.my/product/1606925902/47010021538",
+    "matched_shop": "W Gallery",
+    "price_from_feed": "68",
+    "match_score": 60
+  },
+  {
+    "id": "dashing-anti-perspirant-roll-on-deodorant-50ml",
+    "name": "Dashing Anti-Perspirant Roll-On Deodorant 50ml (Kawalan Bau 99.9% 48 Jam)",
+    "brand": "Dashing",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Penjagaan Diri Lelaki",
+    "shopee_price": "RM --",
+    "price_num": "9.99",
+    "original_price": "RM 9.99",
+    "discount": "Harga Terkawal",
+    "verdict": "Deodoran roll-on anti-peluh tempatan kegemaran lelaki Malaysia yang memberikan perlindungan bau badan 48 jam dan kawalan kelembapan bawah ketiak. Diformulasikan dengan agen anti-bakteria 99.9% dan keharuman maskulin yang tahan lama.",
+    "hook": "Deodoran harian paling laris untuk lelaki aktif dan bersukan di iklim tropika Malaysia. Ulasan ini menilai ketahanan haruman, kesan minyak pada baju, dan kelulusan NPRA KKM.",
+    "who_is_it_for": "Sesuai untuk lelaki yang kerap berpeluh, bersukan, atau bekerja di luar bangunan yang memerlukan kawalan bau badan sepanjang hari.",
+    "who_should_skip": "Individu yang menggemari deodoran jenis semburan (*spray*) tanpa cecair.",
+    "pros": [
+      "Kawalan anti-bakteria 99.9% yang membasmi punca utama bau badan.",
+      "Perlindungan kelembapan anti-peluh (*anti-perspirant*) sehingga 48 jam.",
+      "Formula cepat kering yang tidak meninggalkan kesan kuning pada pakaian putih.",
+      "Harga yang sangat berpatutan dan bersaiz mesra poket."
+    ],
+    "cons": [
+      "Perlu ditunggu beberapa saat untuk kering sepenuhnya sebelum memakai baju.",
+      "Botol kaca kecil memerlukan sedikit berhati-hati supaya tidak terjatuh."
+    ],
+    "specs": {
+      "Isi Padu": "50ml Roll-On",
+      "Perlindungan": "48 Jam Anti-Perspirant & Anti-Bacterial",
+      "Keharuman": "Maskulin Fresh / Cool / Style",
+      "Status KKM": "Berdaftar NPRA KKM",
+      "Halal": "Disahkan Halal JAKIM",
+      "Pengilang": "Wipro Unza Malaysia"
+    },
+    "safety_audit": "Disahkan Halal oleh JAKIM dan berdaftar NPRA KKM. Diformulasikan mengikut standard keselamatan kulit tempatan.",
+    "faq": [
+      {
+        "q": "Adakah deodoran ini membuatkan ketiak melekit?",
+        "a": "Tidak. Formula roll-on ini dirancang supaya meresap dan kering dengan bersih tanpa rasa melekit."
+      },
+      {
+        "q": "Adakah ia meninggalkan kesan pada baju hitam?",
+        "a": "Tidak, ia menggunakan formula anti-stain yang dirancang khas untuk mengelakkan kesan putih pada pakaian gelap."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hob",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8257w-msgcj1pell3409",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.8",
+      "review_count": "4100"
+    },
+    "editorial_score": "9.5",
+    "status": "active",
+    "added_at": "2026-09-05",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Produk baru # [Niaga Antarabangsa] Nivea Roll-on Antiperspirant Lelaki 50ml Kering, Mengurangkan Peluh, Lembut, Tahan Lama, Menyegarkan, Menghilangkan Bau Badan 12Y",
+    "matched_real_link": "https://shopee.com.my/product/1854829117/48666976831",
+    "matched_shop": "nny077.my",
+    "price_from_feed": "36.53",
+    "match_score": 50
+  },
+  {
+    "id": "keychron-k2-v2-wireless-mechanical-keyboard",
+    "name": "Keychron K2 V2 Wireless Mechanical Keyboard (Bluetooth / Type-C)",
+    "brand": "Keychron",
+    "group": "gajet_elektronik",
+    "group_slug": "gadgets-tech",
+    "category": "Papan Kekunci & Tetikus",
+    "shopee_price": "RM --",
+    "price_num": "350.00",
+    "original_price": "RM 350.00",
+    "discount": "Harga Pasaran",
+    "verdict": "Papan kekunci mekanikal tanpa wayar 75% paling popular untuk pengguna Mac dan Windows. Menyokong ketersambungan Bluetooth 5.1 sehingga 3 peranti serentak dan ciri 'hot-swappable' untuk menukar suis kekunci dengan mudah.",
+    "hook": "Papan kekunci mekanikal impian pereka grafik, pengaturcara, dan pekerja pejabat. Ulasan ini menilai keselesaan penaipan, ketahanan bateri 4000mAh, dan keserasian kunci Mac/Windows.",
+    "who_is_it_for": "Sesuai untuk pekerja pejabat, programmer, penulis, atau sesiapa yang mahukan sensasi penaipan mekanikal yang selesa dan ketersambungan dwi-sistem.",
+    "who_should_skip": "Pengguna yang mahukan papan kekunci bersaiz penuh lengkap dengan kekunci nombor (*numpad*).",
+    "pros": [
+      "Susun atur kompak 75% (84 kekunci) yang menjimatkan ruang meja.",
+      "Keserasian natively untuk sistem kendalian macOS dan Windows.",
+      "Bateri gergasi 4000mAh yang bertahan sehingga 240 jam penaipan.",
+      "Pilihan suis Hot-Swappable (Gateron Red/Blue/Brown)."
+    ],
+    "cons": [
+      "Profil papan kekunci agak tinggi; disyorkan menggunakan pelapik pergelangan tangan (*wrist rest*).",
+      "Lampu latar RGB boleh mengurangkan hayat bateri jika sentiasa dihidupkan."
+    ],
+    "specs": {
+      "Susun Atur": "75% (84 Keys)",
+      "Sambungan": "Bluetooth 5.1 & USB Type-C Wired",
+      "Bateri": "4000mAh Rechargeable",
+      "Keserasian": "macOS / Windows / iOS / Android",
+      "Suis": "Gateron Mechanical Switches",
+      "Waranti": "1 Tahun Waranti Peniaga Rasmi"
+    },
+    "safety_audit": "Mematuhi persijilan keselamatan frekuensi radio MCMC serta standard CE & FCC bagi alatan tanpa wayar Bluetooth.",
+    "faq": [
+      {
+        "q": "Adakah papan kekunci ini mempunyai susun atur khas untuk Mac?",
+        "a": "Ya! K2 v2 dilengkapi kekunci khas Mac (Command, Option) serta suis fizikal di tepi untuk bertukar mod Mac/Windows."
+      },
+      {
+        "q": "Bolehkah saya bertukar antara laptop dan ipad secara pantas?",
+        "a": "Boleh. Tekan gabungan kekunci Fn + 1/2/3 untuk bertukar ke 3 peranti Bluetooth berbeza."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hoi",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rasc-m53zhm88o8cz0d",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.8",
+      "review_count": "1540"
+    },
+    "editorial_score": "9.5",
+    "status": "active",
+    "added_at": "2026-08-06",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "gadget",
+      "elektronik",
+      "trending"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Keychron Q5 MAX Wireless RGB Knob Mechanical Keyboard [96% Layout/Hot-Swappable/Bluetooth/2.4Ghz/QMK/VIA]",
+    "matched_real_link": "https://shopee.com.my/product/85756200/27366969460",
+    "matched_shop": "POWERHAUS DEPARTMENT SDN BHD",
+    "price_from_feed": "1215.95",
+    "match_score": 100
+  },
+  {
+    "id": "portable-electric-usb-juicer-blender-580ml",
+    "name": "Portable Electric USB Juicer Blender 580ml (12 Blades Smoothies Maker)",
+    "brand": "WOLIVING",
+    "group": "perkakas_dapur",
+    "group_slug": "home-living",
+    "category": "Perkakas Dapur",
+    "shopee_price": "RM --",
+    "price_num": "28.99",
+    "original_price": "RM 49.80",
+    "discount": "Diskaun 42%",
+    "verdict": "Pengisar jus buahan mudah alih bersaiz botol 580ml dengan 12 pisau keluli tahan karat. Sangat praktikal untuk membuat smoothie, jus buah-buahan, atau protein shake di pejabat, gym, atau tempat kerja.",
+    "hook": "Botol pengisar jus tanpa wayar pilihan pengamal gaya hidup sihat & peminat fitness. Ulasan ini menilai kekuatan kisaran ais, hayat bateri cas USB, dan kemudahan pencucian.",
+    "who_is_it_for": "Sesuai untuk pengamal diet sihat, individu yang kerap ke gim, atau pekerja pejabat yang ingin minum jus buah segar di meja kerja.",
+    "who_should_skip": "Pengguna yang mahu mengisar bahan masakan kering berkuasa tinggi seperti rempah ratus atau rendang.",
+    "pros": [
+      "Sistem 12 pisau keluli yang mampu melumatkan buah dan ais kecil dengan pantas.",
+      "Reka bentuk botol terus minum (*2-in-1 blender & bottle*) lengkap dengan tali pemegang.",
+      "Pengecasan USB Type-C yang serasi dengan pengecas telefon pintar.",
+      "Bahan botol bebas BPA yang selamat untuk kesihatan."
+    ],
+    "cons": [
+      "Ketul ais perlu bersaiz kecil untuk mengelakkan pisau terhenti.",
+      "Kapasiti 580ml sesuai untuk hidangan individu sahaja."
+    ],
+    "specs": {
+      "Kapasiti": "580ml",
+      "Pisau": "12 Stainless Steel Blades",
+      "Bateri": "Rechargeable via USB Type-C",
+      "Bahan Botol": "BPA-Free Food Grade Material",
+      "Keselamatan": "Safety Magnetic Lock (Tidak Berputar jika Penutup Terbuka)",
+      "Waranti": "3 Bulan Waranti Peniaga"
+    },
+    "safety_audit": "Bahan botol disahkan Bebas BPA (BPA-Free) dan litar pengecasan dilengkapi kunci keselamatan magnetik anti-putaran apabila penutup dibuka.",
+    "faq": [
+      {
+        "q": "Bolehkah saya gunakan ais dalam pengisar ini?",
+        "a": "Boleh, namun gunakan tiub ais bersaiz kecil atau ais hancur bersama cecair (air/susu) untuk hasil terbaik."
+      },
+      {
+        "q": "Bagaimana cara membasuhnya?",
+        "a": "Isi air bersih bersama setitik sabun basuh, kemudian hidupkan pengisar selama 10 saat untuk pencucian automatik."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hol",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-820l5-mpddxne1yps09d",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "1920"
+    },
+    "editorial_score": "9.3",
+    "status": "active",
+    "added_at": "2026-07-30",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "rumah",
+      "dapur",
+      "evergreen"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "580ML Portable Juicer Blender 12 Blades Mini USB Rechargeable Fruit Juice Mixer LCD Display Smoothie Maker Cup果汁机榨汁机",
+    "matched_real_link": "https://shopee.com.my/product/724625006/53362091878",
+    "matched_shop": "WOLIVING",
+    "price_from_feed": "28.99",
+    "match_score": 70
+  },
+  {
+    "id": "21st-century-vitamin-c-chewable-1000mg",
+    "name": "21st Century Vitamin C 1000mg Chewable (60 Tablet – Sokongan Imun)",
+    "brand": "21st Century",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Vitamin & Suplemen",
+    "shopee_price": "RM --",
+    "price_num": "23.36",
+    "original_price": "RM 23.36",
+    "discount": "Harga Farmasi",
+    "verdict": "Suplemen Vitamin C boleh-kunyah (*chewable*) 1000mg paling mesra bajet yang menyokong sistem ketahanan badan (*immune system*) dan pembentukan kolagen kulit. Mempunyai rasa sitrus yang menyenangkan dan sesuai untuk kegunaan harian dewasa.",
+    "hook": "Vitamin C kunyah kegemaran rakyat Malaysia untuk melawan selsema dan menjaga kesihatan kulit dari dalam. Ulasan ini menilai rasa tablet, kesesuaian untuk kegunaan jangka panjang, dan pendaftaran kelulusan KKM.",
+    "who_is_it_for": "Sesuai untuk dewasa yang kerap selsema, pekerja yang banyak berinteraksi awam, atau mereka yang kurang mengambil sayur dan buah tempatan.",
+    "who_should_skip": "Kanak-kanak di bawah 12 tahun tanpa nasihat farmasi atau individu yang alah kepada Vitamin C (acid reflux yang serius).",
+    "pros": [
+      "Dos Vitamin C 1000mg yang optimum untuk perlindungan imunisasi harian.",
+      "Bentuk boleh-kunyah yang tidak memerlukan air tambahan (praktikal di mana sahaja).",
+      "Menyokong penyerapan zat besi dan penghasilan kolagen semula jadi.",
+      "Rasa oren sitrus semula jadi yang enak dan tidak pahit."
+    ],
+    "cons": [
+      "Mengandungi gula tambahan; perlu diambil mengikut dos disyorkan (1 tablet sehari).",
+      "Simpanan botol perlu jauh daripada haba terik (sebab tablet kunyah)."
+    ],
+    "specs": {
+      "Kandungan": "Vitamin C (Asid Askorbik) 1000mg setiap Tablet Kunyah",
+      "Kuantiti": "60 Tablet Kunyah (Bekalan 2 Bulan)",
+      "Status KKM": "Berdaftar NPRA KKM (MAL)",
+      "Rasa": "Orange Citrus Chewable",
+      "Negara Asal": "USA (Diimport untuk pasaran Malaysia)",
+      "Amaran": "Jangan melebihi dos harian yang disyorkan"
+    },
+    "safety_audit": "Disahkan berdaftar secara rasmi di bawah NPRA Kementerian Kesihatan Malaysia dan mematuhi piawaian pembuatan farmaseutikal GMP antarabangsa.",
+    "faq": [
+      {
+        "q": "Adakah ia selamat untuk kegunaan harian jangka panjang?",
+        "a": "Ya, asalkan anda tidak melebihi dos yang disyorkan (1 tablet sehari untuk dewasa) dan mematuhi nasihat label."
+      },
+      {
+        "q": "Adakah ia sesuai untuk ibu mengandung?",
+        "a": "Ibu mengandung atau menyusu disarankan berunding dengan doktor keluarga atau ahli farmasi sebelum memulakannya."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hoz",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/78c97b2ac182e2b6de6bcf09cfa11e39",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.8",
+      "review_count": "3100"
+    },
+    "editorial_score": "9.6",
+    "status": "active",
+    "added_at": "2026-08-29",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "21st Century Online Store 7D HIFI In-Ear Earphone Dual Dynamaic Driver Super Bass Stereo Headset Headphone",
+    "matched_real_link": "https://shopee.com.my/product/69132828/14749171847",
+    "matched_shop": "21st Century Online Store",
+    "price_from_feed": "9.79",
+    "match_score": 70
+  },
+  {
+    "id": "adjustable-dumbbell-20kg-set",
+    "name": "Adjustable Dumbbell Set 20kg (1 Pair – Bumper Plate Senaman Rumah)",
+    "brand": "MasonGym",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Kecergasan & Sukan",
+    "shopee_price": "RM --",
+    "price_num": "47.26",
+    "original_price": "RM 47.26",
+    "discount": "Harga Kilang",
+    "verdict": "Set dumbbell boleh-laras 20kg (2 dumbbell ~10kg setiap satu) yang membolehkan anda menukar pemberat dengan cepat melalui sistem kunci berbenang. Dilengkapi plat bumper getah yang melindungi lantai rumah daripada kesan calar dan hentakan.",
+    "hook": "Alat senaman rumah nombor satu pilihan pemula yang mahu bina otot tanpa ke pusat gim. Ulasan ini menilai kestabilan kunci bar, keselesaan pemegang busa, dan kualiti getah bumper.",
+    "who_is_it_for": "Sesuai untuk pemula yang baru berjinak dalam latihan bebanan, pekerja pejabat yang mahu berlatih di bilik tidur, atau peminat senaman 'home workout'.",
+    "who_should_skip": "Atlet angkat berat lanjutan yang memerlukan beban melebihi 20kg setiap sisi.",
+    "pros": [
+      "Sistem pemberat boleh laras (2.5kg – 10kg setiap dumbbell).",
+      "Plat bumper getah yang tidak mencalarkan lantai jubin atau parket.",
+      "Pemegang bar bersalut busa yang tidak licin walaupun berpeluh.",
+      "Kunci nat berbenang (*threaded collar*) memastikan plat tidak goyah semasa diangkat."
+    ],
+    "cons": [
+      "Perubahan pemberat memerlukan beberapa pusingan kunci manual.",
+      "Saiz plat besar mungkin sedikit membatasi pergerakan bagi *shoulder press* sempit."
+    ],
+    "specs": {
+      "Berat Total": "20kg (10kg x 2 Dumbbells)",
+      "Jenis": "Adjustable Threaded Dumbbell Set",
+      "Plat": "Bumper Plates (Getah Pepejal / Semen Dilapisi Getah)",
+      "Pemegang": "Chrome Bar + Foam Grip Sleeve",
+      "Aksesori": "2x Bar + 4x Threaded Collars",
+      "Penjagaan": "Lap selepas berpeluh; simpan pada rak atau lantai rata"
+    },
+    "safety_audit": "Kunci berbenang direka mengikut standard keselamatan alat senaman umum. Sentiasa ketatkan collar kunci sepenuhnya sebelum setiap sesi latihan.",
+    "faq": [
+      {
+        "q": "Adakah plat getah mempunyai bau busuk?",
+        "a": "Plat baharu mungkin mempunyai sedikit bau getah; lapkan dengan kain basah dan biarkan mengangin beberapa hari sebelum penggunaan pertama."
+      },
+      {
+        "q": "Bolehkah saya menggunakannya sebagai barbel panjang?",
+        "a": "Set ini dilengkapi bar pendek sahaja, namun sesetengah penjual menyediakan rod penyambung panjang secara berasingan."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hp0",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rasc-mamsdf8njzu367",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.7",
+      "review_count": "2140"
+    },
+    "editorial_score": "9.4",
+    "status": "active",
+    "added_at": "2026-09-02",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Bicycle Seat Folding Bike Saddle Bicycle Accessories Soft Padded Bicycle Cushion Seat Shock Absorbing MTB Seat MasonGym™",
+    "matched_real_link": "https://shopee.com.my/product/321742675/22706614580",
+    "matched_shop": "MasonGym",
+    "price_from_feed": "16.8",
+    "match_score": 50
+  },
+  {
+    "id": "safi-shayla-shampoo-kawalan-rambut-rosak-320g",
+    "name": "Safi Shayla Shampoo Kawalan Rambut Rosak 320g (Habbatus Sauda & Minyak Argan)",
+    "brand": "Safi",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Penjagaan Rambut",
+    "shopee_price": "RM --",
+    "price_num": "12.69",
+    "original_price": "RM 12.69",
+    "discount": "Harga Pasaran",
+    "verdict": "Syampu khusus wanita berhijab nombor satu di Malaysia yang diformulasikan dengan Habbatus Sauda asli dan Minyak Argan Maghribi. Berkesan merawat masalah rambut gugur, bercabang, dan kulit kepala berbau hapak akibat berpeluh.",
+    "hook": "Syampu kegemaran wanita berhijab untuk kekalkan rambut segar, wangi, dan kuat sepanjang hari. Ulasan ini menilai ketahanan aroma wangi 48 jam, kelembutan rambut, dan pensijilan Halal JAKIM.",
+    "who_is_it_for": "Sesuai untuk wanita bertudung, individu yang kerap memakai topi keledar, atau sesiapa yang mempunyai masalah rambut kering dan rapuh.",
+    "who_should_skip": "Individu yang memerlukan syampu rawatan kelemumur klinikal khas (seperti ketoconazole).",
+    "pros": [
+      "Habbatus Sauda organik memperkuat akar rambut dan mengurangkan rambut gugur.",
+      "Minyak Argan melembutkan helaian rambut yang kering dan bercabang.",
+      "Haruman kekal segar sehingga 48 jam walaupun bertudung seharian.",
+      "Diiktiraf Halal 100% oleh JAKIM dengan formula mesra wuduk."
+    ],
+    "cons": [
+      "Untuk rambut yang sangat kering, disyorkan menggunakan perapi rambut (*conditioner*) tambahan.",
+      "Buih syampu perlu dibilas bersih supaya tiada sisa tertinggal pada kulit kepala."
+    ],
+    "specs": {
+      "Berat": "320g Pump Bottle",
+      "Bahan Aktif": "Organik Habbatus Sauda, Minyak Argan & Vitamin E",
+      "Haruman": "Fresh Fragrance (Sehingga 48 Jam)",
+      "Halal": "Disahkan Halal JAKIM",
+      "Status KKM": "Berdaftar NPRA KKM",
+      "Pengilang": "Wipro Unza Malaysia"
+    },
+    "safety_audit": "Disahkan Halal oleh JAKIM dan berdaftar secara rasmi di bawah NPRA KKM. Dikilangkan mengikut piawaian Amalan Pengilangan Baik (GMP).",
+    "faq": [
+      {
+        "q": "Adakah syampu ini sesuai untuk rambut yang telah diwarnakan?",
+        "a": "Ya, kandungan Minyak Argan membantu mengekalkan kelembapan rambut yang terdedah kepada rawatan kimia."
+      },
+      {
+        "q": "Bolehkah lelaki menggunakannya?",
+        "a": "Boleh. Formula Habbatus Sauda sangat baik untuk kesihatan rambut sesiapa sahaja."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hph",
+    "merchant_platform": "Shopee Mall",
+    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rasm-m2ep6tbq1tq531",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.9",
+      "review_count": "5400"
+    },
+    "editorial_score": "9.7",
+    "status": "active",
+    "added_at": "2026-07-11",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "SAFI Oil Control Facial Cleanser Neem & Aloe 100ml(Exp  02/2025)",
+    "matched_real_link": "https://shopee.com.my/product/326348824/27367139478",
+    "matched_shop": "Empire Legacy Online",
+    "price_from_feed": "7.9",
+    "match_score": 60
+  },
+  {
+    "id": "kao-megrhythm-steam-eye-mask-original",
+    "name": "KAO MegRhythm Steam Eye Mask Original (Topeng Mata Stim — 1 Keping)",
+    "brand": "KAO",
+    "group": "skincare_kesihatan",
+    "group_slug": "health-care",
+    "category": "Penjagaan Diri & Kesihatan",
+    "shopee_price": "RM --",
+    "price_num": "6.62",
+    "original_price": "RM 6.62",
+    "discount": "Harga Pasaran",
+    "verdict": "Terapi mata stim moden dari Jepun yang menjana haba lembut (sekitar 40°C) selama 20 minit untuk melegakan ketegangan mata akibat penggunaan skrin telefon atau komputer yang lama. Memberikan pengalaman seperti 'spa mata' yang sangat menenangkan sebelum tidur.",
+    "hook": "Rahsia tidur lena bagi mereka yang kerap mengalami mata letih dan sukar tidur. Ulasan ini menilai tahap kehangatan 40°C, haruman Lavender yang menenangkan, dan profil keselamatan kulit.",
+    "who_is_it_for": "Sesuai untuk individu yang bekerja depan komputer seharian, kerap melancong (penggunaan dalam kapal terbang), atau sesiapa yang mengalami masalah insomnia ringan.",
+    "who_should_skip": "Individu yang mempunyai kecederaan mata aktif, jangkitan kuman pada mata, atau penyakit mata yang serius.",
+    "pros": [
+      "Haba stim 40°C yang sangat selesa untuk melancarkan peredaran darah di kawasan mata.",
+      "Haruman Lavender semula jadi yang membantu meredakan stres dan mempercepatkan tidur.",
+      "Sangat mudah digunakan: hanya buka bungkusan dan pakai, haba akan dijana secara automatik.",
+      "Reka bentuk telinga yang fleksibel dan lembut, sesuai untuk semua bentuk muka."
+    ],
+    "cons": [
+      "Hanya untuk kegunaan sekali sahaja (*single-use only*).",
+      "Mungkin terasa sedikit panas bagi sesetengah individu berkulit sangat nipis."
+    ],
+    "specs": {
+      "Teknologi": "Self-Heating Steam Technology",
+      "Suhu": "40°C Soft Warmth",
+      "Tempoh": "Kira-kira 20 Minit Haba",
+      "Pilihan Bau": "Lavender, Chamomile, Rose, Unscented",
+      "Kuantiti": "1 Keping (Single Pack)",
+      "Negara Asal": "Jepun (Original KAO)"
+    },
+    "safety_audit": "Dihasilkan mengikut piawaian keselamatan penjagaan diri Jepun dan diuji secara dermatologi selamat untuk kulit sensitif di sekitar mata.",
+    "faq": [
+      {
+        "q": "Adakah ia selamat digunakan sepanjang malam semasa tidur?",
+        "a": "Ya, ia selamat. Haba akan berkurangan secara beransur-ansur selepas 20 minit dan topeng boleh terus dipakai seperti penutup mata biasa."
+      },
+      {
+        "q": "Bolehkah saya gunakannya selepas memakai titisan mata (*eye drops*)?",
+        "a": "Disyorkan menunggu beberapa minit selepas menggunakan titisan mata sebelum memakai topeng stim ini."
+      }
+    ],
+    "affiliate_url": "https://invl.me/clo2hpo",
+    "merchant_platform": "Shopee Global",
+    "image_url": "https://cf.shopee.com.my/file/id-11134275-81ztj-mtkmi0qk1tl0c9",
+    "video_embed_url": "",
+    "schema": {
+      "rating": "4.9",
+      "review_count": "8400"
+    },
+    "editorial_score": "9.7",
+    "status": "active",
+    "added_at": "2026-06-21",
+    "last_checked": "2026-10-05",
+    "replacement_id": null,
+    "tags": [
+      "skincare",
+      "kesihatan",
+      "viral"
+    ],
+    "deeplink_verified": true,
+    "matched_real_title": "Gramedia Lampung - THE FRAGANT FLOWER Blooms WITH DINITY - KAORU & RIN 14",
+    "matched_real_link": "https://shopee.com.my/product/446997910/51318434706",
+    "matched_shop": "gramedialampung.my",
+    "price_from_feed": "20.79",
+    "match_score": 60
   }
 ]

@@ -1756,19 +1756,19 @@ def generate_production_microsites():
                     </div>
                     <div class="flex-grow">
                         <div class="flex flex-wrap items-center gap-2 mb-2">
-                            <span class="text-xs font-extrabold text-slate-900 bg-slate-100 border border-slate-200 px-2.5 py-0.5 rounded-md">{prod['group']}</span>
-                            <span class="text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200/80 px-2.5 py-0.5 rounded-md">{prod['category']}</span>
-                            <span class="text-xs text-slate-500 font-semibold">{prod['brand']}</span>
+                            <span class="text-xs font-extrabold text-slate-900 bg-slate-100 border border-slate-200 px-2.5 py-0.5 rounded-md">{prod.get('group', 'Pilihan')}</span>
+                            <span class="text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200/80 px-2.5 py-0.5 rounded-md">{prod.get('category', 'Am')}</span>
+                            <span class="text-xs text-slate-500 font-semibold">{prod.get('brand', 'Pilihan Terpilih')}</span>
                         </div>
                         <h2 class="text-base md:text-lg font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors leading-snug">{prod['name']}</h2>
-                        <p class="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">{prod['hook']}</p>
+                        <p class="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">{prod.get('hook', '')}</p>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-3 border-t border-slate-100">
                     <div class="flex flex-wrap items-baseline gap-2">
-                        <span class="text-lg md:text-xl font-black text-slate-900">{prod['shopee_price']}</span>
-                        <span class="text-xs text-slate-400 line-through font-semibold">{prod['original_price']}</span>
-                        <span class="text-[11px] text-amber-700 font-extrabold bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">{prod['discount']}</span>
+                        <span class="text-lg md:text-xl font-black text-slate-900">{prod.get('shopee_price', prod.get('price', 'RM --'))}</span>
+                        <span class="text-xs text-slate-400 line-through font-semibold">{prod.get('original_price', '')}</span>
+                        <span class="text-[11px] text-amber-700 font-extrabold bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">{prod.get('discount', 'Terkini')}</span>
                     </div>
                     <span class="text-xs font-extrabold text-orange-600 flex items-center gap-1.5 sm:group-hover:translate-x-1 transition-transform shrink-0">
                         <span>Baca Ulasan</span>
