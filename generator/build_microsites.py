@@ -1300,6 +1300,19 @@ def generate_production_microsites():
     dist_dir = os.path.join(base_dir, "dist")
     os.makedirs(dist_dir, exist_ok=True)
 
+    # Salin halaman statik trust (about, editorial-policy, privacy-policy, contact)
+    # daripada /static ke /dist supaya tidak hilang semasa rebuild.
+    static_dir = os.path.join(base_dir, "static")
+    if os.path.isdir(static_dir):
+        import shutil
+        copied = 0
+        for fn in os.listdir(static_dir):
+            if fn.endswith(".html"):
+                shutil.copy2(os.path.join(static_dir, fn), os.path.join(dist_dir, fn))
+                copied += 1
+        if copied:
+            print(f" Copied {copied} static trust pages from /static to /dist.")
+
     with open(data_path, "r", encoding="utf-8") as f:
         products = json.load(f)
 
