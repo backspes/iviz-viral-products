@@ -1126,11 +1126,37 @@ def validate_problem_hub_guardrails(products):
 
 def classify_category(p):
     text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
-    if any(k in text for k in ["serum","sunscreen","sunblock","cleanser","toner","moisturizer","skincare","ceramide","retinol","kkm","npra","jerawat","jeragat","kulit","collagen","vitamin c","brightening","whitening","spf"]): return "skincare"
-    if any(k in text for k in ["kerusi","keyboard","papan kekunci","desk","standing desk","light bar","ergonom","gaming chair"]): return "setup_wfh"
-    if any(k in text for k in ["air fryer","rice cooker","periuk","pressure cooker","blender","chopper","cooker","dapur","masak","pan","kuali","steamer"]): return "dapur"
-    if any(k in text for k in ["earbuds","earphone","tws","fon telinga","powerbank","charger","pengecas","kabel","cable","dashcam","ugreen","baseus","smartwatch","jam tangan","bluetooth"]): return "gajet"
-    # Rumah Pintar & Gaya Hidup
+    
+    # 1. Skincare & Kesihatan
+    if any(k in text for k in ["serum","sunscreen","sunblock","cleanser","toner","moisturizer","skincare","ceramide","retinol","kkm","npra","jerawat","jeragat","kulit","collagen","vitamin c","brightening","whitening","spf","shampoo","syampu","face wash","facial"]):
+        return "skincare"
+        
+    # 2. Setup Meja WFH (Ergonomik & Ruang Kerja)
+    if any(k in text for k in ["kerusi","keyboard","papan kekunci","desk","standing desk","light bar","ergonom","gaming chair","laptop stand","lumbar","backrest","monitor"]):
+        return "setup_wfh"
+        
+    # 3. Perkakas Dapur & Memasak
+    if any(k in text for k in ["air fryer","rice cooker","periuk","pressure cooker","blender","chopper","cooker","dapur","masak","pan","kuali","steamer","pengukus","kettle","cerek","grinder","pengisar","juicer","lunch box","tumbler"]):
+        return "dapur"
+        
+    # 4. Gajet & Elektronik
+    if any(k in text for k in ["earbuds","earphone","tws","fon telinga","powerbank","charger","pengecas","kabel","cable","dashcam","ugreen","baseus","smartwatch","jam tangan","bluetooth","usb-c","audio"]):
+        return "gajet"
+        
+    # 5. Rumah Pintar & Pembersihan (Mesti eksplisit, bukan fallback buta)
+    if any(k in text for k in ["vacuum","vakum","purifier","penapis udara","humidifier","smart led","lampu pintar","router","penghala","steam iron","iron","mop","deodorizer","dust mite"]):
+        return "rumah_pintar"
+
+    # Jika produk rumah umum lain yang sah
+    if any(k in text for k in ["stor","drawer","rak","cermin","penyimpan","organizer"]):
+        return "rumah_pintar"
+
+    # Default fallback berasaskan category asal data
+    cat_orig = p.get("category","").lower()
+    if "dapur" in cat_orig: return "dapur"
+    if "gajet" in cat_orig or "audio" in cat_orig: return "gajet"
+    if "skincare" in cat_orig or "kulit" in cat_orig: return "skincare"
+    if "wfh" in cat_orig or "meja" in cat_orig: return "setup_wfh"
     return "rumah_pintar"
 
 def generate_category_listicles(dist_dir, products):

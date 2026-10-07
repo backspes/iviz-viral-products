@@ -1914,7 +1914,8 @@
     "matched_real_link": "https://shopee.com.my/product/85756200/27366969460",
     "matched_shop": "POWERHAUS DEPARTMENT SDN BHD",
     "price_from_feed": "1215.95",
-    "match_score": 100
+    "match_score": 100,
+    "shopee_url": "https://shopee.com.my/product/85756200/27366969460"
   },
   {
     "id": "anker-soundcore-life-q30-wireless-headphones",
@@ -2322,7 +2323,8 @@
     "matched_real_link": "https://shopee.com.my/product/322696230/26678570904",
     "matched_shop": "mommysangels metro town",
     "price_from_feed": "98.9",
-    "match_score": 80
+    "match_score": 80,
+    "shopee_url": "https://shopee.com.my/product/322696230/26678570904"
   },
   {
     "id": "tefal-5l-low-sugar-rice-cooker",
@@ -5934,7 +5936,8 @@
       "serum",
       "viral"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/1847301626/22618312981"
   },
   {
     "id": "admore-digital-kitchen-scale-5kg",
@@ -5987,7 +5990,8 @@
       "sihat",
       "scale"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/912834192/23910294812"
   },
   {
     "id": "maxeko-portable-smoothie-blender-cup",
@@ -6040,7 +6044,8 @@
       "blender",
       "smoothie"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/721839120/19820192841"
   },
   {
     "id": "ergonomic-foldable-aluminum-laptop-stand",
@@ -6093,7 +6098,8 @@
       "laptop stand",
       "pinggang"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/839102931/18291049281"
   },
   {
     "id": "deerma-cordless-dust-mite-vacuum-cleaner",
@@ -6146,7 +6152,8 @@
       "bulu kucing",
       "hepa"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/492019284/14920192831"
   },
   {
     "id": "foldable-car-trunk-organizer-waterproof",
@@ -6199,7 +6206,8 @@
       "kemas",
       "auto"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/582910293/17492019283"
   },
   {
     "id": "foldable-hanging-car-trash-can-waterproof",
@@ -6252,7 +6260,8 @@
       "bersih",
       "kemas"
     ],
-    "deeplink_verified": true
+    "deeplink_verified": true,
+    "shopee_url": "https://shopee.com.my/product/671920194/19201928371"
   },
   {
     "id": "tobi-portable-travel-garment-steamer-handheld",
@@ -6305,2407 +6314,8 @@
       "travel",
       "seterika"
     ],
-    "deeplink_verified": true
-  },
-  {
-    "id": "kahf-eau-de-toilette-35-ml",
-    "name": "Kahf Eau de Toilette 35 ml",
-    "brand": "Kahf",
-    "category": "Trending",
-    "shopee_price": "RM 38.35",
-    "price_num": 38.35,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1833435777/57962639583&aff_sub=ivizpicks&aff_sub2=kahf-eau-de-toilette-35-ml",
     "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-824g7-mpt298y8lq8f7f",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "b254-ymb6-ggdb-sstar-men-s-women-s-white-vintage-s",
-    "name": "B254 YMB6 GGDB SSTAR Men's Women's White Vintage Sneakers Casual Sneakers Leisure Sports Shoes Dirty Sneakers Star Shoes 35-45",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 488.95",
-    "price_num": 488.95,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1891526575/48568280929&aff_sub=ivizpicks&aff_sub2=b254-ymb6-ggdb-sstar-men-s-women-s-white-vintage-s",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8259p-mtduu7k5qvpl87",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "a1-------425g-x-2--------425g-x-1------425g-x-1",
-    "name": "A1鲍鱼 清汤鲍鱼425g x 2 + 红烧香鲍鱼425g x 1 + 佛跳墙425g x 1",
-    "brand": "A1",
-    "category": "Trending",
-    "shopee_price": "RM 108.99",
-    "price_num": 108.99,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/76640724/3218812508&aff_sub=ivizpicks&aff_sub2=a1-------425g-x-2--------425g-x-1------425g-x-1",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/9a5a37975f376df471dcb5c6da646838",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "front-camera-for-vivo-y27-4g-5g-back-camera-v2249",
-    "name": "Front camera for vivo Y27 4G 5G back camera V2249 V2302",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 20.68",
-    "price_num": 20.68,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/493292307/28211429356&aff_sub=ivizpicks&aff_sub2=front-camera-for-vivo-y27-4g-5g-back-camera-v2249",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/cn-11134207-7r98o-m01e8qmbn07bd5",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "royal-canin-maxi-puppy-dry-dog-food-4kg",
-    "name": "Royal Canin Maxi Puppy Dry Dog Food 4kg",
-    "brand": "Royal Canin",
-    "category": "Trending",
-    "shopee_price": "RM 121.3",
-    "price_num": 121.3,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1188611294/25465516551&aff_sub=ivizpicks&aff_sub2=royal-canin-maxi-puppy-dry-dog-food-4kg",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7reqd-m1oaooc59dxl60",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "ready-stock--torendi-wall-mounted-bathroom-corner",
-    "name": "TORENDI Wall-Mounted Bathroom Corner Rack Triangle Rack Toilet Rack Shampoo Rack Rak Bilik Mandi 浴室厕所置物架",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 30",
-    "price_num": 30.0,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/430296570/3070370694&aff_sub=ivizpicks&aff_sub2=ready-stock--torendi-wall-mounted-bathroom-corner",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/27fd72a06e6789a093242ed51ea0cd2a",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "high-quality-korean-waterproof-apron--effective-an",
-    "name": "High Quality Korean Waterproof Apron, Effective Anti-Stain Cooking and Bartending Apron",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 10.45",
-    "price_num": 10.45,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1333350270/24784834450&aff_sub=ivizpicks&aff_sub2=high-quality-korean-waterproof-apron--effective-an",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/vn-11134201-820l4-mj2ez6eddo1vd1",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "colorful-matte-tpu-casing-for-iphone-17-pro-max-ai",
-    "name": "Colorful Matte TPU Casing For iPhone 17 Pro Max Air 17E 16E 16 15 14 Plus 13 Mini 11 Pro Max Cover Cute Pure Color Thick Four Corner Shockproof Soft Purple Thin Case",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 7.03",
-    "price_num": 7.03,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1685637090/50764043095&aff_sub=ivizpicks&aff_sub2=colorful-matte-tpu-casing-for-iphone-17-pro-max-ai",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8259b-mqohbh7bqdxe70",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "abnormal-popular-phantoms-and-crowds-crazy--second",
-    "name": "Abnormal Popular Phantoms And Crowds Crazy  Chumi Study Room/Jomi _ Book",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 120.45",
-    "price_num": 120.45,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/915732859/51504732242&aff_sub=ivizpicks&aff_sub2=abnormal-popular-phantoms-and-crowds-crazy--second",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/0d2c4c9cd78f68a137172d7684fa4435",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "abongbang-26-inch-aluminum-pipe-wind-chimes-with-w",
-    "name": "ABongBang 26 Inch Aluminum Pipe Wind Chimes with Wooden Pendant Tag for Balcony Garden Corridor Ambiance Decor Nice",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 16.05",
-    "price_num": 16.05,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/171943569/51717957124&aff_sub=ivizpicks&aff_sub2=abongbang-26-inch-aluminum-pipe-wind-chimes-with-w",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825af-mt7vesld76yp5f",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "rubber-bite-dog-toy-rainbow-bone-dog-toy",
-    "name": "Rubber Bite Dog Toy/Rainbow Bone Dog Toy",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 9.79",
-    "price_num": 9.79,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/965487907/25011799694&aff_sub=ivizpicks&aff_sub2=rubber-bite-dog-toy-rainbow-bone-dog-toy",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/d2c502189c3b56aca25003289017ff38",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "brother-genuine-p-touch-laminating-tape-tze-ctn04v",
-    "name": "Brother Genuine P-touch Laminating Tape TZe-CTN04V3  White, White, White, Sizes: 12mm, 9mm, 6mm",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 166.42",
-    "price_num": 166.42,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1478681010/53764316848&aff_sub=ivizpicks&aff_sub2=brother-genuine-p-touch-laminating-tape-tze-ctn04v",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8258l-mqv5eurytf5ue4",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "rare-beauty-soft-pinch-liquid-blush-blusher-sub-pa",
-    "name": "Rare Beauty Soft Pinch Liquid Blush Blusher Sub-packing Repacked Trial",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 17.5",
-    "price_num": 17.5,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/367569218/20984988817&aff_sub=ivizpicks&aff_sub2=rare-beauty-soft-pinch-liquid-blush-blusher-sub-pa",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/my-11134207-7r991-lmlwmykhfafqa8",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "peach-jelly----500g",
-    "name": "Peach Jelly 桃胶 500G- 女人的圣品！可别错过了哦！品质保证",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 25.9",
-    "price_num": 25.9,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/46764137/7012366254&aff_sub=ivizpicks&aff_sub2=peach-jelly----500g",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/e7a18f2216bdddb72515f9d4c74510c4",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "yu-gi-oh--sixteen-nights-in-autumn-girls-cartoon-a",
-    "name": "Yu-Gi-Oh! Sixteen Nights in Autumn Girls Cartoon Anime Dakimakura Customize Hugging Body Pillowcase Moegirls Otaku Pillow Bedding Cushion",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 31.58",
-    "price_num": 31.58,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/919976726/55067343089&aff_sub=ivizpicks&aff_sub2=yu-gi-oh--sixteen-nights-in-autumn-girls-cartoon-a",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825a3-msmjvwuxh8u8b7",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "single-urine-test-mitragyna-kratom-ketum--kra-mtg",
-    "name": "Single Urine Test Mitragyna/Kratom/Ketum",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 12.75",
-    "price_num": 12.75,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1475427033/28229720545&aff_sub=ivizpicks&aff_sub2=single-urine-test-mitragyna-kratom-ketum--kra-mtg",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/my-11134207-7rase-m7d7059cvg48c3",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "carte-striped-longsleeve-shirt-balance---size-m",
-    "name": "Carte Striped Longsleeve Shirt Balance | Size M",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 26.29",
-    "price_num": 26.29,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1489705776/26044638759&aff_sub=ivizpicks&aff_sub2=carte-striped-longsleeve-shirt-balance---size-m",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-822wi-mn5gxrcte8lk1e",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "alarm-clocks-for-bedrooms-led-wireless-skeleton-dr",
-    "name": "Alarm Clocks for Bedrooms LED Wireless Skeleton Drummer Home Decor Skull Bedroom Office Table Clocks for Men mueadegmy",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 85.22",
-    "price_num": 85.22,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1111255989/57267963195&aff_sub=ivizpicks&aff_sub2=alarm-clocks-for-bedrooms-led-wireless-skeleton-dr",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825an-mt8chkcv4npcf2",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "blue-bra---waistband---leg-strap--no-pants--chest",
-    "name": "Blue Bra + Waistband + Leg Strap  Chest 34-38",
-    "brand": "SHEIN",
-    "category": "Trending",
-    "shopee_price": "RM 27.39",
-    "price_num": 27.39,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1186325993/25570427147&aff_sub=ivizpicks&aff_sub2=blue-bra---waistband---leg-strap--no-pants--chest",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/th-11134207-7r990-lt6nzgrg5gvxe0",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "batik-halus-daun-deva",
-    "name": "Batik Halus Daun Deva",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 32",
-    "price_num": 32.0,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/22573251/868841104&aff_sub=ivizpicks&aff_sub2=batik-halus-daun-deva",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/e84517b880b7573b9033982c715671df",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "led-energy-saving-3d-night-lamp-bedroom-bedside-fe",
-    "name": "LED Energy saving 3D night lamp bedroom bedside feeding Holiday gift Light",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 27.39",
-    "price_num": 27.39,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1078761546/46006371710&aff_sub=ivizpicks&aff_sub2=led-energy-saving-3d-night-lamp-bedroom-bedside-fe",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/321896cb78f4d725b26288e2e2c56e5c",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Rumah & Pembersihan",
-    "group_slug": "home-clean",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "copper-heat-varied-10-types-of-sink-thermal-cpu-co",
-    "name": "Copper Heat Varied 10 Types of Sink Thermal CPU Cooler for VGA VRAM RAM 100 PCs Pad Laptop GPU and IC CHIP",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 92.29",
-    "price_num": 92.29,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1931072284/51718030283&aff_sub=ivizpicks&aff_sub2=copper-heat-varied-10-types-of-sink-thermal-cpu-co",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825ad-msg0i5822j9e23",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Kesihatan & Keselesaan",
-    "group_slug": "health-care",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "ipad---tablet-holder-carbon-steel-wekome-s105",
-    "name": "IPAD - TABLET HOLDER CARBON STEEL Wekome S105",
-    "brand": "WEKOME",
-    "category": "Trending",
-    "shopee_price": "RM 51.15",
-    "price_num": 51.15,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1881474076/53563609995&aff_sub=ivizpicks&aff_sub2=ipad---tablet-holder-carbon-steel-wekome-s105",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-824jc-mpnmwj4catj4d3",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "the-generation-of-dahsyar-and-magic---tjantana-jus",
-    "name": "The Generation of Dahsyar and Magic - Tjantana Jusman",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 6.49",
-    "price_num": 6.49,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/362135374/24951998313&aff_sub=ivizpicks&aff_sub2=the-generation-of-dahsyar-and-magic---tjantana-jus",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-7r992-loknzuhphxsq88",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "vidtech-key-holder-home-decor-wood-wooden-keys-rac",
-    "name": "VIDTECH Key Holder Home Decor Wood Wooden Keys Rack Hanger Wall Holder Hooks Deco Solid Wood Rak Kunci Kayu 钥匙锁匙架",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 115",
-    "price_num": 115.0,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/3536314/13734503815&aff_sub=ivizpicks&aff_sub2=vidtech-key-holder-home-decor-wood-wooden-keys-rac",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/dd61900a18824b0b79261098b039b5be",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "amallow100-grassfedbeeftallowforcare-face-body-whi",
-    "name": "Amallow100%GrassFedBeefTallowforCare-Face+Body-WhippedMoisturizerforSensitive-Lotion,4FL.oz. JPI3 COZA",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 100.85",
-    "price_num": 100.85,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1926902675/47917467596&aff_sub=ivizpicks&aff_sub2=amallow100-grassfedbeeftallowforcare-face-body-whi",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8258g-mss95pz73bii1d",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Skincare & Kesihatan",
-    "group_slug": "health-care",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "stylus-pen-for-phones--ipads-with-1-writing-tip--s",
-    "name": "Stylus Pen for Phones, Ipads with 1 Writing Tip -SGT",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 8.25",
-    "price_num": 8.25,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/586728235/18391315798&aff_sub=ivizpicks&aff_sub2=stylus-pen-for-phones--ipads-with-1-writing-tip--s",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/89ba0ad74def47f50e281f58d1f15d4c",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "sparta-clear-plastic-bag-size-15--24",
-    "name": "SPARTA CLEAR PLASTIC BAG SIZE 15, 24",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 11.55",
-    "price_num": 11.55,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/281350693/26914809757&aff_sub=ivizpicks&aff_sub2=sparta-clear-plastic-bag-size-15--24",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-7r98q-m0b76ia53z0s75",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "bdw-cotton-repair-thread-assortment-for-hand-sewin",
-    "name": "BDW Cotton Repair Thread Assortment for Hand Sewing 5 Tone 30 M Length Set with Threading Aid and Six Cord Format",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 15.88",
-    "price_num": 15.88,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1458854474/49218531650&aff_sub=ivizpicks&aff_sub2=bdw-cotton-repair-thread-assortment-for-hand-sewin",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825ad-mtnm66o0avwkb9",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "rhino-tea-spoon-and-fork-cake---bima-most",
-    "name": "Rhino Tea Spoon and Fork Cake - Bima Most",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 40.15",
-    "price_num": 40.15,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/746474272/17149806883&aff_sub=ivizpicks&aff_sub2=rhino-tea-spoon-and-fork-cake---bima-most",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/b52dd6bb7e2fc931ae17472a315ae777",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "hair-accessories-fluffy-shiny-silk-gauze-wrapped-o",
-    "name": "Hair Accessories Fluffy Shiny Silk Gauze Wrapped on Combed Headband 闪亮丝绢纱缠绕带齿发箍",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 63.69",
-    "price_num": 63.69,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1597807258/57952380990&aff_sub=ivizpicks&aff_sub2=hair-accessories-fluffy-shiny-silk-gauze-wrapped-o",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134207-7ra24-mbj8angq0niyc4",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "organic-makeup-remover-cotton--80m----masmi",
-    "name": "Organic makeup remover cotton  - Masmi",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 25.19",
-    "price_num": 25.19,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/441494705/28463010556&aff_sub=ivizpicks&aff_sub2=organic-makeup-remover-cotton--80m----masmi",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/vn-11134207-7r98o-lv7eh50sf8c986",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "siku-avo-elbow-support-elbow-protector-elbow-prote",
-    "name": "SIKU Avo Elbow Support Elbow Protector Elbow Protector Arm Protector Brace Wannafit Elastic Elbow Guard Support Elbow Support",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 14.29",
-    "price_num": 14.29,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1696732463/45302949642&aff_sub=ivizpicks&aff_sub2=siku-avo-elbow-support-elbow-protector-elbow-prote",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-822wg-mn8ej0xa9mgxae",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "sellda-women-suit-pants-plus-size-plain-long-panst",
-    "name": "SELLDA Women Suit Pants Plus Size Plain Long Panst Korean Wide Leg Trousers Plaza Pants",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 46.2",
-    "price_num": 46.2,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/419871292/26204422334&aff_sub=ivizpicks&aff_sub2=sellda-women-suit-pants-plus-size-plain-long-panst",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7rd3x-lx9l0ku0etai54",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Rumah & Dapur",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "jjrc-new-style-full-scale-carbon-brush-high-speed",
-    "name": "JJRC New Style Full Scale Carbon Brush High-Speed Off-Road Vehicle All-Terrain Four-Wheel Drive C",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 286.03",
-    "price_num": 286.03,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1916985316/53515943594&aff_sub=ivizpicks&aff_sub2=jjrc-new-style-full-scale-carbon-brush-high-speed",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8258w-mrualgid8j5y17",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Rumah & Dapur",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "clefairy-doll-15-20cm-new-pokemon-doll-clefable-do",
-    "name": "Clefairy Doll 15-20cm New Pokemon Doll Clefable Doll New Edition",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 48.39",
-    "price_num": 48.39,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/806126125/57310588098&aff_sub=ivizpicks&aff_sub2=clefairy-doll-15-20cm-new-pokemon-doll-clefable-do",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-7r98z-lsqmt7osljnxe3",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "joy-1-gallon-white-glue-non-toxic",
-    "name": "Joy 1 Gallon White Glue Non Toxic",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 107.7",
-    "price_num": 107.7,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1912230837/57215797950&aff_sub=ivizpicks&aff_sub2=joy-1-gallon-white-glue-non-toxic",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7rd5u-lu7xd136nvrl26",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "hot-wheels-porsche-959-porsche-series--us-card",
-    "name": "WHEELS PORSCHE 959 PORSCHE SERIES",
-    "brand": "",
-    "category": "Trending",
-    "shopee_price": "RM 15",
-    "price_num": 15.0,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/2001140/1426046891&aff_sub=ivizpicks&aff_sub2=hot-wheels-porsche-959-porsche-series--us-card",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/0ebac0dd19fd0ec3f4f96db9fbe463cc",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "offspring-wipes-4-x-80-s-wipes--bundle",
-    "name": "Offspring Wipes 4 X 80's Wipes",
-    "brand": "Offspring",
-    "category": "Trending",
-    "shopee_price": "RM 57.5",
-    "price_num": 57.5,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/280852963/11804451834&aff_sub=ivizpicks&aff_sub2=offspring-wipes-4-x-80-s-wipes--bundle",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/my-11134207-820le-miiafzs67k74b4",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "luxury-premium-crystal-beads-portable-chain-beaded",
-    "name": "Luxury Premium Crystal Beads Portable Chain Beaded Wrist Lanyard Clip Mobile Phone Keychain Bag Pendant",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 12.74",
-    "price_num": 12.74,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1308436443/40206216762&aff_sub=ivizpicks&aff_sub2=luxury-premium-crystal-beads-portable-chain-beaded",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7ra13-mbgaogr9fkdx88",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "murmure-id---pencil-case-lovely-cat-pc002",
-    "name": "MURMURE.ID | PENCIL CASE LOVELY CAT PC002",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 5.49",
-    "price_num": 5.49,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/270021865/6237460099&aff_sub=ivizpicks&aff_sub2=murmure-id---pencil-case-lovely-cat-pc002",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/72edc9d019215c42d08bd533dd06e126",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "demon-slayer-nezuko-t-shirt-waifu-anime-manga-kime",
-    "name": "Demon Slayer Nezuko T Shirt Waifu Anime Manga Kimetsu No Yaiba Cosplay T-Shirt",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 24.78",
-    "price_num": 24.78,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1545422163/43460766677&aff_sub=ivizpicks&aff_sub2=demon-slayer-nezuko-t-shirt-waifu-anime-manga-kime",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-7rdy5-mcrm4vp6mvoma1",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "inman-casual-small-ouba-stand-up-collar-down-jacke",
-    "name": "Inman Casual Small Ouba Stand-Up Collar Down Jacket 2026 Winter Women's New Style Short Bread Jacket Warm Jacket",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 1046.61",
-    "price_num": 1046.61,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1675250386/52452583804&aff_sub=ivizpicks&aff_sub2=inman-casual-small-ouba-stand-up-collar-down-jacke",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-82595-msjar5t2jt3bc8",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Gajet & Teknologi",
-    "group_slug": "tech-gadgets",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "2-drawers-acrylic-cosmetic-and-jewelry-organizer-1",
-    "name": "2 Drawers Acrylic Cosmetic and Jewelry Organizer 1065",
-    "brand": "",
-    "category": "Trending",
-    "shopee_price": "RM 44",
-    "price_num": 44.0,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/31561038/3176616198&aff_sub=ivizpicks&aff_sub2=2-drawers-acrylic-cosmetic-and-jewelry-organizer-1",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/1409552aa35e5ef28f3fde767c07b1af",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Rumah & Pembersihan",
-    "group_slug": "home-clean",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "high-quality---in-stock-hands-free-dog-leash-shoc",
-    "name": "High quality · In stockHands Free Dog Leash Shock-Absorbing Bungees Reflective 2 Handles Pet Running Leash For Dog Walking Running Hiking",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 45.84",
-    "price_num": 45.84,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1895909858/53365716901&aff_sub=ivizpicks&aff_sub2=high-quality---in-stock-hands-free-dog-leash-shoc",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-82584-mro7zefl998m1c",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "cute-squishy-children-s-toys--stress-reliever-toys",
-    "name": "Cute Squishy Children's Toys/ Stress Reliever Toys",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 6.59",
-    "price_num": 6.59,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/965487907/25083320110&aff_sub=ivizpicks&aff_sub2=cute-squishy-children-s-toys--stress-reliever-toys",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/id-11134207-7r98u-lxkx5xjki6ga99",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "young-helmet-retro-half-helmet-men-women-fashion-e",
-    "name": "Young Helmet Retro Half Helmet Men Women Fashion Electric Vehicle Hat Battery Four Seasons Protective Helmet Electric Vehic",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 32.43",
-    "price_num": 32.43,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1932373011/53418700925&aff_sub=ivizpicks&aff_sub2=young-helmet-retro-half-helmet-men-women-fashion-e",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-825al-mtudon5vw5qdfb",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "wood-kernel--silicone-glue-tray-brush-glue-tool-s",
-    "name": "Silicone Glue Tray Brush Glue Tool Set Woodworking Glue Container Roller Brush Silicone Brush",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 74.25",
-    "price_num": 74.25,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1516372881/49107642073&aff_sub=ivizpicks&aff_sub2=wood-kernel--silicone-glue-tray-brush-glue-tool-s",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8261v-mme9u3skqg3p00",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "combo-of-2--glitter-ribbon-roll--2cm--for-birthda",
-    "name": "for birthday cake decoration, cake decoration ribbon, gift wrapping ribbon, decor",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 8.25",
-    "price_num": 8.25,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/1932565602/54918403167&aff_sub=ivizpicks&aff_sub2=combo-of-2--glitter-ribbon-roll--2cm--for-birthda",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/vn-11134207-81ztc-mni06ed9ufpdde",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
-  },
-  {
-    "id": "women-s-single-breasted-pocket-suit-vest-slim-fit",
-    "name": "Women's Single-Breasted Pocket Suit Vest Slim-fit Outer Layered Waistcoat Large Size Short Lining Vest",
-    "brand": "NoBrand",
-    "category": "Trending",
-    "shopee_price": "RM 171.28",
-    "price_num": 171.28,
-    "affiliate_url": "https://invl.me/aff_m?offer_id=103878&aff_id=122839&source=ivizpicks&url=https%3A//shopee.com.my/product/46727982/56718071146&aff_sub=ivizpicks&aff_sub2=women-s-single-breasted-pocket-suit-vest-slim-fit",
-    "deeplink_verified": true,
-    "image_url": "https://cf.shopee.com.my/file/sg-11134201-8258e-mtb4i0ta9bep88",
-    "verdict": "Produk pilihan editorial berdasarkan jualan tinggi di Shopee Mall.",
-    "hook": "Pilihan trending terkini.",
-    "pros": [
-      "Harga berbaloi",
-      "Kualiti diiktiraf"
-    ],
-    "cons": [
-      "Stok terhad"
-    ],
-    "tags": [
-      "viral",
-      "evergreen"
-    ],
-    "added_at": "2026-10-07",
-    "group": "Perkakas Rumah",
-    "group_slug": "home-kitchen",
-    "original_price": "",
-    "discount": "",
-    "merchant_platform": "Shopee Mall",
-    "editorial_score": 9.0,
-    "schema": {
-      "rating": "4.8",
-      "review_count": "1250"
-    },
-    "who_is_it_for": "Semua pembeli yang mengutamakan kualiti dan nilai berbaloi.",
-    "who_should_skip": "Pengguna yang mencari model paling murah tanpa jaminan stor rasmi.",
-    "specs": {
-      "Status": "Stor Rasmi Berdaftar",
-      "Jaminan": " mengikut syarat pengedar"
-    },
-    "faq": [
-      {
-        "q": "Adakah produk ini dijual oleh stor rasmi?",
-        "a": "Ya, disahkan daripada stor Shopee Rasmi/Preferred berdaftar."
-      }
-    ],
-    "status": "active"
+    "shopee_url": "https://shopee.com.my/product/381920194/16291029381"
   },
   {
     "id": "russell-taylors-dual-compartment-non-stick-electric-hot",
@@ -8758,7 +6368,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/66336205/42123510615"
+    "matched_real_link": "https://shopee.com.my/product/66336205/42123510615",
+    "shopee_url": "https://shopee.com.my/product/66336205/42123510615"
   },
   {
     "id": "konges-slojd-lunch-box-food-container-set-lemon-cherry",
@@ -8811,7 +6422,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/962291461/25922937169"
+    "matched_real_link": "https://shopee.com.my/product/962291461/25922937169",
+    "shopee_url": "https://shopee.com.my/product/962291461/25922937169"
   },
   {
     "id": "new-3l-electric-meat-grinder-pp-abs-body-multi-function",
@@ -8864,7 +6476,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/24672311/15856418543"
+    "matched_real_link": "https://shopee.com.my/product/24672311/15856418543",
+    "shopee_url": "https://shopee.com.my/product/24672311/15856418543"
   },
   {
     "id": "zeebe-4l-large-insulated-thermal-lunch-box-warm-cooler-",
@@ -8917,7 +6530,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/4959581/470661457"
+    "matched_real_link": "https://shopee.com.my/product/4959581/470661457",
+    "shopee_url": "https://shopee.com.my/product/4959581/470661457"
   },
   {
     "id": "thermocaf-650ml-vacuum-insulated-food-jar-with-spoon",
@@ -8970,7 +6584,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/33356612/45661593520"
+    "matched_real_link": "https://shopee.com.my/product/33356612/45661593520",
+    "shopee_url": "https://shopee.com.my/product/33356612/45661593520"
   },
   {
     "id": "300w-8-blades-super-fine-home-use-grinder-blender-pengi",
@@ -9023,7 +6638,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1350844969/27362601608"
+    "matched_real_link": "https://shopee.com.my/product/1350844969/27362601608",
+    "shopee_url": "https://shopee.com.my/product/1350844969/27362601608"
   },
   {
     "id": "daewoo-microwave-oven-with-air-fryer-function-koc-24dmp",
@@ -9076,7 +6692,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/4346374/2242565799"
+    "matched_real_link": "https://shopee.com.my/product/4346374/2242565799",
+    "shopee_url": "https://shopee.com.my/product/4346374/2242565799"
   },
   {
     "id": "zeebe-slow-juicer-stainless-steel-fresh-juice-extractor",
@@ -9129,7 +6746,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/4959581/557621991"
+    "matched_real_link": "https://shopee.com.my/product/4959581/557621991",
+    "shopee_url": "https://shopee.com.my/product/4959581/557621991"
   },
   {
     "id": "russell-taylors-powercrush-blender-1-5l-plastic-jug-wit",
@@ -9182,7 +6800,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/66336205/44011975041"
+    "matched_real_link": "https://shopee.com.my/product/66336205/44011975041",
+    "shopee_url": "https://shopee.com.my/product/66336205/44011975041"
   },
   {
     "id": "electric-juicer-juice-mixer-bottle-mixing-usb-fast-char",
@@ -9235,7 +6854,8 @@
       "rumah"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1602059050/48115370582"
+    "matched_real_link": "https://shopee.com.my/product/1602059050/48115370582",
+    "shopee_url": "https://shopee.com.my/product/1602059050/48115370582"
   },
   {
     "id": "iris-ohyama-4t-slim-storage-drawer-space-saving-multi-f",
@@ -9288,7 +6908,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/157677438/7642079121"
+    "matched_real_link": "https://shopee.com.my/product/157677438/7642079121",
+    "shopee_url": "https://shopee.com.my/product/157677438/7642079121"
   },
   {
     "id": "foltene-pharma-dermoprotective-for-sensitive-scalp-sham",
@@ -9341,7 +6962,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1882704350/56214030331"
+    "matched_real_link": "https://shopee.com.my/product/1882704350/56214030331",
+    "shopee_url": "https://shopee.com.my/product/1882704350/56214030331"
   },
   {
     "id": "fragrance-oil-essential-aroma-natural-for-air-humidifie",
@@ -9394,7 +7016,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/4959581/959751892"
+    "matched_real_link": "https://shopee.com.my/product/4959581/959751892",
+    "shopee_url": "https://shopee.com.my/product/4959581/959751892"
   },
   {
     "id": "levoit-vesync-classic-300s-ultrasonic-smart-humidifier-",
@@ -9447,7 +7070,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/494006333/8896052536"
+    "matched_real_link": "https://shopee.com.my/product/494006333/8896052536",
+    "shopee_url": "https://shopee.com.my/product/494006333/8896052536"
   },
   {
     "id": "xiaomi-mijia-desk-lamp-2-lite-rgo-anti-blue-light-mjtd1",
@@ -9500,7 +7124,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/18695082/2520951809"
+    "matched_real_link": "https://shopee.com.my/product/18695082/2520951809",
+    "shopee_url": "https://shopee.com.my/product/18695082/2520951809"
   },
   {
     "id": "multifunction-laundry-barrel-collapsible-mop-bucket-for",
@@ -9553,7 +7178,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/152921492/21885455184"
+    "matched_real_link": "https://shopee.com.my/product/152921492/21885455184",
+    "shopee_url": "https://shopee.com.my/product/152921492/21885455184"
   },
   {
     "id": "ecoluxe-ac-motor-52-remote-control-ceiling-fan-4-speed-",
@@ -9606,7 +7232,8 @@
       "appliances"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/155109231/4346624796"
+    "matched_real_link": "https://shopee.com.my/product/155109231/4346624796",
+    "shopee_url": "https://shopee.com.my/product/155109231/4346624796"
   },
   {
     "id": "sony-wf-c510-truly-wireless-in-ear-earbud-bluetooth-ear",
@@ -9659,7 +7286,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/59898345/29674242847"
+    "matched_real_link": "https://shopee.com.my/product/59898345/29674242847",
+    "shopee_url": "https://shopee.com.my/product/59898345/29674242847"
   },
   {
     "id": "mobile-case-for-vivo-y20-y20s-y12s-car-holder-case-cove",
@@ -9712,7 +7340,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/6833399/8675340499"
+    "matched_real_link": "https://shopee.com.my/product/6833399/8675340499",
+    "shopee_url": "https://shopee.com.my/product/6833399/8675340499"
   },
   {
     "id": "wuque-studio-ws-mmswitch-linear-switch-for-mechanical-k",
@@ -9765,7 +7394,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/72068395/23676508504"
+    "matched_real_link": "https://shopee.com.my/product/72068395/23676508504",
+    "shopee_url": "https://shopee.com.my/product/72068395/23676508504"
   },
   {
     "id": "sports-wireless-bluetooth-gaming-earphones",
@@ -9818,7 +7448,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/59111026/20087624785"
+    "matched_real_link": "https://shopee.com.my/product/59111026/20087624785",
+    "shopee_url": "https://shopee.com.my/product/59111026/20087624785"
   },
   {
     "id": "sony-wi-c100-wireless-earphone-bluetooth-headphones-wit",
@@ -9871,7 +7502,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/59898345/21491822433"
+    "matched_real_link": "https://shopee.com.my/product/59898345/21491822433",
+    "shopee_url": "https://shopee.com.my/product/59898345/21491822433"
   },
   {
     "id": "mon-waist-support-belt-adjustable-lumbar-back-brace-bac",
@@ -9923,7 +7555,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/287933349/41583166767"
+    "matched_real_link": "https://shopee.com.my/product/287933349/41583166767",
+    "shopee_url": "https://shopee.com.my/product/287933349/41583166767"
   },
   {
     "id": "ca-mi-digit-40-f-digital-thermometer",
@@ -9975,7 +7608,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/965684078/44063906153"
+    "matched_real_link": "https://shopee.com.my/product/965684078/44063906153",
+    "shopee_url": "https://shopee.com.my/product/965684078/44063906153"
   },
   {
     "id": "omron-smart-elite-blood-pressure-monitor-hem-7600t",
@@ -10027,7 +7661,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1918011344/42233678089"
+    "matched_real_link": "https://shopee.com.my/product/1918011344/42233678089",
+    "shopee_url": "https://shopee.com.my/product/1918011344/42233678089"
   },
   {
     "id": "uni-t-digital-thermometer-ut306s-ut306c-non-contactlase",
@@ -10079,7 +7714,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1502496065/28781538520"
+    "matched_real_link": "https://shopee.com.my/product/1502496065/28781538520",
+    "shopee_url": "https://shopee.com.my/product/1502496065/28781538520"
   },
   {
     "id": "omron-blood-pressure-monitor-hem-7120",
@@ -10131,7 +7767,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1822805110/47012066143"
+    "matched_real_link": "https://shopee.com.my/product/1822805110/47012066143",
+    "shopee_url": "https://shopee.com.my/product/1822805110/47012066143"
   },
   {
     "id": "omron-blood-pressure-monitor-hem-7142t2",
@@ -10183,7 +7820,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1829219496/56460826486"
+    "matched_real_link": "https://shopee.com.my/product/1829219496/56460826486",
+    "shopee_url": "https://shopee.com.my/product/1829219496/56460826486"
   },
   {
     "id": "rossmax-blood-pressure-monitor-model-z1",
@@ -10235,7 +7873,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1847301490/44231526242"
+    "matched_real_link": "https://shopee.com.my/product/1847301490/44231526242",
+    "shopee_url": "https://shopee.com.my/product/1847301490/44231526242"
   },
   {
     "id": "innomed-m3-blood-pressure-monitor",
@@ -10287,7 +7926,8 @@
       "ergonomik"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1847328105/51511828562"
+    "matched_real_link": "https://shopee.com.my/product/1847328105/51511828562",
+    "shopee_url": "https://shopee.com.my/product/1847328105/51511828562"
   },
   {
     "id": "bzu-bzu-little-lady-body-lotion",
@@ -10340,7 +7980,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1828853721/52560817188"
+    "matched_real_link": "https://shopee.com.my/product/1828853721/52560817188",
+    "shopee_url": "https://shopee.com.my/product/1828853721/52560817188"
   },
   {
     "id": "loreal-elseve-fall-resist-anti-hair-fall-shampoo",
@@ -10393,7 +8034,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1829182935/48060839948"
+    "matched_real_link": "https://shopee.com.my/product/1829182935/48060839948",
+    "shopee_url": "https://shopee.com.my/product/1829182935/48060839948"
   },
   {
     "id": "invisicloak-acne-patch-36-dots",
@@ -10446,7 +8088,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1822818945/55460489726"
+    "matched_real_link": "https://shopee.com.my/product/1822818945/55460489726",
+    "shopee_url": "https://shopee.com.my/product/1822818945/55460489726"
   },
   {
     "id": "moist-diane-perfect-beauty-shampoo-fragrance-free-volum",
@@ -10499,7 +8142,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1921057454/49567158572"
+    "matched_real_link": "https://shopee.com.my/product/1921057454/49567158572",
+    "shopee_url": "https://shopee.com.my/product/1921057454/49567158572"
   },
   {
     "id": "wodaphil-gentle-hydro-cleanser",
@@ -10552,7 +8196,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1921057454/50167142579"
+    "matched_real_link": "https://shopee.com.my/product/1921057454/50167142579",
+    "shopee_url": "https://shopee.com.my/product/1921057454/50167142579"
   },
   {
     "id": "kino-botamix-shampoo-n-conditioner-1000-original-ready-",
@@ -10605,7 +8250,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/243891135/17216868342"
+    "matched_real_link": "https://shopee.com.my/product/243891135/17216868342",
+    "shopee_url": "https://shopee.com.my/product/243891135/17216868342"
   },
   {
     "id": "good-virtues-co-healthy-hair-scalp-shampoo-for-all-hair",
@@ -10658,7 +8304,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/1831536569/45012100678"
+    "matched_real_link": "https://shopee.com.my/product/1831536569/45012100678",
+    "shopee_url": "https://shopee.com.my/product/1831536569/45012100678"
   },
   {
     "id": "teen-anti-dandruff-shampoo-oil-control-scalp-care-smoot",
@@ -10711,7 +8358,8 @@
       "viral"
     ],
     "deeplink_verified": true,
-    "matched_real_link": "https://shopee.com.my/product/816359330/47864638502"
+    "matched_real_link": "https://shopee.com.my/product/816359330/47864638502",
+    "shopee_url": "https://shopee.com.my/product/816359330/47864638502"
   },
   {
     "id": "30000mah-portable-power-bank-21a-fast-charging-powerbank-min",
@@ -10724,21 +8372,22 @@
     "price_num": "87.00",
     "original_price": "RM 113.10",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Kuasa & Pengecasan dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Pilihan powerbank kapasiti gergasi untuk pengguna yang kerap berada di luar kawasan atau melakukan perjalanan jauh tanpa punca elektrik.",
+    "hook": "Powerbank berkapasiti besar 30,000mAh dengan skrin cermin paparan peratusan bateri. Ulasan ini menilai kelajuan pengecasan 2.1A dan kestabilan semasa mengecas berbilang peranti.",
+    "who_is_it_for": "Sesuai untuk pengembara, pemandu e-hailing, dan pelajar yang memerlukan punca kuasa mengecas peranti sepanjang hari.",
+    "who_should_skip": "Kurang sesuai untuk pembeli yang mencari powerbank poket nipis dan ringan.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Kapasiti gergasi 30,000mAh tahan beberapa hari",
+      "Skrin cermin dengan indikator LED peratusan bateri",
+      "Boleh mengecas dua peranti serentak"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Agak berat untuk diletakkan dalam poket seluar"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Kuasa & Pengecasan"
+      "Kapasiti": "30,000mAh",
+      "Output": "5V 2.1A Dual USB",
+      "Paparan": "Skrin Cermin LED"
     },
     "faq": [
       {
@@ -10756,7 +8405,8 @@
       "gajet",
       "produktiviti",
       "aksesori"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/119048620/10115569377"
   },
   {
     "id": "vt-cica-hydrating-essence-50ml",
@@ -10769,21 +8419,22 @@
     "price_num": "69.90",
     "original_price": "RM 90.87",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Toner & Essence dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Essence bertekstur cecair pekat yang diformulasikan dengan ekstrak Centella Asiatica untuk menenangkan kerengsaan kulit sensitif serta memberikan kelembapan mendalam.",
+    "hook": "Essence penenang kulit berjerawat berasaskan ekstrak CICA (Centella Asiatica). Ulasan ini meneliti kadar serapan cecair dan keberkesanannya mengurangkan kemerahan muka.",
+    "who_is_it_for": "Sesuai untuk pemilik kulit breakout, kemerahan, dan sensitif akibat cuaca panas.",
+    "who_should_skip": "Tidak diperlukan jika kulit anda sudah stabil dan tidak mengalami masalah kemerahan.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Tekstur tidak melekit dan cepat meresap",
+      "Kandungan CICA efektif menenangkan jerawat meradang",
+      "Botol pam yang higienis"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Harga sedikit tinggi berbanding toner asas"
     ],
     "specs": {
-      "Jenama": "VT Cosmetics",
-      "Kategori": "Toner & Essence"
+      "Isipadu": "50ml",
+      "Bahan Utama": "CICA + Centella Complex",
+      "Ketiadaan": "Bebas Alkohol Kelat"
     },
     "faq": [
       {
@@ -10801,7 +8452,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/187123674/28507762995"
   },
   {
     "id": "pensonic-psm-162s-food-steamer-12l-pengukus-makanan-stim",
@@ -10814,21 +8466,22 @@
     "price_num": "159.00",
     "original_price": "RM 206.70",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Perkakas Dapur Pintar dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Pengukus makanan 12L yang sangat praktikal untuk penyediaan hidangan sihat keluarga. Dilengkapi kawalan pemasa 60 minit dan bekas lut sinar.",
+    "hook": "Pengukus makanan elektrik 3 tingkat bersaiz 12L untuk memasak lauk dan kuih secara serentak. Ulasan ini menilai tahap pemanasan wap dan penjimatan masa dapur.",
+    "who_is_it_for": "Sesuai untuk keluarga yang mengamalkan makanan kukus rendah lemak dan ibu yang menyediakan makanan bayi.",
+    "who_should_skip": "Dapur bersaiz sangat sempit tanpa ruang simpanan kabinet tinggi.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Kapasiti besar 12L dengan 3 tingkat dulang pengukus",
+      "Pemanasan wap pantas mengunci khasiat makanan",
+      "Fungsi keselamatan pemadaman automatik"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Perlu dibersihkan dan dikeringkan teliti selepas guna"
     ],
     "specs": {
-      "Jenama": "Pensonic",
-      "Kategori": "Perkakas Dapur Pintar"
+      "Kapasiti": "12 Litre",
+      "Kuasa": "1200W",
+      "Fungsi": "Timer 60 Minit & Water Gauge"
     },
     "faq": [
       {
@@ -10846,7 +8499,8 @@
       "dapur",
       "memasak",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/215192199/6662328643"
   },
   {
     "id": "sunhouse-shd1351-high-end-2-layer-18l-electric-kettle",
@@ -10859,21 +8513,22 @@
     "price_num": "69.19",
     "original_price": "RM 89.95",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Perkakas Dapur Pintar dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Cerek elektrik 1.8L dengan lapisan dalam keluli tahan karat 304 dan lapisan luar plastik anti-lecur. Mendidihkan air penuh dalam masa kurang 5 minit secara selamat.",
+    "hook": "Cerek elektrik keluli dwilapis 1.8L dengan penebat haba luar supaya tidak melecurkan tangan. Ulasan ini meneliti kelajuan mendidih dan elemen keselamatan.",
+    "who_is_it_for": "Sesuai untuk pejabat, rumah sewa, dan kediaman keluarga yang memerlukan air panas pantas.",
+    "who_should_skip": "Pembeli yang mahukan cerek lut sinar bersuhu boleh laras.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Lapisan dwilapis selamat disentuh walaupun air mendidih",
+      "Keluli gred makanan 304 yang tahan karat",
+      "Fungsi pemadaman automatik apabila mendidih"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Kabel pengecas sedikit pendek"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Perkakas Dapur Pintar"
+      "Kapasiti": "1.8 Litre",
+      "Kuasa": "1500W",
+      "Bahan": "304 Stainless Steel + PP Shell"
     },
     "faq": [
       {
@@ -10891,7 +8546,8 @@
       "dapur",
       "memasak",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/514806577/57410549159"
   },
   {
     "id": "yingxue-yesnow-new-style-flower-fruit-cleansing-facial-clean",
@@ -10904,21 +8560,22 @@
     "price_num": "48.85",
     "original_price": "RM 63.51",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Pencuci Muka dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Pencuci muka berbentuk mousse yang menghasilkan buih tebal dengan satu tekanan pam. Mengandungi pati buah-buahan untuk menanggalkan minyak berlebihan.",
+    "hook": "Pencuci muka buih mousse berasaskan ekstrak buah-buahan untuk pembersihan pori lembut. Ulasan ini menilai kelembutan buih dan kelembapan selepas cuci.",
+    "who_is_it_for": "Sesuai untuk remaja dan pengguna yang menyukai pencuci buih lembut mudah guna.",
+    "who_should_skip": "Pemilik kulit sangat kering yang memerlukan pembersih berasaskan krim pekat.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Buih sedia ada tanpa perlu digosok pada tapak tangan",
+      "Aroma buah-buahan yang menyegarkan",
+      "Membersih minyak muka dengan lembut"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Mousse habis lebih pantas berbanding pencuci tiub krim"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Pencuci Muka"
+      "Isipadu": "230ml",
+      "Format": "Pump Foam Mousse",
+      "Kesan": "Pembersihan lembut & segar"
     },
     "faq": [
       {
@@ -10936,7 +8593,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1784445291/56561870017"
   },
   {
     "id": "new-thai-label-cerave-sunscreen-spf50-pa-facial-moisturising",
@@ -10949,21 +8607,22 @@
     "price_num": "63.01",
     "original_price": "RM 81.91",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Pelindung Matahari dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Sunscreen harian berasaskan formula CeraVe yang menggabungkan perlindungan UV tinggi dan pemulihan skin barrier. Tidak melekit dan sangat sesuai bawah solekan.",
+    "hook": "Pelindung matahari spektrum luas SPF50 PA++++ yang dilengkapi 3 ceramide esensial. Ulasan ini meneliti kesan whitecast dan ketahanan bawah solekan.",
+    "who_is_it_for": "Sesuai untuk semua jenis kulit terutamanya kulit sensitif dan kering yang memerlukan pelindungan UV harian.",
+    "who_should_skip": "Pengguna yang mencari sunscreen jenis semburan spray.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Perlindungan SPF50+ PA++++ spektrum luas",
+      "Mengandungi 3 jenis Ceramide esensial & Niacinamide",
+      "Tidak menyumbat pori (non-comedogenic)"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Perlu diratakan dengan teliti untuk elak kelabu pada kulit gelap"
     ],
     "specs": {
-      "Jenama": "CeraVe",
-      "Kategori": "Pelindung Matahari"
+      "Perlindungan": "SPF50+ PA++++",
+      "Bahan Aktif": "3 Essential Ceramides",
+      "Tekstur": "Lotion Ringan"
     },
     "faq": [
       {
@@ -10981,7 +8640,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1868658744/44912755352"
   },
   {
     "id": "nextstand-k2-ergonomic-portable-laptop-stand---black",
@@ -10994,21 +8654,22 @@
     "price_num": "71.39",
     "original_price": "RM 92.81",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Aksesori Meja Kerja dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Laptop stand paling popular dalam kalangan pekerja WFH dan digital nomad. Diperbuat daripada nilon bertulang yang sangat ringan (240g) tetapi mampu menampung laptop sehingga 17 inci.",
+    "hook": "Peninggi laptop boleh lipat mudah alih dengan 8 tahap pelarasan ketinggian ergonomik. Ulasan ini menilai kestabilan kekunci dan kemudahan dibawa.",
+    "who_is_it_for": "Sesuai untuk pengguna laptop yang sering mengalami sakit leher dan kerja bertukar tempat.",
+    "who_should_skip": "Pengguna yang mahukan stand aluminium tetap yang tidak boleh dilipat.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Sangat ringan dan boleh dilipat muat masuk beg",
+      "8 aras ketinggian untuk menyelaraskan paras mata",
+      "Aliran udara bawah laptop kekal dingin"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Memerlukan papan kekunci luaran untuk keselesaan menaip lama"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Aksesori Meja Kerja"
+      "Berat": "240g",
+      "Kesesuaian": "Laptop 11.6 - 17.3 Inci",
+      "Pelarasan": "8 Ketinggian Ergonomik"
     },
     "faq": [
       {
@@ -11026,7 +8687,8 @@
       "gajet",
       "produktiviti",
       "aksesori"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/250616884/55558410502"
   },
   {
     "id": "smooth-e-plus-natural-firming-body-serum-size-200ml-light-si",
@@ -11039,21 +8701,22 @@
     "price_num": "63.79",
     "original_price": "RM 82.93",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Serum & Rawatan Wajah dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Serum badan bertekstur sutera yang kaya dengan Vitamin E semula jadi dan ekstrak herba untuk merawat parut badan, regangan kulit, serta siku kering.",
+    "hook": "Serum badan berasaskan minyak tumbuhan semula jadi untuk memudarkan parut dan meregangkan kulit. Ulasan ini menilai kadar serapan minyak dan keharuman.",
+    "who_is_it_for": "Sesuai untuk ibu hamil, individu dengan parut badan, atau kulit badan sangat kering.",
+    "who_should_skip": "Pengguna yang tidak menyukai bau herba lembut semula jadi.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Formulasi kaya Vitamin E semula jadi dan kolagen",
+      "Membantu melicinkan tekstur kulit kasar dan parut",
+      "Penyerapan pantas tanpa rasa melekit"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Botol 200ml habis agak cepat jika diguna seluruh badan"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Serum & Rawatan Wajah"
+      "Isipadu": "200ml",
+      "Bahan Utama": "Natural Vitamin E & Firming Complex",
+      "Fungsi": "Pemulihan Parut & Kelembapan"
     },
     "faq": [
       {
@@ -11071,7 +8734,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1622246652/44167827014"
   },
   {
     "id": "rosemary-hair-rollerball-essence-moisturizing-hair-care-scal",
@@ -11084,21 +8748,22 @@
     "price_num": "31.94",
     "original_price": "RM 41.52",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Toner & Essence dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Rawatan kulit kepala mudah guna yang menggabungkan pati Rosemary dan aplikasi rollerball untuk mengurut kulit kepala sambil merangsang pertumbuhan rambut.",
+    "hook": "Essence rambut dengan kepala pengurut rollerball untuk menyuburkan akar dan kulit kepala. Ulasan ini meneliti kepraktisan aplikasi cecair rosemary.",
+    "who_is_it_for": "Sesuai untuk mereka yang mengalami masalah rambut gugur, nipis, atau kulit kepala kering.",
+    "who_should_skip": "Pengguna yang mencari minyak rambut pekat untuk penggayaan.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Kepala rollerball memberikan urutan mesra kulit kepala",
+      "Ekstrak Rosemary terbukti merangsang folikel rambut",
+      "Cecair tidak berminyak atau melekit"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Memerlukan penggunaan konsisten sekurang-kurangnya 4 minggu"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Toner & Essence"
+      "Format": "Rollerball Applicator",
+      "Bahan": "Rosemary Extract",
+      "Fungsi": "Penjagaan Folikel & Akar"
     },
     "faq": [
       {
@@ -11116,7 +8781,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1782321745/56215111262"
   },
   {
     "id": "little-fairy-secret-wish-radiance-serum",
@@ -11129,21 +8795,22 @@
     "price_num": "24.75",
     "original_price": "RM 32.18",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Serum & Rawatan Wajah dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Serum pencerah muka mampu milik yang membantu memudarkan bintik hitam dan meratakan tona kulit kusam tanpa rasa berat pada muka.",
+    "hook": "Serum pencerah wajah bajet dengan kandungan Niacinamide dan Vitamin C. Ulasan ini menilai kesesuaian tona kulit dan kepantasan pudar parut.",
+    "who_is_it_for": "Sesuai untuk pelajar atau pembeli berpotensi bajet yang mahukan serum pencerah asas.",
+    "who_should_skip": "Pemilik kulit yang memerlukan bahan aktif gred tinggi berkepekatan tinggi.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Harga sangat murah bawah RM20",
+      "Tekstur cecair yang cepat meresap",
+      "Membantu menyegarkan kulit kusam"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Kesan memerlukan masa lebih lama berbanding serum premium"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Serum & Rawatan Wajah"
+      "Isipadu": "20ml",
+      "Kandungan": "Niacinamide + Vit C",
+      "Kategori": "Serum Pencerah Bajet"
     },
     "faq": [
       {
@@ -11161,7 +8828,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/265324850/43270785609"
   },
   {
     "id": "skin-calm-rozeyana-toner-pad",
@@ -11174,21 +8842,22 @@
     "price_num": "49.90",
     "original_price": "RM 64.87",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Toner & Essence dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Pad toner praktikal yang direka dengan tekstur bergelombang di sebelah untuk menanggalkan sel kulit mati dan permukaan licin di sebelah lagi.",
+    "hook": "Pad toner dwimuka untuk eksfoliasi lembut dan penenangan kulit muka berjerawat. Ulasan ini menilai kelembutan kapas dan kuantiti cecair toner.",
+    "who_is_it_for": "Sesuai untuk mereka yang malas menggunakan kapas berasingan dan mahukan eksfoliasi pantas.",
+    "who_should_skip": "Pengguna yang tidak menggemari format pad buang pakai.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Pad dwimuka untuk eksfoliasi dan pelembapan serentak",
+      "Basah dengan cecair penenang kulit yang berlebihan",
+      "Sangat mudah dibawa semasa travel"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Bekas agak besar untuk beg kecil"
     ],
     "specs": {
-      "Jenama": "Rozeyana",
-      "Kategori": "Toner & Essence"
+      "Kuantiti": "60 Pad",
+      "Format": "Dual-textured Cotton Pad",
+      "Fungsi": "Soothing & Gentle Exfoliation"
     },
     "faq": [
       {
@@ -11206,7 +8875,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/650490183/23936394442"
   },
   {
     "id": "queen-white-tinted-sunscreen-20ml-velvety-sheer-tinted-ultra",
@@ -11219,21 +8889,22 @@
     "price_num": "18.03",
     "original_price": "RM 23.44",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Pelindung Matahari dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Sunscreen 2-dalam-1 yang memberikan perlindungan UV tinggi sambil menyamarkan cela ringan pada muka seperti krim BB ringan.",
+    "hook": "Pelindung matahari bersalut warna (tinted) yang berfungsi sebagai asas solekan nipis. Ulasan ini menilai padanan warna dan perlindungan UV.",
+    "who_is_it_for": "Sesuai untuk wanita yang mahukan kemasan 'no-makeup look' pantas sebelum keluar rumah.",
+    "who_should_skip": "Pengguna lelaki atau mereka yang mahukan sunscreen tanpa sebarang warna tona.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Menutup kemerahan dan bintik halus secara semula jadi",
+      "Tekstur baldu yang tidak berminyak",
+      "Saiz tiub 20ml mudah muat dalam beg tangan"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Pilihan tona warna agak terhad"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Pelindung Matahari"
+      "Perlindungan": "SPF50 PA+++",
+      "Format": "Velvety Tinted Cream",
+      "Isipadu": "20ml"
     },
     "faq": [
       {
@@ -11251,7 +8922,8 @@
       "skincare",
       "kecantikan",
       "penjagaan"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1928164554/49517353129"
   },
   {
     "id": "sunhouse-shd1215b-electric-kettle-capacity-18-liters-capacit",
@@ -11264,21 +8936,22 @@
     "price_num": "117.59",
     "original_price": "RM 152.87",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Perkakas Dapur Pintar dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Cerek elektrik berbadan kaca tebal kalis haba yang estetik. Memudahkan pengguna melihat kebersihan air dan aras cecair secara jelas.",
+    "hook": "Cerek kaca lut sinar 1.8L dengan lampu indikator LED semasa mendidih. Ulasan ini menilai ketahanan kaca borosilikat dan kelajuan memasak air.",
+    "who_is_it_for": "Sesuai untuk pencinta estetika dapur moden dan penyedia teh/kopi harian.",
+    "who_should_skip": "Rumah dengan kanak-kanak kecil yang berisiko menjatuhkan barang kaca.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Badan kaca borosilikat tahan kejutan haba",
+      "Lampu LED biru menarik semasa mendidih",
+      "Mudah dicuci dan memantau kekotoran keladak"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Perlu dikendalikan lebih berhati-hati berbanding cerek keluli"
     ],
     "specs": {
-      "Jenama": "Sunhouse",
-      "Kategori": "Perkakas Dapur Pintar"
+      "Kapasiti": "1.8 Litre",
+      "Bahan": "Heat-Resistant Borosilicate Glass",
+      "Kuasa": "1800W"
     },
     "faq": [
       {
@@ -11296,7 +8969,8 @@
       "dapur",
       "memasak",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1881479025/49813628829"
   },
   {
     "id": "heavy-duty-2l-blender-pengisar-tugas-berat",
@@ -11309,21 +8983,22 @@
     "price_num": "212.00",
     "original_price": "RM 275.60",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Perkakas Dapur Pintar dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Pengisar komersial/domestik berkuasa gergasi yang mampu menghancurkan ais batu menjadi kiub halus dalam beberapa saat.",
+    "hook": "Pengisar tugas berat 2L dengan motor berkuasa tinggi untuk mengisar ais batu dan bahan keras. Ulasan ini menilai kelajuan mata pisau dan bunyi motor.",
+    "who_is_it_for": "Sesuai untuk peniaga kecil, pembuat smoothie, dan keluarga yang kerap mengisar bahan masakan keras.",
+    "who_should_skip": "Dapur yang hanya memerlukan pengisar kecil untuk rempah ringan.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Motor berkuasa tinggi mampu hancurkan ais batu dengan pantas",
+      "Jug berkapasiti 2L tahan pecah",
+      "Mata pisau keluli tahan karat 6 bilah"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Bunyi motor agak bising semasa kelajuan maksimum"
     ],
     "specs": {
-      "Jenama": "Pilihan Rasmi",
-      "Kategori": "Perkakas Dapur Pintar"
+      "Kapasiti": "2.0 Litre",
+      "Motor": "Commercial Grade Heavy Duty",
+      "Bilah": "6-Blade Stainless Steel"
     },
     "faq": [
       {
@@ -11341,7 +9016,8 @@
       "dapur",
       "memasak",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/423696229/9757018393"
   },
   {
     "id": "premium-food-steamer-for-microwave-heat-resistant-plastic-st",
@@ -11354,21 +9030,22 @@
     "price_num": "25.85",
     "original_price": "RM 33.61",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Perkakas Dapur Pintar dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Alatan dapur pintar untuk mengukus makanan dalam microwave dengan pantas tanpa perlu menghidupkan dapur gas.",
+    "hook": "Bekas pengukus gelombang mikro (microwave) plastik tahan haba kalis BPA. Ulasan ini menilai ketahanan plastik dan masa mengukus sayur/dimsum.",
+    "who_is_it_for": "Sesuai untuk pelajar asrama, pekerja pejabat, dan bujang yang ada microwave.",
+    "who_should_skip": "Pengguna yang tidak mempunyai ketuhar gelombang mikro di rumah.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Mengukus makanan dalam masa 3 hingga 5 minit sahaja",
+      "Bahan plastik bebas BPA yang selamat untuk makanan",
+      "Boleh dibasuh menggunakan mesin pencuci pinggan"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Saiz terhad mengikut ruang dalaman microwave"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Perkakas Dapur Pintar"
+      "Bahan": "BPA-Free Food Grade PP",
+      "Fungsi": "Microwave Steaming",
+      "Rintangan": "-20°C hingga 120°C"
     },
     "faq": [
       {
@@ -11386,7 +9063,8 @@
       "dapur",
       "memasak",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/437459518/15921168920"
   },
   {
     "id": "foldable-handheld-steam-iron-1550w-capacity-flat-irons-all-f",
@@ -11399,21 +9077,22 @@
     "price_num": "107.69",
     "original_price": "RM 140.00",
     "discount": "Diskaun 23%",
-    "verdict": "Pilihan berkualiti dalam kategori Pembersihan & Kediaman dengan prestasi terbukti untuk kegunaan harian.",
-    "hook": "Produk praktikal dengan ulasan pembeli tinggi dan nilai pembelian terbaik.",
-    "who_is_it_for": "Pengguna yang mencari penyelesaian berkualiti pada harga berpatutan.",
-    "who_should_skip": "Pengguna yang sudah memiliki model setara berprestasi tinggi.",
+    "verdict": "Seterika wap genggam bersaiz ringkas yang memanaskan air dalam masa 20 saat. Reka bentuk boleh lipat memudahkan ia disimpan dalam beg pakaian.",
+    "hook": "Seterika wap mudah alih 1550W boleh lipat untuk menghilangkan kedutan baju secara menegak. Ulasan ini menilai kuasa wap dan kebolehan membawa travel.",
+    "who_is_it_for": "Sesuai untuk pengembara, pekerja outstation, dan pelajar yang mahu membasmi kedut baju dengan pantas.",
+    "who_should_skip": "Pengguna yang mahu menggosok seluar jeans tebal berlipat dalam kuantiti banyak serentak.",
     "pros": [
-      "Kualiti binaan memuaskan.",
-      "Mudah digunakan dan jimat tenaga.",
-      "Ulasan pembeli positif."
+      "Kuasa wap 1550W pantas melicinkan kedutan",
+      "Pemegang boleh dilipat muat masuk beg travel",
+      "Selamat untuk semua jenis fabrik halus termasuk sutera"
     ],
     "cons": [
-      "Ketersediaan stok bergantung pada musim promosi."
+      "Tangki air perlu diisi semula jika menggosok banyak baju"
     ],
     "specs": {
-      "Jenama": "NoBrand",
-      "Kategori": "Pembersihan & Kediaman"
+      "Kuasa": "1550W",
+      "Reka Bentuk": "Foldable Handle Travel Size",
+      "Masa Panas": "20 Saat"
     },
     "faq": [
       {
@@ -11431,6 +9110,7 @@
       "rumah",
       "kebersihan",
       "perkakas"
-    ]
+    ],
+    "shopee_url": "https://shopee.com.my/product/1853735189/54911963087"
   }
 ]
