@@ -568,6 +568,17 @@ CATEGORY_LISTICLE_SPECS = [
         "match": lambda p: match_problem_category(p, "pakaian_kemas"),
         "is_problem": True
     },
+    {
+        "slug": "penjagaan-diri-lelaki-grooming.html",
+        "title_short": "Penjagaan Diri Lelaki",
+        "emoji": "🧔",
+        "meta_title": "{n} Produk Penjagaan Diri Lelaki & Grooming Terbaik ({year})",
+        "meta_desc": "Bandingkan {n} produk grooming lelaki terbaik di Malaysia — pencukur elektrik, deodorant tahan 48 jam, pencuci muka, dan pengering rambut untuk rutin harian ({year}).",
+        "h1": "{n} Produk Penjagaan Diri Lelaki Wajib Untuk Rutin Harian ({year})",
+        "intro": "Rutin grooming lelaki yang ringkas tetapi lengkap: cukur janggut tanpa iritasi, bau badan kekal segar sepanjang hari, dan rambut sentiasa kemas — semua dengan produk berpatutan di Malaysia.",
+        "match": lambda p: match_problem_category(p, "grooming_lelaki"),
+        "is_problem": True
+    },
 
     # --------------------------------------------------------------------------
     # HAB LISTICLE PSIKOLOGI, GAYA HIDUP & HADIAH (INTENT & LIFE-STAGE HUBS)
@@ -882,6 +893,14 @@ PROBLEM_HUB_PRODUCT_IDS = {
         "cosrx-acne-pimple-master-patch-24pcs",
         "aiken-tea-tree-oil-facial-cleanser-100g",
     },
+    # Masalah penampilan lelaki: cukur, bau badan, rambut & kemasan diri
+    "grooming_lelaki": {
+        "philips-electric-shaver-pro-pq217",
+        "dashing-anti-perspirant-roll-on-deodorant-50ml",
+        "nivea-men-bright-c-hya-wash-foam-100g",
+        "simplus-high-speed-hair-dryer-ionic",
+        "dettol-antibacterial-body-wash-berry-cool-950g",
+    },
 }
 
 # ==============================================================================
@@ -959,6 +978,12 @@ PROBLEM_GUARDRAIL_RULES = {
     "bajet_bawah_rm50": {
         "negative": ["air fryer", "vacuum cleaner", "monitor light", "mechanical keyboard"],
         "required": ["earbuds", "cable", "tumbler", "lint", "patch", "cleanser"]
+    },
+    "grooming_lelaki": {
+        "negative": ["lip tint", "lipstik", "false nail", "toenail", "kuku", "mascara",
+                     "solekan", "tudung", "hijab", "shayla", "body lotion", "losyen badan"],
+        "required": ["shaver", "cukur", "deodorant", "roll-on", "bau badan", "face wash",
+                     "body wash", "mandian", "hair dryer", "pengering rambut", "grooming"]
     },
 }
 
@@ -1455,6 +1480,18 @@ def generate_production_microsites():
                     <span class="text-slate-900 font-semibold text-xs sm:text-sm sm:text-right">{val}</span>
                 </div>
             """
+        # Baris Semakan Pihak Ketiga — automatik jika specs belum ada
+        _AUDIT_KEYS = ("semakan", "kkm", "sirim", "npra", "keselamatan",
+                       "pensijilan", "persijilan", "piawaian")
+        _has_audit = any(any(w in lbl.lower() for w in _AUDIT_KEYS)
+                         for lbl in prod.get("specs", {}))
+        if not _has_audit and prod.get("safety_audit"):
+            specs_html += f"""
+                <div class="py-3 flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
+                    <span class="font-medium text-slate-500 text-xs sm:text-sm">Semakan Keselamatan</span>
+                    <span class="text-slate-900 font-semibold text-xs sm:text-sm sm:text-right">{prod['safety_audit']}</span>
+                </div>
+            """
 
         # FAQ & FAQ Schema
         faq_html = ""
@@ -1522,7 +1559,10 @@ def generate_production_microsites():
         page = page.replace("{{id}}", prod["id"])
         page = page.replace("{{name}}", prod["name"])
         page = page.replace("{{brand}}", prod.get("brand", "Jenama Sah"))
-        page = page.replace("{{group}}", prod.get("group", "Kesihatan & Penjagaan Diri"))
+        _grp = prod.get("group", "Kesihatan & Penjagaan Diri")
+        if "_" in _grp:  # guard: slug tak sepatutnya terpapar
+            _grp = _grp.replace("_", " ").title()
+        page = page.replace("{{group}}", _grp)
         page = page.replace("{{category}}", prod["category"])
         page = page.replace("{{verdict}}", prod.get("verdict", prod["hook"]))
         page = page.replace("{{hook}}", prod.get("hook", prod.get("verdict", "")))
@@ -1564,7 +1604,10 @@ def generate_production_microsites():
     for p in products:
         slug = p.get("group_slug", "health-care")
         group_counts[slug] = group_counts.get(slug, 0) + 1
-        group_names[slug] = p.get("group", slug.title())
+        _gn = p.get("group", slug.title())
+        if "_" in _gn:
+            _gn = _gn.replace("_", " ").title()
+        group_names[slug] = _gn
 
     tab_buttons_html = f'''<button onclick="filterGroup('all', this)" class="tab-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0">Semua ({len(products)})</button>'''
     for slug, count in group_counts.items():

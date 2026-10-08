@@ -57,8 +57,8 @@ def _mobile_links():
 GLOBAL_HEADER = f'''    <!-- GLOBAL HEADER (komponen dikongsi — jangan edit manual per halaman) -->
     <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2.5 font-extrabold text-lg text-slate-900 tracking-tight hover:opacity-80 transition-opacity">
-                <span class="bg-gradient-to-tr from-orange-500 to-amber-400 text-white w-7 h-7 rounded-lg flex items-center justify-center font-black text-sm shadow-md shadow-orange-500/20">i</span>
+            <a href="https://link.iviztrading.com" class="flex items-center gap-2.5 font-extrabold text-lg text-slate-900 tracking-tight hover:opacity-80 transition-opacity">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0" aria-hidden="true"><defs><linearGradient id="picksG" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#EA580C"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient><linearGradient id="picksV" x1="12" y1="14" x2="36" y2="38" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FED7AA"/></linearGradient></defs><rect width="48" height="48" rx="14" fill="url(#picksG)"/><rect x="1" y="1" width="46" height="46" rx="13" stroke="white" stroke-opacity="0.25" stroke-width="2"/><path d="M14 17L24 33L34 17H28.5L24 24.5L19.5 17H14Z" fill="url(#picksV)"/><circle cx="24" cy="14" r="2.5" fill="#FFFFFF"/></svg>
                 <span>iviz <span class="text-orange-500 font-bold">Picks</span></span>
             </a>
             <div class="hidden md:flex items-center gap-5 text-xs font-bold text-slate-600">
@@ -97,7 +97,8 @@ GLOBAL_FOOTER = '''    <!-- GLOBAL FOOTER (komponen dikongsi — jangan edit man
             </div>
         </div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 mt-6 pt-6 border-t border-slate-100 text-center leading-relaxed">
-            Penafian: iviz Picks ialah saluran media ulasan bebas. Pautan luar mungkin mengandungi rujukan perkongsian komisen afiliasi. Sebarang ulasan diterbitkan secara objektif tanpa tajaan penjual. Hubungi kami: <a href="mailto:hello@iviztrading.com" class="text-slate-600 underline font-medium">hello@iviztrading.com</a>.
+            <p class="mb-2">© 2026 <a href="https://iviztrading.com" class="hover:underline font-bold text-slate-600">iViz Trading (0000194176-T)</a>. Hak cipta terpelihara.</p>
+            Penafian: iviz Picks ialah saluran media ulasan bebas. Pautan luar mungkin mengandungi rujukan perkongsian komisen afiliasi. Sebarang ulasan diterbitkan secara objektif tanpa tajaan penjual.
         </div>
     </footer>'''
 

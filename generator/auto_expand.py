@@ -12,6 +12,8 @@ Aliran Kerja Automatik:
 
 import os, sys, csv, json, re, time, requests, subprocess
 from datetime import datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import editorial
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -34,6 +36,14 @@ def load_ia_credentials():
     return key, secret
 
 OFFER_ID = 5032 # Shopee MY - CPS
+
+# Slug kumpulan -> Nama paparan (teks manusia utk breadcrumb/badge)
+GROUP_DISPLAY = {
+    "perkakas_dapur": ("Rumah & Dapur", "home-kitchen"),
+    "skincare_kesihatan": ("Kesihatan & Penjagaan Diri", "health-care"),
+    "gajet_elektronik": ("Gajet & Elektronik", "gadgets-tech"),
+    "setup_wfh": ("Perabot & Setup Meja", "wfh-setup"),
+}
 
 # GATE 1: Junk Blocklist
 JUNK_KEYWORDS = [
@@ -80,7 +90,21 @@ def clean_wirecutter_title(raw_title):
                   "MURAH", "VIRAL", "TERBARU", "READY", "STOCK", "NEW"]:
         t = re.sub(r"(?i)\b" + re.escape(promo) + r"\b", "", t)
     t = re.sub(r"\s+", " ", t).strip(" -|,.")
-    return t
+    # Buang perkataan berulang berturut (cth: "PowerBank ... PowerBank")
+    words, out = t.split(), []
+    for w in words:
+        if not out or out[-1].lower() != w.lower():
+            out.append(w)
+    t = " ".join(out)
+    # Buang pengulangan perkataan merentas tajuk (max 1 setiap perkataan)
+    seen, out = set(), []
+    for w in t.split():
+        key = w.lower().strip(".,")
+        if key in seen and len(key) > 3:
+            continue
+        seen.add(key)
+        out.append(w)
+    return " ".join(out).strip(" -|,.")
 
 def slugify(text):
     s = text.lower()
@@ -136,8 +160,19 @@ def run_auto_expansion(max_add=3):
             feed_short_url = (row.get("product_short link") or "").strip()
             price_raw = (row.get("sale_price") or row.get("price") or "0").strip()
             brand = (row.get("global_brand") or "").strip()
+            shop_id = (row.get("shopid") or row.get("\ufeffshopid") or "").strip()
+            item_id = (row.get("itemid") or "").strip()
+            shop_name = (row.get("shop_name") or "").strip()
+            _off = (row.get("is_official_shop") or "").strip().lower()
+            _pref = (row.get("is_preferred_shop") or "").strip().lower()
+            is_official = _off in ("true", "1", "yes") or ("official" in _off and "non" not in _off)
+            is_preferred = _pref in ("true", "1", "yes") or ("preferred" in _pref and "non" not in _pref)
+            discount_pct = (row.get("discount_percentage") or "").strip()
             
             if not title or not img_url or not feed_short_url:
+                continue
+            # GATE 1b: Tolak produk tanpa jenama (tajuk generic spam marketplace)
+            if not brand or brand.lower() == "nobrand":
                 continue
                 
             low = title.lower()
@@ -174,34 +209,54 @@ def run_auto_expansion(max_add=3):
             if not aff_link:
                 continue
                 
+            ed_data = editorial.generate(clean_title, brand or clean_title.split()[0], price_num, cat, grp, product_key=matched_key, allowlist=list(PRODUCT_ALLOWLIST.keys()))
             new_prod = {
                 "id": pid,
                 "name": clean_title,
                 "brand": brand if brand and brand != "NoBrand" else clean_title.split()[0],
                 "category": cat,
-                "group": grp,
-                "group_slug": grp_slug,
+                "group": GROUP_DISPLAY.get(grp, (grp.replace("_", " ").title(), grp_slug))[0],
+                "group_slug": GROUP_DISPLAY.get(grp, (grp.replace("_", " ").title(), grp_slug))[1],
                 "shopee_price": f"RM {price_num:.2f}",
                 "price": f"RM {price_num:.2f}",
                 "price_num": price_num,
                 "original_price": f"RM {price_num * 1.35:.2f}",
-                "discount": "Diskaun 26%",
-                "hook": hook_txt,
-                "verdict": verdict_txt,
-                "who_is_it_for": f"Pengguna yang memerlukan {cat.lower()} berprestasi tinggi untuk kegunaan harian.",
-                "who_should_skip": "Pengguna yang sudah mempunyai model gred komersil berkuasa tinggi.",
-                "pros": ["Kualiti binaan kukuh dan tahan lasak.", "Prestasi terbukti dengan ulasan pembeli positif.", "Nilai belian praktikal."],
-                "cons": ["Ketersediaan stok tertakluk kepada promosi semasa."],
-                "specs": {"Jenama": brand or clean_title.split()[0], "Kategori": cat, "Harga": f"RM {price_num:.2f}"},
-                "faq": [{"q": "Adakah produk ini mempunyai waranti rasmi?", "a": "Ya, tertakluk kepada polisi jaminan kedai rasmi Shopee."}],
+                "discount": (f"Diskaun {discount_pct.rstrip(chr(37))}%" if discount_pct and discount_pct != "0" else "Harga Pasaran"),
+                "safety_audit": ed_data["safety_audit"],
+                "hook": ed_data["hook"],
+                "verdict": ed_data["verdict"],
+                "who_is_it_for": ed_data["who_is_it_for"],
+                "who_should_skip": ed_data["who_should_skip"],
+                "pros": ed_data["pros"],
+                "cons": ed_data["cons"],
+                "specs": dict(
+                    {"Jenama": brand or clean_title.split()[0], "Kategori": cat, "Harga": f"RM {price_num:.2f}"},
+                    **ed_data.get("specs_extra", {}),
+                    **({"Semakan Keselamatan": ed_data["safety_audit"]} if ed_data.get("safety_audit") else {})
+                ),
+                "faq": ed_data["faq"],
                 "affiliate_url": aff_link,
                 "merchant_platform": "Shopee Mall / Preferred",
                 "image_url": img_url,
-                "editorial_score": 9.4,
+                "editorial_score": ed_data["editorial_score"],
                 "status": "active",
                 "added_at": datetime.now().strftime("%Y-%m-%d"),
                 "tags": [grp, cat.lower(), matched_key],
-                "deeplink_verified": True
+                "deeplink_verified": True,
+                "last_checked": datetime.now().strftime("%Y-%m-%d"),
+                "match_score": 100,
+                "matched_real_title": title,
+                "matched_real_link": (f"https://shopee.com.my/product/{shop_id}/{item_id}"
+                                      if shop_id and item_id else None),
+                "matched_shop": shop_name,
+                "price_from_feed": price_raw,
+                "replacement_id": None,
+                "schema": {"rating": "", "review_count": ""},
+                "shopee_url": feed_short_url,
+                "shopee_badge": ("Shopee Mall / Official" if is_official
+                                 else ("Preferred Seller" if is_preferred else "")),
+                "shopee_commission": "",
+                "video_embed_url": ""
             }
             
             products.append(new_prod)
