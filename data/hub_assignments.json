@@ -26,32 +26,46 @@
     "torriden-dive-in-low-molecule-hyaluronic-acid-serum"
   ],
   "diet_sihat": [
-    "gaabor-air-fryer-3-5l-smokeless-oil-free",
-    "gaabor-smokeless-air-fryer-4l",
-    "tefal-5l-low-sugar-rice-cooker"
+    "tefal-5l-low-sugar-rice-cooker",
+    "russell-taylors-powercrush-blender-1-5l",
+    "han-river-mini-food-chopper-250ml",
+    "zeebe-3kg-mini-digital-kitchen-scale",
+    "gaabor-air-fryer-3-5l-smokeless-oil-free"
   ],
   "sakit_pinggang": [
     "boldlux-memory-foam-backrest-cushion",
-    "ttracing-swift-x-2020-gaming-chair"
+    "ttracing-swift-x-2020-gaming-chair",
+    "nira-butterfly-lumbar-pillow",
+    "cooling-gel-seat-cushion-honeycomb",
+    "evelin-lumbar-support-belt"
   ],
   "bulu_habuk": [
     "deerma-dx300-vacuum-cleaner",
     "xiaomi-showsee-electric-lint-remover",
-    "xiaomi-smart-air-purifier-4-compact"
+    "xiaomi-smart-air-purifier-4-compact",
+    "xiaomi-robot-vacuum-e5",
+    "midea-map-28bd-air-purifier"
   ],
   "kereta_bersih": [
     "baseus-360-rotation-magnetic-car-holder",
-    "wireless-car-vacuum-cleaner-handheld"
+    "wireless-car-vacuum-cleaner-handheld",
+    "baseus-portable-car-vacuum-a2",
+    "baseus-car-seat-gap-filler-organizer",
+    "baseus-clean-garbage-bag-car-seat"
   ],
   "pakaian_kemas": [
     "panasonic-ni-ghd021-handheld-garment-steamer",
-    "xiaomi-showsee-electric-lint-remover"
+    "xiaomi-showsee-electric-lint-remover",
+    "hodekt-stand-garment-steamer",
+    "sonifer-sf9053-steam-generator-iron"
   ],
   "hadiah_housewarming": [
     "baseus-bowie-wm02-earbuds",
     "gaabor-air-fryer-3-5l-smokeless-oil-free",
     "tyeso-vacuum-insulated-tumbler-750ml",
-    "xiaomi-smart-air-purifier-4-compact"
+    "portable-electric-usb-juicer-blender-580ml",
+    "zeebe-3kg-mini-digital-kitchen-scale",
+    "gaabor-smokeless-air-fryer-4l"
   ],
   "starter_pack_rumah_sewa": [
     "boldlux-memory-foam-backrest-cushion",
@@ -63,7 +77,9 @@
   "rutin_penampilan_kemas": [
     "panasonic-ni-ghd021-handheld-garment-steamer",
     "skintific-5x-ceramide-moisture-gel",
-    "xiaomi-showsee-electric-lint-remover"
+    "xiaomi-showsee-electric-lint-remover",
+    "philips-electric-shaver-s1886",
+    "gatsby-styling-spray-mat-hard-200g"
   ],
   "pelajar_asrama": [
     "anker-soundcore-r50i-nc-wireless-earbuds",
@@ -77,13 +93,15 @@
     "samu-giken-mini-portable-uv-sterilizer-box",
     "stainless-steel-304-thermal-insulated-food-jar",
     "tp-link-tapo-c120-outdoor-security-camera",
-    "xiaomi-smart-air-purifier-4-compact"
+    "xiaomi-smart-air-purifier-4-compact",
+    "midea-map-28bd-air-purifier"
   ],
   "bujang_sibuk": [
     "deerma-dx300-vacuum-cleaner",
     "gaabor-air-fryer-3-5l-smokeless-oil-free",
     "panasonic-ni-ghd021-handheld-garment-steamer",
-    "tefal-5l-low-sugar-rice-cooker"
+    "tefal-5l-low-sugar-rice-cooker",
+    "xiaomi-robot-vacuum-e5"
   ],
   "kaki_travel": [
     "anker-soundcore-r50i-nc-wireless-earbuds",
@@ -95,12 +113,16 @@
   "fitness_kesihatan": [
     "boldlux-memory-foam-backrest-cushion",
     "tyeso-vacuum-insulated-tumbler-750ml",
-    "xiaomi-smart-band-9-pro-amoled"
+    "xiaomi-smart-band-9-pro-amoled",
+    "cooling-gel-seat-cushion-honeycomb",
+    "zeebe-3kg-mini-digital-kitchen-scale"
   ],
   "setup_minimalis": [
     "baseus-i-wok-series-monitor-light-bar",
     "ugreen-10in1-usb-c-transfer-hub-80133",
-    "ugreen-wired-keyboard-mouse-combo-mk003"
+    "ugreen-wired-keyboard-mouse-combo-mk003",
+    "baseus-f02-wireless-mouse",
+    "n3-premium-laptop-stand-aluminium"
   ],
   "bajet_bawah_rm50": [
     "aiken-tea-tree-oil-facial-cleanser-100g",
@@ -114,7 +136,19 @@
     "philips-electric-shaver-pro-pq217",
     "dashing-anti-perspirant-roll-on-deodorant-50ml",
     "nivea-men-bright-c-hya-wash-foam-100g",
-    "simplus-high-speed-hair-dryer-ionic",
-    "dettol-antibacterial-body-wash-berry-cool-950g"
+    "gatsby-shaving-foam-190g",
+    "gillette-blue-2-plus-6s",
+    "gatsby-water-gloss-hard-150g",
+    "philips-electric-shaver-s1886",
+    "gatsby-styling-spray-mat-hard-200g",
+    "nivea-men-deep-mud-foam-100g",
+    "gatsby-urban-cologne-luxury-air"
+  ],
+  "masak_pantas": [
+    "gaabor-air-fryer-3-5l-smokeless-oil-free",
+    "gaabor-smokeless-air-fryer-4l",
+    "pensonic-psm-162s-food-steamer-12l-pengukus-makana",
+    "tefal-5l-low-sugar-rice-cooker",
+    "russell-taylors-powercrush-blender-1-5l"
   ]
 }

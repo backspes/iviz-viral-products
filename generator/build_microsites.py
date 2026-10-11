@@ -515,14 +515,27 @@ CATEGORY_LISTICLE_SPECS = [
     },
     {
         "slug": "perkakas-dapur-diet-sihat.html",
-        "title_short": "Diet Sihat & Low Sugar",
+        "title_short": "Diet Sihat & Rendah Gula",
         "emoji": "🥗",
-        "meta_title": "{n} Periuk Nasi Rendah Gula & Air Fryer untuk Diet Sihat ({year})",
-        "meta_desc": "Ulasan {n} periuk nasi low-sugar dan penggoreng udara tanpa minyak terbaik untuk gaya hidup sihat & kurangkan kolesterol ({year}).",
-        "h1": "{n} Periuk Nasi Rendah Gula & Air Fryer Terbaik untuk Diet Sihat ({year})",
-        "intro": "Perkakas dapur moden yang membantu mengurangkan kanji nasi dan minyak masakan tanpa menjejaskan rasa makanan harian keluarga.",
+        "meta_title": "{n} Periuk Nasi Low Sugar & Pengisar Sihat Terbaik ({year})",
+        "meta_desc": "Ulasan {n} periuk nasi rendah gula, pengisar smoothie dan penimbang digital terbaik untuk gaya hidup sihat & pesakit diabetes ({year}).",
+        "h1": "{n} Alatan Dapur Rendah Gula & Pengisar Sihat untuk Diet ({year})",
+        "intro": "Perkakas dapur yang membantu menguruskan pengambilan gula dan kalori harian — daripada periuk nasi teknologi 'low sugar' hingga pengisar nutrisi untuk smoothie segar.",
         "match": lambda p: match_problem_category(p, "diet_sihat"),
-        "is_problem": True
+        "is_problem": True,
+        "added_at": "2026-10-08"
+    },
+    {
+        "slug": "gajet-dapur-masak-pantas.html",
+        "title_short": "Dapur Masak Pantas",
+        "emoji": "⚡",
+        "meta_title": "{n} Air Fryer & Steamer Terbaik untuk Masakan Pantas ({year})",
+        "meta_desc": "Senarai {n} air fryer smokeless dan pengukus elektrik terbaik di Malaysia untuk yang sibuk — masak cepat tanpa berlama-lama di dapur ({year}).",
+        "h1": "{n} Gajet Dapur Masak Pantas: Air Fryer & Steamer Terbaik ({year})",
+        "intro": "Selesai masalah tiada masa memasak dengan gajet dapur yang mempercepatkan penyediaan makanan harian tanpa pengawet dan tanpa minyak berlebihan.",
+        "match": lambda p: match_problem_category(p, "masak_pantas"),
+        "is_problem": True,
+        "added_at": "2026-10-08"
     },
     {
         "slug": "kerusi-ergonomik-sakit-pinggang.html",
@@ -577,7 +590,8 @@ CATEGORY_LISTICLE_SPECS = [
         "h1": "{n} Produk Penjagaan Diri Lelaki Wajib Untuk Rutin Harian ({year})",
         "intro": "Rutin grooming lelaki yang ringkas tetapi lengkap: cukur janggut tanpa iritasi, bau badan kekal segar sepanjang hari, dan rambut sentiasa kemas — semua dengan produk berpatutan di Malaysia.",
         "match": lambda p: match_problem_category(p, "grooming_lelaki"),
-        "is_problem": True
+        "is_problem": True,
+        "added_at": "2026-10-08"
     },
 
     # --------------------------------------------------------------------------
@@ -704,6 +718,16 @@ CATEGORY_LISTICLE_SPECS = [
         "is_intent": True
     }
 ]
+
+
+def sorted_specs(specs=None):
+    """Susun listicle spec: terbaru (ada added_at) di ATAS, lama (tanpa added_at)
+    kekal ikut susunan asal di bawah. Standard enterprise: kad latest di atas."""
+    specs = specs if specs is not None else CATEGORY_LISTICLE_SPECS
+    dated = sorted([s for s in specs if s.get("added_at")],
+                   key=lambda s: s["added_at"], reverse=True)
+    undated = [s for s in specs if not s.get("added_at")]
+    return dated + undated
 
 def parse_numeric_price(p):
     raw = str(p.get("shopee_price") or p.get("price") or "0")
@@ -1033,7 +1057,7 @@ def generate_segment_directory(dist_dir, products, _now):
 
     def _build_page(filename, title, subtitle, specs_list):
         grid_cards = ""
-        for spec in specs_list:
+        for spec in sorted_specs(specs_list):
             spec_obj, matched = pids_by_spec.get(spec["slug"], (spec, []))
             n = len(matched)
             if n == 0:
@@ -1167,40 +1191,87 @@ def validate_problem_hub_guardrails(products):
 
     print(f"  🛡️  Guardrail Integriti Masalah: LULUS 100% (Semua produk disahkan relevan).")
 
+def validate_product_page_fields(products):
+    """
+    Guardrail kualiti page produk: setiap produk AKTIF mesti ada
+    - 'specs'         : dict label->nilai (Spesifikasi & Semakan Pihak Ketiga)
+    - 'who_should_skip': ayat spesifik (Pertimbangkan Semula Jika)
+    Tanpa kedua-dua field ini, page produk hanya menunjukkan ringkasan generik.
+    """
+    missing = []
+    for p in products:
+        if p.get("status") != "active":
+            continue
+        if not isinstance(p.get("specs"), dict) or not p.get("specs"):
+            missing.append((p["id"], "specs"))
+        elif not str(p.get("who_should_skip", "")).strip() or str(p.get("who_should_skip", "")).strip() == "Tiada.":
+            missing.append((p["id"], "who_should_skip"))
+    if missing:
+        for pid, field in missing:
+            print(f"  ❌ Produk '{pid}' tiada field '{field}' — page produk akan generik!")
+        raise ValueError(
+            f"Build dibatalkan: {len(missing)} produk aktif tanpa field kualiti "
+            f"(specs / who_should_skip). Sila isi sebelum deploy."
+        )
+    print(f"  🛡️  Guardrail Kualiti Page Produk: LULUS (semua ada specs + who_should_skip).")
+
+def get_outbound_url(p):
+    """
+    Dapatkan URL destinasi keluar untuk butang CTA:
+    1. Utamakan affiliate_url (deeplink Involve Asia) jika ada.
+    2. Fallback WAJIB ke matched_real_link / shopee_url (link produk Shopee sebenar).
+    DILARANG pulangkan string kosong atau '#' — itu punca butang 'flickering'
+    dan tidak menghala ke mana-mana.
+    """
+    url = (p.get("affiliate_url") or "").strip()
+    if url and url != "#":
+        return url
+    fallback = (p.get("matched_real_link") or p.get("shopee_url") or "").strip()
+    if fallback and fallback != "#":
+        return fallback
+    return "https://shopee.com.my/"
+
 def classify_category(p):
-    text = (p.get("name","") + " " + p.get("category","") + " " + p.get("group","") + " " + " ".join(p.get("tags",[]))).lower()
-    
-    # 1. Skincare & Kesihatan
-    if any(k in text for k in ["serum","sunscreen","sunblock","cleanser","toner","moisturizer","skincare","ceramide","retinol","kkm","npra","jerawat","jeragat","kulit","collagen","vitamin c","brightening","whitening","spf","shampoo","syampu","face wash","facial"]):
-        return "skincare"
-        
-    # 2. Setup Meja WFH (Ergonomik & Ruang Kerja)
-    if any(k in text for k in ["kerusi","keyboard","papan kekunci","desk","standing desk","light bar","ergonom","gaming chair","laptop stand","lumbar","backrest","monitor"]):
+    # NOTA: guna name + category + group_slug SAHAJA (bukan label group — label
+    # "Rumah & Dapur" pernah mengkontaminasi keyword dapur, menarik vacuum masuk)
+    text = (p.get("name","") + " " + p.get("category","") + " " + (p.get("group_slug") or "")).lower()
+    if any(k in text for k in ["grooming","shaver","cukur","deodorant","roll-on","pomade","hair gel","styling spray","body cologne","dashing","gatsby","gillette"]) and not any(x in text for x in ["garment steamer","food steamer"]):
+        return "grooming"
+
+    # 2. Setup WFH
+    if any(k in text for k in ["kerusi","keyboard","papan kekunci","light bar","ergonom","gaming chair","laptop stand","lumbar","backrest","mouse pad","tetikus","kvm"]):
         return "setup_wfh"
-        
-    # 3. Perkakas Dapur & Memasak
-    if any(k in text for k in ["air fryer","rice cooker","periuk","pressure cooker","blender","chopper","cooker","dapur","masak","pan","kuali","steamer","pengukus","kettle","cerek","grinder","pengisar","juicer","lunch box","tumbler"]):
+
+    # 3. Perkakas Dapur (alat memasak/penyediaan makanan)
+    dapur_kw = ["air fryer","rice cooker","periuk","pressure cooker","blender","chopper","pengisar","food processor","dapur","kuali","pengukus makanan","food steamer","kettle","cerek","hotpot","oven thermometer","timbangan dapur","penimbang","coffee grinder","lunch box","pemanas makanan","vacuum sealer","perkakas dapur"]
+    if any(k in text for k in dapur_kw) and not any(x in text for x in ["garment steamer","steamer pakaian"]):
         return "dapur"
-        
+
     # 4. Gajet & Elektronik
-    if any(k in text for k in ["earbuds","earphone","tws","fon telinga","powerbank","charger","pengecas","kabel","cable","dashcam","ugreen","baseus","smartwatch","jam tangan","bluetooth","usb-c","audio"]):
+    gajet_kw = ["earbuds","earphone","tws","fon telinga","powerbank","charger","pengecas","kabel","cable","dashcam","dash cam","smartwatch","smart band","jam tangan","bluetooth","usb-c","audio receiver","otg","san disk","flash drive","router","penghala","wifi","hdmi","jisulife","fan ultra"]
+    if any(k in text for k in gajet_kw):
         return "gajet"
-        
-    # 5. Rumah Pintar & Pembersihan (Mesti eksplisit, bukan fallback buta)
-    if any(k in text for k in ["vacuum","vakum","purifier","penapis udara","humidifier","smart led","lampu pintar","router","penghala","steam iron","iron","mop","deodorizer","dust mite"]):
+
+    # 5. Rumah Pintar & Pembersihan (kebersihan/udara/keselamatan rumah + alatan pakaian)
+    rumah_kw = ["vacuum","vakum","purifier","penapis udara","humidifier","smart led","lampu pintar","motion sensor","night light","uv sterilizer","disinfectant","stand fan","kipas industri","kamera keselamatan","tapo","garment steamer","lint remover","seterika","pembersih","kediaman"]
+    if any(k in text for k in rumah_kw):
         return "rumah_pintar"
 
-    # Jika produk rumah umum lain yang sah
-    if any(k in text for k in ["stor","drawer","rak","cermin","penyimpan","organizer"]):
-        return "rumah_pintar"
+    # 6. Skincare & Kesihatan Diri (kulit muka/badan sahaja — bukan solekan/rambut)
+    skin_kw = ["serum","sunscreen","sunblock","cleanser","toner","moisturizer","skincare","ceramide","retinol","pelembap","face wash","facial","pimple","dark spot","parut","whitening","brightening","teeth gel","pemutih gigi","lotion","losyen","body wash","mandian","eye mask","stretch marks","bio-oil","snail mucin","micellar","jerawat","jeragat","kulit"]
+    if any(k in text for k in skin_kw):
+        return "skincare"
 
-    # Default fallback berasaskan category asal data
+    # 7. Khas: solekan & rambut (tiada hub kategori sendiri — biar di situ sahaja)
+    if any(k in text for k in ["solekan","bibir","lip tint","water tint","rambut","shampoo","syampu"]):
+        return "kecantikan"
+
     cat_orig = p.get("category","").lower()
     if "dapur" in cat_orig: return "dapur"
     if "gajet" in cat_orig or "audio" in cat_orig: return "gajet"
     if "skincare" in cat_orig or "kulit" in cat_orig: return "skincare"
     if "wfh" in cat_orig or "meja" in cat_orig: return "setup_wfh"
-    return "rumah_pintar"
+    return "lain_lain"
 
 def generate_category_listicles(dist_dir, products):
     import datetime as _dt
@@ -1210,6 +1281,8 @@ def generate_category_listicles(dist_dir, products):
 
     # ENFORCE CRITICAL GUARDRAIL: Sahkan integriti produk masalah secara automatik
     validate_problem_hub_guardrails(products)
+    # ENFORCE QUALITY GUARDRAIL: setiap produk aktif mesti ada specs + who_should_skip
+    validate_product_page_fields(products)
 
     for spec in CATEGORY_LISTICLE_SPECS:
         matched = [p for p in products if spec["match"](p)]
@@ -1280,9 +1353,9 @@ def generate_category_listicles(dist_dir, products):
                                 <a href="{p['id']}.html" class="inline-flex items-center justify-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 py-2.5 px-3 rounded-xl transition-colors min-h-[42px] text-center">
                                     <span>Baca Ulasan</span>
                                 </a>
-                                <a href="{p['affiliate_url']}" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center justify-center gap-1.5 text-xs font-extrabold text-white bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 py-2.5 px-3.5 rounded-xl shadow-sm hover:shadow-md transition-all min-h-[42px] text-center">
-                                    <span>Beli di Shopee</span>
-                                    <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                <a href="{get_outbound_url(p)}" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-orange-600 hover:bg-orange-700 py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 min-h-[48px] w-full sm:w-auto text-center">
+                                    <span>Lihat Tawaran di Shopee</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                                 </a>
                             </div>
                         </div>
@@ -1293,7 +1366,7 @@ def generate_category_listicles(dist_dir, products):
 
         # Other category quick links
         other_cats = ""
-        for ospec in CATEGORY_LISTICLE_SPECS:
+        for ospec in sorted_specs():
             is_cur = ospec["slug"] == slug
             cur_cls = "bg-orange-500 text-white font-extrabold shadow-sm" if is_cur else "bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold"
             other_cats += f'<a href="{ospec["slug"]}" class="px-4 py-2 rounded-xl text-xs whitespace-nowrap transition-colors {cur_cls}">{ospec["emoji"]} {ospec["title_short"]}</a>\n'
@@ -1572,7 +1645,7 @@ def generate_production_microsites():
         page = page.replace("{{price_num}}", str(prod.get("price_num", "0.00")))
         page = page.replace("{{original_price}}", str(prod.get("original_price", "")))
         page = page.replace("{{discount}}", str(prod.get("discount", "")))
-        page = page.replace("{{affiliate_url}}", prod.get("affiliate_url", "#"))
+        page = page.replace("{{affiliate_url}}", get_outbound_url(prod))
         page = page.replace("{{merchant_platform}}", prod.get("merchant_platform", "Shopee Mall"))
         page = page.replace("{{image_url}}", prod.get("image_url", ""))
         page = page.replace("{{editorial_score}}", str(prod.get("editorial_score", "9.0")))
@@ -1623,7 +1696,7 @@ def generate_production_microsites():
     intent_cards_html = ""
     problem_cards_html = ""
 
-    for spec in CATEGORY_LISTICLE_SPECS:
+    for spec in sorted_specs():
         hcount = sum(1 for p in products if spec["match"](p))
         if hcount == 0:
             continue
@@ -1773,7 +1846,7 @@ def generate_production_microsites():
                 Pilihan Produk Terbaik & Panduan Belian Malaysia
             </h1>
             <p class="text-slate-600 text-sm md:text-base mt-3 max-w-xl mx-auto leading-relaxed">
-                Analisis ulasan objektif berasaskan data pembeli terverifikasi dan semakan piawaian rasmi (NPRA KKM, SIRIM, MCMC).
+                Analisis ulasan objektif berasaskan data pembeli yang disahkan dan semakan piawaian rasmi (NPRA KKM, SIRIM, MCMC).
             </p>
         </div>
 

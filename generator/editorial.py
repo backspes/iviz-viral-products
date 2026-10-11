@@ -117,7 +117,7 @@ def _powerbank(name, brand, price, s):
         skip = "Anda yang mahu sesuatu yang muat dalam poket seluar — kapasiti sebegini berat dibawa harian."
         heavy = "Besar dan berat — kurang selesa dalam beg galas ringkas."
     elif cap <= 10000:
-        who = "Pengguna telefon yang cuma perlu satu penyelamat tambahan sebelum sampai ke rumah."
+        who = "Pengguna telefon yang hanya perlu satu penyelamat tambahan sebelum sampai ke rumah."
         skip = "Anda yang mengecas komputer riba — kapasiti ini tidak mencukupi untuk skrin besar."
         heavy = "Hanya satu hingga dua cas penuh; pengguna berat perlu isi semula kerap."
     else:
@@ -128,7 +128,7 @@ def _powerbank(name, brand, price, s):
     if watt:
         pros.append(f"Output {watt}W mengurangkan masa tunggu berbanding pengecas biasa 10W.")
     if s["has_cable"]:
-        pros.append("Kabel pengecas terbina dalam — tak payah bawa kabel asing.")
+        pros.append("Kabel pengecas terbina dalam — tidak perlu membawa kabel berasingan.")
     if s["has_display"]:
         pros.append("Paparan peratusan baki bateri yang tepat.")
     cons = [heavy]
@@ -232,7 +232,7 @@ def _kitchen(name, brand, price, s, kind="air fryer"):
     elif kind == "blender":
         hook = f"Motor {int(watt) if watt else ''}W menghancurkan ais dan sayur keras tanpa tersekat.".replace("W ", "W ")
         verdict = "Kuasa motor mencukupi untuk smoothie pekat; makanan keras perlu dipecahkan dahulu supaya bilah tahan lama."
-        skip = "Anda yang cuma mahu blender rempah kecil — model ini terlalu besar untuk itu."
+        skip = "Anda yang hanya mahu blender rempah kecil — model ini terlalu besar untuk itu."
         pros = ["Mangkuk besar kisar bahan sekali gus.", "Bilah tahan lasak untuk penggunaan harian."]
     elif kind == "food steamer":
         hook = f"Pengukus {lit:.0f}L bertingkat — kukus ikan, sayur dan telur serentak tanpa berlapis periuk."
@@ -262,7 +262,7 @@ def _home_clean(name, brand, price, s, kind="vacuum cleaner"):
     if kind == "air purifier":
         hook = "Penapisan HEPA menyingkirkan habuk halus, serbuk sumber, dan bulu haiwan dari udara bilik."
         verdict = "Untuk penghidap resdung:HEPA H13 menahan 99.97% zarah 0.3 mikron — bulu kucing dan serbuk tidak lagi berlegar waktu malam.".replace("resdung:HEPA", "resdung: HEPA")
-        who_txt = "Penghidap resdum dan rumah bertukar hewan".replace("resdum", "resdung").replace("hewan", "haiwan") + " yang perlukan udara bersih sepanjang malam."
+        who_txt = "Penghidap resdung dan rumah berhaiwan peliharaan".replace("resdum", "resdung") + " yang perlukan udara bersih sepanjang malam."
         skip = "Anda yang perlukan penyaman bilik — unit ini membersih udara, bukan menyejukkan."
         pros = ["HEPA H13 menahan 99.97% zarah halus termasuk serbuk dan bulu."]
         cons = ["Penapis perlu ditukar ikut jadual — kos berulang setiap 6-12 bulan.", "Bunyi kipas sedikit ketika mod kuasa tinggi."]

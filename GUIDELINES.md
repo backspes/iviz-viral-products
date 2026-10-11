@@ -44,7 +44,7 @@ Setiap halaman ulasan microsite produk mesti mengandungi elemen berikut:
    - Lencana kepercayaan: `🚚 Penghantaran Pantas`, `🛡️ Jaminan 100% Original`, `Disahkan Rasmi`.
    - Butang CTA menonjol (*Sunset Orange Gradient*): *"Semak Harga Terkini di Stor Rasmi"*.
 5. **Kelebihan (Pros) vs Kekurangan (Cons)**:
-   - 3-4 poin kelebihan nyata berasaskan pengalaman pengguna terverifikasi.
+   - 3-4 poin kelebihan nyata berasaskan pengalaman pengguna disahkan.
    - 2-3 poin kekurangan jujur bagi membina kepercayaan pembaca (*Zero bias*).
 6. **Spesifikasi & Semakan Pihak Ketiga (3rd Party Audit)**:
    - Skincare/Kosmetik: Semakan senarai NOT / amaran racun berjadual NPRA KKM.

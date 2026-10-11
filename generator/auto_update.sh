@@ -6,6 +6,10 @@ mkdir -p "$PROJECT_DIR/logs"
 
 echo "=== [$(date '+%Y-%m-%d %H:%M:%S')] Starting Build & Deploy ===" >> "$LOG_FILE"
 
+# 0.5 Refresh affiliate links (auto-heal — langkau senyap kalau API IA down)
+echo "--- Refreshing Affiliate Links ---" >> "$LOG_FILE"
+python3 "$PROJECT_DIR/generator/refresh_affiliate_links.py" >> "$LOG_FILE" 2>&1 || true
+
 # 1. Build Pages
 echo "--- Building Pages ---" >> "$LOG_FILE"
 python3 "$PROJECT_DIR/generator/build_microsites.py" >> "$LOG_FILE" 2>&1

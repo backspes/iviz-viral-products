@@ -82,7 +82,10 @@
       "timbang",
       "blender",
       "smoothie",
-      "low sugar"
+      "low sugar",
+      "chopper",
+      "pengisar",
+      "food processor"
     ]
   },
   "sakit_pinggang": {
@@ -100,7 +103,12 @@
       "kerusi",
       "laptop stand",
       "footrest",
-      "ergonomic"
+      "ergonomic",
+      "seat cushion",
+      "kusyen",
+      "cushion",
+      "back support",
+      "posture"
     ]
   },
   "bulu_habuk": {
@@ -222,7 +230,12 @@
       "remover",
       "ceramide",
       "serum",
-      "skincare"
+      "skincare",
+      "shaver",
+      "cukur",
+      "spray",
+      "grooming",
+      "pencukur"
     ]
   },
   "pelajar_asrama": {
@@ -363,17 +376,56 @@
       "losyen badan"
     ],
     "required": [
-      "shaver",
-      "cukur",
-      "deodorant",
-      "roll-on",
+      "pisau",
+      "cologne",
+      "wax",
+      "foam",
+      "spray",
+      "body wash",
+      "gel",
+      "pomade",
+      "shaving",
       "bau badan",
       "face wash",
-      "body wash",
-      "mandian",
+      "roll-on",
+      "face",
+      "grooming",
       "hair dryer",
+      "perfume",
+      "shaver",
+      "fragrance",
+      "deodorant",
+      "mud",
+      "cukur",
+      "mandian",
       "pengering rambut",
-      "grooming"
+      "razor",
+      "wash"
+    ]
+  },
+  "masak_pantas": {
+    "negative": [
+      "garment steamer",
+      "seterika",
+      "lint",
+      "humidifier",
+      "vacuum",
+      "kettle",
+      "cerek"
+    ],
+    "required": [
+      "air fryer",
+      "penggoreng",
+      "steamer",
+      "pengukus",
+      "smokeless",
+      "fryer",
+      "stim",
+      "rice cooker",
+      "blender",
+      "pengisar",
+      "periuk nasi",
+      "hotpot"
     ]
   }
 }
